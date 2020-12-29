@@ -69,3 +69,17 @@ target="\_blank"の遷移先に window.opener.location="遷移元サイトのダ
 ### 3
 
 Referrer-Policy: origin-when-cross-origin
+
+# 課題２（クイズ）
+
+### 1
+
+Authorization ヘッダーの値を指定する時、Basic 認証方式を使用している場合には、HTTPS との組み合わせが推奨されてるのは何故でしょうか？
+
+### 2
+
+Referre-Policy ヘッダーは何も指定されていない場合はどのような動作になるでしょうか？
+
+### 3
+
+Location ヘッダーと Content-Location ヘッダーの違いについて説明してください。
