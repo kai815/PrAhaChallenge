@@ -38,3 +38,30 @@ curl -X POST -d 'name=hoge' https://httpbin.org/post
 ```
 
 Content-Type を指定しなくても application/x-www-form-urlencoded になる
+
+# クイズ
+
+## curl
+
+### 1
+
+問題２の curl コマンドを修正して、実行にかかった全ての時間を表示させる curl コマンドを作成してください。
+
+### 2
+
+https://httpbin.org/image/jpegを使用して、画像ファイルをダウンロードして保存するコマンドを作成してください。(保存するファイル名は「test.jpg」)
+
+### 3
+
+https://httpbin.org/cookiesを使用して、name=taro,age=20のcookieをcurlコマンドをセットしてください。レスポンスは以下になるはずです。
+
+```
+{
+  "cookies": {
+    "age": "20",
+    "name": "taro"
+  }
+}
+```
+
+## postman
