@@ -39,6 +39,10 @@ curl -X POST -d 'name=hoge' https://httpbin.org/post
 
 Content-Type を指定しなくても application/x-www-form-urlencoded になる
 
+### 上記の同じ課題を postman でやった結果
+
+https://documenter.getpostman.com/view/13158613/TVt184bW
+
 # クイズ
 
 ## curl
@@ -65,3 +69,17 @@ https://httpbin.org/cookiesを使用して、name=taro,age=20のcookieをcurlコ
 ```
 
 ## postman
+
+### 1
+
+postman にある「collections」の意味は何か？
+
+### 2
+
+postman で API 叩き、それを保存してドキュメントとして公開して、URL を貼り付けてください。
+
+例：https://documenter.getpostman.com/view/13158613/TVt184bW
+
+### 3
+
+問題 1（X-Test ヘッダーに hello をセットするやつ）を postaman 実行する際に、実行結果が正しいかどうかを判定するテストコードを postman の tests に記載し、テストが通ったら、回答のテストコードをこちらに貼り付けてください。
