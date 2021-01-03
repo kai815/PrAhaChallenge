@@ -7,16 +7,16 @@ app.use(express.urlencoded({ extended: true }));
 
 app.get('/', function(req, res){
   res.status(200);
-  res.send({"text":"hello world"});
+  res.send({text:"hello world"});
 })
 
 app.post('/', function(req, res){
-  if(req.headers["content-type"]==="application/json"){
+  if(req.is('application/json')){
     return res.status(201).send(req.body);
   }
   return res.status(400).send({ 
     errorMessage: "Invalid content-type",
-    "content-type":req.headers["content-type"]
+    "content-type":req.get('content-type')
   });
 })
 app.listen(port)
