@@ -24,3 +24,10 @@ web-basis/request-parse-server
 
 プルリク
 https://github.com/kai815/PrAhaChallenge/pull/4
+
+### 4.の解答
+
+web-basis/understanding-cookie.md
+
+プルリク
+https://github.com/kai815/PrAhaChallenge/pull/5
