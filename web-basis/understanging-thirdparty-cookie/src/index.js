@@ -2,21 +2,14 @@ const express = require('express');
 const app = express();
 const port = 8080;
 
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
 
-app.get('/', function(req, res){
-  res.status(200);
-  res.send({text:"hello world"});
-})
-
-app.post('/', function(req, res){
-  if(req.is('application/json')){
-    return res.status(201).send(req.body);
+app.use(express.static(__dirname + '/public',{
+  setHeaders: function (res, path, stat) {
+    res.set('Set-Cookie', "cookie=test;")
+    res.set('Set-Cookie', "cookie1=cookie1;domain=hoge.com")
+    res.set('Set-Cookie', "cookie2=cookie2;domain=hoge2.com")
   }
-  return res.status(400).send({ 
-    errorMessage: "Invalid content-type",
-    "content-type":req.get('content-type')
-  });
-})
+}))
+
+
 app.listen(port)
