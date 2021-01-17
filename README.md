@@ -31,3 +31,11 @@ web-basis/understanding-cookie.md
 
 プルリク
 https://github.com/kai815/PrAhaChallenge/pull/5
+
+### 5.の解答
+
+課題 1→web-basis/understanging-thirdparty-cookie/answer.md
+課題 2→web-baisis/understanging-thirdparty-cookie/server1 と web-baisis/understanging-thirdparty-cookie/server2
+
+プルリク
+https://github.com/kai815/PrAhaChallenge/pull/6
