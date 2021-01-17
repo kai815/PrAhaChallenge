@@ -7,7 +7,9 @@ app.use(express.static(__dirname + '/public',{
   setHeaders: function (res, path, stat) {
     //このcookieがサードパーティになる
     res.cookie("hoge2", "hoge2",{
-      httpOnly:true
+      httpOnly:true,
+      sameSite: 'none',
+      secure:true
     })
     
   }
