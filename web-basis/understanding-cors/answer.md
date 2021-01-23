@@ -37,3 +37,24 @@ A ドメインから B ドメインにアクセスをする場合に、B ドメ�
 ### 5.XMLHttpRequest を使ってクロスオリジンリクエストを発行する際にクッキーを含めるには
 
 Access-Control-Allow-Credentials ヘッダーを true にする必要があります。
+
+# 課題 2（クイズ）
+
+### 1
+
+https://example.com から https://〇〇.example.com へのアクセスはクロスオリジンリクエストになるでしょうか？
+
+### 2
+
+http://〇〇.example.com
+サーバでは Access-Control-Allow-Origin ヘッダーに
+https://example.com
+を設定していますが、
+https://example.com
+から
+http://〇〇.example.com
+へのアクセスがうまくいきせん。その際の原因と対策を教えてください。
+
+### 3
+
+Access-Control-Allow-Origin で複数のオリジンを許可することは可能でしょうか？また、可能な場合の方法を最低 1 つ挙げてください。（何でどう設定するかはお任せします。）
