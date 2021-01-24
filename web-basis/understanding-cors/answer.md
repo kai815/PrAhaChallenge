@@ -58,3 +58,75 @@ http://〇〇.example.com
 ### 3
 
 Access-Control-Allow-Origin で複数のオリジンを許可することは可能でしょうか？また、可能な場合の方法を最低 1 つ挙げてください。（何でどう設定するかはお任せします。）
+
+# 課題 4（成果物に関する質問）
+
+### curl
+
+実行した curl Content-Type: application/json なので simple ではないはず。（他のいろいろなパターンも試しましたが、割愛）
+`curl --location --request POST 'https://323805abc601.ngrok.io' \ --header 'Origin: https://960afc52ca8a.ngrok.io' \ --header 'Content-Type: application/json' --verbose`
+
+返ってきたログ
+`
+curl --location --request POST 'https://323805abc601.ngrok.io' \
+--header 'Origin: https://960afc52ca8a.ngrok.io' \
+--header 'Content-Type: application/json' --verbose
+
+- Trying 3.13.191.225...
+- TCP_NODELAY set
+- Connected to 323805abc601.ngrok.io (3.13.191.225) port 443 (#0)
+- ALPN, offering h2
+- ALPN, offering http/1.1
+- successfully set certificate verify locations:
+- CAfile: /etc/ssl/cert.pem
+  CApath: none
+- TLSv1.2 (OUT), TLS handshake, Client hello (1):
+- TLSv1.2 (IN), TLS handshake, Server hello (2):
+- TLSv1.2 (IN), TLS handshake, Certificate (11):
+- TLSv1.2 (IN), TLS handshake, Server key exchange (12):
+- TLSv1.2 (IN), TLS handshake, Server finished (14):
+- TLSv1.2 (OUT), TLS handshake, Client key exchange (16):
+- TLSv1.2 (OUT), TLS change cipher, Change cipher spec (1):
+- TLSv1.2 (OUT), TLS handshake, Finished (20):
+- TLSv1.2 (IN), TLS change cipher, Change cipher spec (1):
+- TLSv1.2 (IN), TLS handshake, Finished (20):
+- SSL connection using TLSv1.2 / ECDHE-ECDSA-AES256-GCM-SHA384
+- ALPN, server accepted to use h2
+- Server certificate:
+- subject: CN=\*.ngrok.io
+- start date: Jan 7 16:05:51 2021 GMT
+- expire date: Apr 7 16:05:51 2021 GMT
+- subjectAltName: host "323805abc601.ngrok.io" matched cert's "\*.ngrok.io"
+- issuer: C=US; O=Let's Encrypt; CN=R3
+- SSL certificate verify ok.
+- Using HTTP2, server supports multi-use
+- Connection state changed (HTTP/2 confirmed)
+- Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
+- Using Stream ID: 1 (easy handle 0x7fcf3b008a00)
+  > POST / HTTP/2
+  > Host: 323805abc601.ngrok.io
+  > User-Agent: curl/7.64.1
+  > Accept: _/_
+  > Origin: https://960afc52ca8a.ngrok.io
+  > Content-Type: application/json
+- Connection state changed (MAX_CONCURRENT_STREAMS == 250)!
+  < HTTP/2 200
+  < access-control-allow-methods: POST,OPTIONS
+  < access-control-allow-origin: https://960afc52ca8a.ngrok.io
+  < content-type: application/json; charset=utf-8
+  < date: Sun, 24 Jan 2021 03:15:39 GMT
+  < etag: W/"17-sR81gc85CIor8DUsT/tYP7cXlG0"
+  < x-powered-by: Express
+  < content-length: 23
+  <
+- Connection #0 to host 323805abc601.ngrok.io left intact
+  {"text":"post success"}\* Closing connection 0
+  `
+
+### cors は適用されるか
+
+上記のログの preflight request が送られてないのと、origin ヘッダーを許可していないものにして試した際にも cors 制約は起きなかったことから、適用されないと考えられます。
+
+### 理由
+
+CORS 制約はあくまでブラウザ側のルールで、XMLHttpRequest や FetchAPI などによるアクセスの時に適用されるためです。
