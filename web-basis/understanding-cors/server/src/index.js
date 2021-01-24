@@ -12,7 +12,6 @@ const corsServer = express();
 const corsServerPort = 3000;
 
 const allowCrossDomain = function(req, res, next) {
-  console.log("al")
   //許すドメインやメソッドの定義
   res.header('Access-Control-Allow-Origin', 'http://localhost:8080')
   res.header('Access-Control-Allow-Methods', 'POST,OPTIONS')
