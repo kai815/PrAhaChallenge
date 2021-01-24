@@ -19,7 +19,7 @@ const allowCrossDomain = function(req, res, next) {
   // プリフライト
   if ('OPTIONS' === req.method) {
     console.log("preflightが行われる");
-    res.send(200)
+    next()
   } else {
     next()
   }
