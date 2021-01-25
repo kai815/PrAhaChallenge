@@ -39,3 +39,11 @@ https://github.com/kai815/PrAhaChallenge/pull/5
 
 プルリク
 https://github.com/kai815/PrAhaChallenge/pull/6
+
+### 6.の解答
+
+実装以外 →web-basis/understanding-cors/answer.md
+実装 →web-basis/understanding-cors/server
+
+プルリク
+https://github.com/kai815/PrAhaChallenge/pull/7
