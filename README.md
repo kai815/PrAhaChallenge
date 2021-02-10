@@ -47,3 +47,11 @@ https://github.com/kai815/PrAhaChallenge/pull/6
 
 プルリク
 https://github.com/kai815/PrAhaChallenge/pull/7
+
+### 7.の解答
+
+実装以外 →web-basis/understanding-cache/answer.md
+実装 →web-basis/understanding-cache/server
+
+プルリク
+https://github.com/kai815/PrAhaChallenge/pull/8
