@@ -64,7 +64,7 @@ class Board extends React.Component<BoardPropsInterface, {}> {
 interface GameStateInterface {
   history: { squares: string[] }[];
   stepNumber: number;
-  isATurn: boolean;
+  xIsNext: boolean;
 }
 
 class Game extends React.Component<{}, GameStateInterface> {
@@ -77,7 +77,7 @@ class Game extends React.Component<{}, GameStateInterface> {
         },
       ],
       stepNumber: 0,
-      isATurn: true,
+      xIsNext: true,
     };
   }
 
@@ -88,7 +88,7 @@ class Game extends React.Component<{}, GameStateInterface> {
     if (calculateWinner(squares) || squares[i]) {
       return;
     }
-    squares[i] = this.state.isATurn ? 'A' : 'B';
+    squares[i] = this.state.xIsNext ? "X" : "O";
     this.setState({
       history: history.concat([
         {
@@ -96,14 +96,14 @@ class Game extends React.Component<{}, GameStateInterface> {
         },
       ]),
       stepNumber: history.length,
-      isATurn: !this.state.isATurn,
+      xIsNext: !this.state.xIsNext,
     });
   }
 
   jumpTo(step: number) {
     this.setState({
       stepNumber: step,
-      isATurn: step % 2 === 0,
+      xIsNext: step % 2 === 0,
     });
   }
 
@@ -125,7 +125,7 @@ class Game extends React.Component<{}, GameStateInterface> {
     if (winner) {
       status = 'Winner: ' + winner;
     } else {
-      status = `Player ${this.state.isATurn ? 'A' : 'B'}'s turn`;
+      status = `Player ${this.state.xIsNext ? "X" : "O"}'s turn`;
     }
     return (
       <div className="game">
