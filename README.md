@@ -66,3 +66,10 @@ https://github.com/kai815/PrAhaChallenge/pull/8
 
 プルリク
 https://github.com/kai815/PrAhaChallenge/pull/9
+
+### 9.の海洋
+
+解答記載ファイル →web-basis/understanding-xmlhttprequest.md
+
+プリリク
+https://github.com/kai815/PrAhaChallenge/pull/10
