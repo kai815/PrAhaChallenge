@@ -5,7 +5,6 @@ import './index.css';
 interface SquarePropsInterface {
   value: string;
   onClick: () => void;
-  number: number;
 }
 
 function Square(props: SquarePropsInterface) {
@@ -17,7 +16,6 @@ function Square(props: SquarePropsInterface) {
       }}
     >
       {props.value}
-      {/* {this.props.number} */}
     </button>
   );
 }
@@ -33,7 +31,6 @@ class Board extends React.Component<BoardPropsInterface, {}> {
       <Square
         value={this.props.squares[i]}
         onClick={() => this.props.onClick(i)}
-        number={i}
       />
     );
   }
@@ -125,7 +122,7 @@ class Game extends React.Component<{}, GameStateInterface> {
     if (winner) {
       status = 'Winner: ' + winner;
     } else {
-      status = `Player ${this.state.xIsNext ? "X" : "O"}'s turn`;
+      status = `Next Player ${this.state.xIsNext ? "X" : "O"}'s turn`;
     }
     return (
       <div className="game">
