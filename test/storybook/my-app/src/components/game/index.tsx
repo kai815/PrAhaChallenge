@@ -63,7 +63,7 @@ export const Game = () => {
   };
 
   const jumpTo = (step: number) => {
-    console.log("jumpNumber", step);
+    setStepNumber(step);
     setXIsNext(step % 2 === 0);
   };
 
