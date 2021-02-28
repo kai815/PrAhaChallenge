@@ -25,7 +25,7 @@ const SquareStyle = css({
   }
 })
 
-interface SquarePropsInterface {
+export interface SquarePropsInterface {
   value: string;
   onClick: () => void;
 }

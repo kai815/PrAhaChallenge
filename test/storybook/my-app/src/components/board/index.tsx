@@ -5,6 +5,11 @@ import React from 'react'
 import { Square } from "../square";
 import { css } from '@emotion/react';
 
+// const BordTableStyle = css({
+//   display:"flex",
+//   dlexDirection:"row"
+// })
+
 const BordRowStyle = css({
   "&:after":{
     clear:"both",
@@ -12,7 +17,7 @@ const BordRowStyle = css({
     display:"table"
   }
 })
-interface BoardPropsInterface {
+export interface BoardPropsInterface {
   squares: string[];
   onClick: (i: number) => void;
 }
@@ -43,6 +48,6 @@ export const Board = (props:BoardPropsInterface) => {
         {renderSquare(7)}
         {renderSquare(8)}
       </div>
-      </div>
+    </div>
   );
 }

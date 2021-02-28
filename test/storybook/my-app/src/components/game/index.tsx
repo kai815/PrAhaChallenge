@@ -3,6 +3,8 @@ import { jsx } from '@emotion/react'
 // eslint-disable-next-line 
 import React, { useState } from 'react';
 import { Board } from "../board/";
+import { Move } from "../move/";
+import { Status } from "../status/"
 import { css } from '@emotion/react';
 
 
@@ -15,35 +17,26 @@ const GameInfoStyle =css({
   marginLeft: '20px',
 });
 
-export const Game = () => {
-  const [ history, setHistory ] = useState(
-    [
-      {
-        squares: Array(9).fill(''),
-      },
-    ]
-  );
-  const [ stepNumber, setStepNumber ] = useState(0); 
+export interface GamePropsInterFace {
+  history: {squares: string[]}[],
+  setHistory: React.Dispatch<React.SetStateAction<{
+    squares: any[];
+  }[]>>,
+  stepNumber:number,
+  setStepNumber:React.Dispatch<React.SetStateAction<number>>
+};
+
+export const Game = (props:GamePropsInterFace) => {
+  
+  const {
+    history,
+    setHistory,
+    stepNumber,
+    setStepNumber
+  } = props;
   const [ xIsNext, setXIsNext ] = useState(true);
   const current = history[stepNumber];
   const winner = calculateWinner(current.squares);
-
-  const moves = history.map((step, move) => {
-    const desc = move ? 'Go to move #' + move : 'Go to game start';
-    return (
-      <li key={move}>
-        <button onClick={() => jumpTo(move)}>{desc}</button>
-      </li>
-    );
-  });
-
-  let status;
-  if (winner) {
-    status = 'Winner: ' + winner;
-  } else {
-    status = `Next Player ${xIsNext ? "X" : "O"}'s turn`;
-  }
-
 
   const handleClick = (i: number) => {
     const slicedHistory = history.slice(0, stepNumber + 1);
@@ -62,11 +55,6 @@ export const Game = () => {
     setXIsNext(!xIsNext);
   };
 
-  const jumpTo = (step: number) => {
-    setStepNumber(step);
-    setXIsNext(step % 2 === 0);
-  };
-
   return (
     <div css={GameStyle}>
       <div css={GameInfoStyle}>
@@ -76,8 +64,19 @@ export const Game = () => {
         />
       </div>
       <div css={GameInfoStyle}>
-        <div>{status}</div>
-        <ol>{moves}</ol>
+        <div>
+          <Status
+            winner={winner}
+            xIsNext={xIsNext}
+          />
+        </div>
+        <ol>
+          <Move
+            history={history}
+            setStepNumber={setStepNumber}
+            setXIsNext={setXIsNext}
+          />
+        </ol>
       </div>
     </div>
   );
