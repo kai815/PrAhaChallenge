@@ -1,5 +1,19 @@
+/** @jsx jsx */
+import { jsx } from '@emotion/react'
+// eslint-disable-next-line 
 import React, { useState } from 'react';
-import { Board } from "../board/"
+import { Board } from "../board/";
+import { css } from '@emotion/react';
+
+
+const GameStyle = css({
+  display: 'flex',
+  flexDirection: 'row',
+});
+
+const GameInfoStyle =css({
+  marginLeft: '20px',
+});
 
 export const Game = () => {
   const [ history, setHistory ] = useState(
@@ -54,14 +68,14 @@ export const Game = () => {
   };
 
   return (
-    <div className="game">
-      <div className="game-board">
+    <div css={GameStyle}>
+      <div css={GameInfoStyle}>
         <Board
           squares={current.squares}
           onClick={(i) => handleClick(i)}
         />
       </div>
-      <div className="game-info">
+      <div css={GameInfoStyle}>
         <div>{status}</div>
         <ol>{moves}</ol>
       </div>

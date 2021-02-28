@@ -1,6 +1,17 @@
+/** @jsx jsx */
+import { jsx } from '@emotion/react'
+// eslint-disable-next-line 
 import React from 'react'
 import { Square } from "../square";
+import { css } from '@emotion/react';
 
+const BordRowStyle = css({
+  "&:after":{
+    clear:"both",
+    contain: "",
+    display:"table"
+  }
+})
 interface BoardPropsInterface {
   squares: string[];
   onClick: (i: number) => void;
@@ -17,17 +28,17 @@ export const Board = (props:BoardPropsInterface) => {
   }
   return (
     <div>
-      <div className="board-row">
+      <div css={BordRowStyle}>
         {renderSquare(0)}
         {renderSquare(1)}
         {renderSquare(2)}
       </div>
-      <div className="board-row">
+      <div css={BordRowStyle}>
         {renderSquare(3)}
         {renderSquare(4)}
         {renderSquare(5)}
       </div>
-      <div className="board-row">
+      <div css={BordRowStyle}>
         {renderSquare(6)}
         {renderSquare(7)}
         {renderSquare(8)}
