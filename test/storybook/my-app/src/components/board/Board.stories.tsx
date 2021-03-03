@@ -7,6 +7,7 @@ import { Board, BoardPropsInterface } from './index';
 export default {
   title: 'Example/Board',
   component: Board,
+  argTypes: { onClick: { action: 'clicked' } },
 } as Meta;
 
 const Template: Story<BoardPropsInterface> = (args) => <Board {...args} />;
@@ -14,17 +15,14 @@ const Template: Story<BoardPropsInterface> = (args) => <Board {...args} />;
 export const DisplayAllO = Template.bind({});
 DisplayAllO.args = {
   squares: ["O","O","O","O","O","O","O","O","O"],
-  onClick: ()=>{}
 };
 
 export const DisplayAllX = Template.bind({});
 DisplayAllX.args = {
   squares: ["X","X","X","X","X","X","X","X","X"],
-  onClick: ()=>{}
 };
 
 export const DisplayAllTriangle = Template.bind({});
 DisplayAllTriangle.args = {
   squares: ["△","△","△","△","△","△","△","△","△"],
-  onClick: ()=>{}
 };

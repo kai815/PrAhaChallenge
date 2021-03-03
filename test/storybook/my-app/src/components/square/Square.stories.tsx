@@ -7,6 +7,7 @@ import { Square, SquarePropsInterface } from './index';
 export default {
   title: 'Example/Sqaure',
   component: Square,
+  argTypes: { onClick: { action: 'clicked' } },
 } as Meta;
 
 const Template: Story<SquarePropsInterface> = (args) => <Square {...args} />;
@@ -14,17 +15,14 @@ const Template: Story<SquarePropsInterface> = (args) => <Square {...args} />;
 export const DisplayO = Template.bind({});
 DisplayO.args = {
   value: "O",
-  onClick: ()=>{}
 };
 
 export const DisplayX = Template.bind({});
 DisplayX.args = {
   value: "X",
-  onClick: ()=>{}
 };
 
 export const DisplayTriangle = Template.bind({});
 DisplayTriangle.args = {
   value: "△",
-  onClick: ()=>{}
 };
