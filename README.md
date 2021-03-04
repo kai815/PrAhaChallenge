@@ -73,3 +73,12 @@ https://github.com/kai815/PrAhaChallenge/pull/9
 
 プリリク
 https://github.com/kai815/PrAhaChallenge/pull/10
+
+### 11.の解答
+
+解答記載ファイル
+実装系：test/storybook/my-app
+質問・クイズ：test/storybook/answer.md
+
+プリリク
+https://github.com/kai815/PrAhaChallenge/pull/14
