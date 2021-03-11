@@ -74,6 +74,13 @@ https://github.com/kai815/PrAhaChallenge/pull/9
 プリリク
 https://github.com/kai815/PrAhaChallenge/pull/10
 
+### 10.の回答
+
+プルリク
+https://github.com/kai815/praha-challenge-templates/pull/1
+
+https://github.com/kai815/praha-challenge-templates/pull/2
+
 ### 11.の解答
 
 解答記載ファイル
