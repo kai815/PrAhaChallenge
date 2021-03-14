@@ -11,7 +11,7 @@ export const Status = (props:StatusPropsInterFace) => {
   if (winner) {
     status = 'Winner: ' + winner;
   } else {
-    status = `Next Player ${xIsNext ? "X" : "O"}'s turn`;
+    status = `次のプレイヤー ${xIsNext ? "X" : "O"}'s turn`;
   }
   return (
     <>{status}</>
