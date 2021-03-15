@@ -5,7 +5,7 @@ import React from 'react'
 import { css } from '@emotion/react';
 
 const SquareStyle = css({
-  background: "#fff",
+  background: "red",
   border: "1px solid #999",
   float: "left",
   fontSize: "24px",
