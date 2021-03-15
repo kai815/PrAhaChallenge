@@ -1,74 +1,116 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Example/Game Game Initial 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.emotion-1 {
+  margin-left: 20px;
+}
+
+.emotion-2:after {
+  clear: both;
+  display: table;
+}
+
+.emotion-3 {
+  background: red;
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
+}
+
+.emotion-3:focus {
+  outline: none;
+}
+
+.emotion-3:hover {
+  background: #ddd;
+}
+
 <div
-  className="css-17xd72k-Game"
+  className="emotion-0"
 >
   <div
-    className="css-vt0g4w-Game"
+    className="emotion-1"
   >
     <div>
       <div
-        className="css-1c7d9u3-Board"
+        className="emotion-2"
       >
         <button
-          className="css-uqotkq-Square"
+          className="emotion-3"
           onClick={[Function]}
         >
           
         </button>
         <button
-          className="css-uqotkq-Square"
+          className="emotion-3"
           onClick={[Function]}
         >
           
         </button>
         <button
-          className="css-uqotkq-Square"
+          className="emotion-3"
           onClick={[Function]}
         >
           
         </button>
       </div>
       <div
-        className="css-1c7d9u3-Board"
+        className="emotion-2"
       >
         <button
-          className="css-uqotkq-Square"
+          className="emotion-3"
           onClick={[Function]}
         >
           
         </button>
         <button
-          className="css-uqotkq-Square"
+          className="emotion-3"
           onClick={[Function]}
         >
           
         </button>
         <button
-          className="css-uqotkq-Square"
+          className="emotion-3"
           onClick={[Function]}
         >
           
         </button>
       </div>
       <div
-        className="css-1c7d9u3-Board"
+        className="emotion-2"
       >
         <button
-          className="css-uqotkq-Square"
+          className="emotion-3"
           onClick={[Function]}
         >
           
         </button>
         <button
-          className="css-uqotkq-Square"
+          className="emotion-3"
           onClick={[Function]}
         >
           
         </button>
         <button
-          className="css-uqotkq-Square"
+          className="emotion-3"
           onClick={[Function]}
         >
           
@@ -77,7 +119,7 @@ exports[`Storyshots Example/Game Game Initial 1`] = `
     </div>
   </div>
   <div
-    className="css-vt0g4w-Game"
+    className="emotion-1"
   >
     <div>
       次のプレイヤー X's turn
@@ -96,74 +138,116 @@ exports[`Storyshots Example/Game Game Initial 1`] = `
 `;
 
 exports[`Storyshots Example/Game Gmae All Triangle 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.emotion-1 {
+  margin-left: 20px;
+}
+
+.emotion-2:after {
+  clear: both;
+  display: table;
+}
+
+.emotion-3 {
+  background: red;
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
+}
+
+.emotion-3:focus {
+  outline: none;
+}
+
+.emotion-3:hover {
+  background: #ddd;
+}
+
 <div
-  className="css-17xd72k-Game"
+  className="emotion-0"
 >
   <div
-    className="css-vt0g4w-Game"
+    className="emotion-1"
   >
     <div>
       <div
-        className="css-1c7d9u3-Board"
+        className="emotion-2"
       >
         <button
-          className="css-uqotkq-Square"
+          className="emotion-3"
           onClick={[Function]}
         >
           △
         </button>
         <button
-          className="css-uqotkq-Square"
+          className="emotion-3"
           onClick={[Function]}
         >
           △
         </button>
         <button
-          className="css-uqotkq-Square"
+          className="emotion-3"
           onClick={[Function]}
         >
           △
         </button>
       </div>
       <div
-        className="css-1c7d9u3-Board"
+        className="emotion-2"
       >
         <button
-          className="css-uqotkq-Square"
+          className="emotion-3"
           onClick={[Function]}
         >
           △
         </button>
         <button
-          className="css-uqotkq-Square"
+          className="emotion-3"
           onClick={[Function]}
         >
           △
         </button>
         <button
-          className="css-uqotkq-Square"
+          className="emotion-3"
           onClick={[Function]}
         >
           △
         </button>
       </div>
       <div
-        className="css-1c7d9u3-Board"
+        className="emotion-2"
       >
         <button
-          className="css-uqotkq-Square"
+          className="emotion-3"
           onClick={[Function]}
         >
           △
         </button>
         <button
-          className="css-uqotkq-Square"
+          className="emotion-3"
           onClick={[Function]}
         >
           △
         </button>
         <button
-          className="css-uqotkq-Square"
+          className="emotion-3"
           onClick={[Function]}
         >
           △
@@ -172,7 +256,7 @@ exports[`Storyshots Example/Game Gmae All Triangle 1`] = `
     </div>
   </div>
   <div
-    className="css-vt0g4w-Game"
+    className="emotion-1"
   >
     <div>
       Winner: △

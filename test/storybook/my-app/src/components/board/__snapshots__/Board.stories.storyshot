@@ -1,68 +1,96 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Example/Board Display All O 1`] = `
+.emotion-0:after {
+  clear: both;
+  display: table;
+}
+
+.emotion-1 {
+  background: red;
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
+}
+
+.emotion-1:focus {
+  outline: none;
+}
+
+.emotion-1:hover {
+  background: #ddd;
+}
+
 <div>
   <div
-    className="css-1c7d9u3-Board"
+    className="emotion-0"
   >
     <button
-      className="css-uqotkq-Square"
+      className="emotion-1"
       onClick={[Function]}
     >
       O
     </button>
     <button
-      className="css-uqotkq-Square"
+      className="emotion-1"
       onClick={[Function]}
     >
       O
     </button>
     <button
-      className="css-uqotkq-Square"
+      className="emotion-1"
       onClick={[Function]}
     >
       O
     </button>
   </div>
   <div
-    className="css-1c7d9u3-Board"
+    className="emotion-0"
   >
     <button
-      className="css-uqotkq-Square"
+      className="emotion-1"
       onClick={[Function]}
     >
       O
     </button>
     <button
-      className="css-uqotkq-Square"
+      className="emotion-1"
       onClick={[Function]}
     >
       O
     </button>
     <button
-      className="css-uqotkq-Square"
+      className="emotion-1"
       onClick={[Function]}
     >
       O
     </button>
   </div>
   <div
-    className="css-1c7d9u3-Board"
+    className="emotion-0"
   >
     <button
-      className="css-uqotkq-Square"
+      className="emotion-1"
       onClick={[Function]}
     >
       O
     </button>
     <button
-      className="css-uqotkq-Square"
+      className="emotion-1"
       onClick={[Function]}
     >
       O
     </button>
     <button
-      className="css-uqotkq-Square"
+      className="emotion-1"
       onClick={[Function]}
     >
       O
@@ -72,68 +100,96 @@ exports[`Storyshots Example/Board Display All O 1`] = `
 `;
 
 exports[`Storyshots Example/Board Display All Triangle 1`] = `
+.emotion-0:after {
+  clear: both;
+  display: table;
+}
+
+.emotion-1 {
+  background: red;
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
+}
+
+.emotion-1:focus {
+  outline: none;
+}
+
+.emotion-1:hover {
+  background: #ddd;
+}
+
 <div>
   <div
-    className="css-1c7d9u3-Board"
+    className="emotion-0"
   >
     <button
-      className="css-uqotkq-Square"
+      className="emotion-1"
       onClick={[Function]}
     >
       △
     </button>
     <button
-      className="css-uqotkq-Square"
+      className="emotion-1"
       onClick={[Function]}
     >
       △
     </button>
     <button
-      className="css-uqotkq-Square"
+      className="emotion-1"
       onClick={[Function]}
     >
       △
     </button>
   </div>
   <div
-    className="css-1c7d9u3-Board"
+    className="emotion-0"
   >
     <button
-      className="css-uqotkq-Square"
+      className="emotion-1"
       onClick={[Function]}
     >
       △
     </button>
     <button
-      className="css-uqotkq-Square"
+      className="emotion-1"
       onClick={[Function]}
     >
       △
     </button>
     <button
-      className="css-uqotkq-Square"
+      className="emotion-1"
       onClick={[Function]}
     >
       △
     </button>
   </div>
   <div
-    className="css-1c7d9u3-Board"
+    className="emotion-0"
   >
     <button
-      className="css-uqotkq-Square"
+      className="emotion-1"
       onClick={[Function]}
     >
       △
     </button>
     <button
-      className="css-uqotkq-Square"
+      className="emotion-1"
       onClick={[Function]}
     >
       △
     </button>
     <button
-      className="css-uqotkq-Square"
+      className="emotion-1"
       onClick={[Function]}
     >
       △
@@ -143,68 +199,96 @@ exports[`Storyshots Example/Board Display All Triangle 1`] = `
 `;
 
 exports[`Storyshots Example/Board Display All X 1`] = `
+.emotion-0:after {
+  clear: both;
+  display: table;
+}
+
+.emotion-1 {
+  background: red;
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
+}
+
+.emotion-1:focus {
+  outline: none;
+}
+
+.emotion-1:hover {
+  background: #ddd;
+}
+
 <div>
   <div
-    className="css-1c7d9u3-Board"
+    className="emotion-0"
   >
     <button
-      className="css-uqotkq-Square"
+      className="emotion-1"
       onClick={[Function]}
     >
       X
     </button>
     <button
-      className="css-uqotkq-Square"
+      className="emotion-1"
       onClick={[Function]}
     >
       X
     </button>
     <button
-      className="css-uqotkq-Square"
+      className="emotion-1"
       onClick={[Function]}
     >
       X
     </button>
   </div>
   <div
-    className="css-1c7d9u3-Board"
+    className="emotion-0"
   >
     <button
-      className="css-uqotkq-Square"
+      className="emotion-1"
       onClick={[Function]}
     >
       X
     </button>
     <button
-      className="css-uqotkq-Square"
+      className="emotion-1"
       onClick={[Function]}
     >
       X
     </button>
     <button
-      className="css-uqotkq-Square"
+      className="emotion-1"
       onClick={[Function]}
     >
       X
     </button>
   </div>
   <div
-    className="css-1c7d9u3-Board"
+    className="emotion-0"
   >
     <button
-      className="css-uqotkq-Square"
+      className="emotion-1"
       onClick={[Function]}
     >
       X
     </button>
     <button
-      className="css-uqotkq-Square"
+      className="emotion-1"
       onClick={[Function]}
     >
       X
     </button>
     <button
-      className="css-uqotkq-Square"
+      className="emotion-1"
       onClick={[Function]}
     >
       X

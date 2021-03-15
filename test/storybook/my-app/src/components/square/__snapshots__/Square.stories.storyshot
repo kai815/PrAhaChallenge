@@ -1,8 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Example/Sqaure Display O 1`] = `
+.emotion-0 {
+  background: red;
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
+}
+
+.emotion-0:focus {
+  outline: none;
+}
+
+.emotion-0:hover {
+  background: #ddd;
+}
+
 <button
-  className="css-uqotkq-Square"
+  className="emotion-0"
   onClick={[Function]}
 >
   O
@@ -10,8 +33,31 @@ exports[`Storyshots Example/Sqaure Display O 1`] = `
 `;
 
 exports[`Storyshots Example/Sqaure Display Triangle 1`] = `
+.emotion-0 {
+  background: red;
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
+}
+
+.emotion-0:focus {
+  outline: none;
+}
+
+.emotion-0:hover {
+  background: #ddd;
+}
+
 <button
-  className="css-uqotkq-Square"
+  className="emotion-0"
   onClick={[Function]}
 >
   △
@@ -19,8 +65,31 @@ exports[`Storyshots Example/Sqaure Display Triangle 1`] = `
 `;
 
 exports[`Storyshots Example/Sqaure Display X 1`] = `
+.emotion-0 {
+  background: red;
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
+}
+
+.emotion-0:focus {
+  outline: none;
+}
+
+.emotion-0:hover {
+  background: #ddd;
+}
+
 <button
-  className="css-uqotkq-Square"
+  className="emotion-0"
   onClick={[Function]}
 >
   X
