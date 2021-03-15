@@ -1,0 +1,191 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Example/Game Game Initial 1`] = `
+<div
+  className="css-17xd72k-Game"
+>
+  <div
+    className="css-vt0g4w-Game"
+  >
+    <div>
+      <div
+        className="css-1c7d9u3-Board"
+      >
+        <button
+          className="css-uqotkq-Square"
+          onClick={[Function]}
+        >
+          
+        </button>
+        <button
+          className="css-uqotkq-Square"
+          onClick={[Function]}
+        >
+          
+        </button>
+        <button
+          className="css-uqotkq-Square"
+          onClick={[Function]}
+        >
+          
+        </button>
+      </div>
+      <div
+        className="css-1c7d9u3-Board"
+      >
+        <button
+          className="css-uqotkq-Square"
+          onClick={[Function]}
+        >
+          
+        </button>
+        <button
+          className="css-uqotkq-Square"
+          onClick={[Function]}
+        >
+          
+        </button>
+        <button
+          className="css-uqotkq-Square"
+          onClick={[Function]}
+        >
+          
+        </button>
+      </div>
+      <div
+        className="css-1c7d9u3-Board"
+      >
+        <button
+          className="css-uqotkq-Square"
+          onClick={[Function]}
+        >
+          
+        </button>
+        <button
+          className="css-uqotkq-Square"
+          onClick={[Function]}
+        >
+          
+        </button>
+        <button
+          className="css-uqotkq-Square"
+          onClick={[Function]}
+        >
+          
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    className="css-vt0g4w-Game"
+  >
+    <div>
+      次のプレイヤー X's turn
+    </div>
+    <ol>
+      <li>
+        <button
+          onClick={[Function]}
+        >
+          Go to game start
+        </button>
+      </li>
+    </ol>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Example/Game Gmae All Triangle 1`] = `
+<div
+  className="css-17xd72k-Game"
+>
+  <div
+    className="css-vt0g4w-Game"
+  >
+    <div>
+      <div
+        className="css-1c7d9u3-Board"
+      >
+        <button
+          className="css-uqotkq-Square"
+          onClick={[Function]}
+        >
+          △
+        </button>
+        <button
+          className="css-uqotkq-Square"
+          onClick={[Function]}
+        >
+          △
+        </button>
+        <button
+          className="css-uqotkq-Square"
+          onClick={[Function]}
+        >
+          △
+        </button>
+      </div>
+      <div
+        className="css-1c7d9u3-Board"
+      >
+        <button
+          className="css-uqotkq-Square"
+          onClick={[Function]}
+        >
+          △
+        </button>
+        <button
+          className="css-uqotkq-Square"
+          onClick={[Function]}
+        >
+          △
+        </button>
+        <button
+          className="css-uqotkq-Square"
+          onClick={[Function]}
+        >
+          △
+        </button>
+      </div>
+      <div
+        className="css-1c7d9u3-Board"
+      >
+        <button
+          className="css-uqotkq-Square"
+          onClick={[Function]}
+        >
+          △
+        </button>
+        <button
+          className="css-uqotkq-Square"
+          onClick={[Function]}
+        >
+          △
+        </button>
+        <button
+          className="css-uqotkq-Square"
+          onClick={[Function]}
+        >
+          △
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    className="css-vt0g4w-Game"
+  >
+    <div>
+      Winner: △
+    </div>
+    <ol>
+      <li>
+        <button
+          onClick={[Function]}
+        >
+          Go to game start
+        </button>
+      </li>
+    </ol>
+  </div>
+</div>
+`;

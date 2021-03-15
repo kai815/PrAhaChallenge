@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Example/Sqaure Display O 1`] = `
+<button
+  className="css-uqotkq-Square"
+  onClick={[Function]}
+>
+  O
+</button>
+`;
+
+exports[`Storyshots Example/Sqaure Display Triangle 1`] = `
+<button
+  className="css-uqotkq-Square"
+  onClick={[Function]}
+>
+  △
+</button>
+`;
+
+exports[`Storyshots Example/Sqaure Display X 1`] = `
+<button
+  className="css-uqotkq-Square"
+  onClick={[Function]}
+>
+  X
+</button>
+`;
