@@ -74,6 +74,8 @@ https://github.com/kai815/PrAhaChallenge/pull/9
 プリリク
 https://github.com/kai815/PrAhaChallenge/pull/10
 
+## テスト
+
 ### 10.の回答
 
 プルリク
@@ -84,8 +86,23 @@ https://github.com/kai815/praha-challenge-templates/pull/2
 ### 11.の解答
 
 解答記載ファイル
+
 実装系：test/storybook/my-app
+
 質問・クイズ：test/storybook/answer.md
 
-プリリク
+プルリク
 https://github.com/kai815/PrAhaChallenge/pull/14
+
+### 12.の解答
+
+質問系
+
+test/snapshot/answer.md
+
+実装系
+
+test/storybook/my-app以下
+
+プルリク
+https://github.com/kai815/PrAhaChallenge/pull/15
