@@ -2,7 +2,7 @@
 
 exports[`Storyshots Example/Sqaure Display O 1`] = `
 .emotion-0 {
-  background: red;
+  background: #fff;
   border: 1px solid #999;
   float: left;
   font-size: 24px;
@@ -34,7 +34,7 @@ exports[`Storyshots Example/Sqaure Display O 1`] = `
 
 exports[`Storyshots Example/Sqaure Display Triangle 1`] = `
 .emotion-0 {
-  background: red;
+  background: #fff;
   border: 1px solid #999;
   float: left;
   font-size: 24px;
@@ -66,7 +66,7 @@ exports[`Storyshots Example/Sqaure Display Triangle 1`] = `
 
 exports[`Storyshots Example/Sqaure Display X 1`] = `
 .emotion-0 {
-  background: red;
+  background: #fff;
   border: 1px solid #999;
   float: left;
   font-size: 24px;

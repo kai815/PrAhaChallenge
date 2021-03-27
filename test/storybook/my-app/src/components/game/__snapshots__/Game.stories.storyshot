@@ -21,7 +21,7 @@ exports[`Storyshots Example/Game Game Initial 1`] = `
 }
 
 .emotion-3 {
-  background: red;
+  background: #fff;
   border: 1px solid #999;
   float: left;
   font-size: 24px;
@@ -158,7 +158,7 @@ exports[`Storyshots Example/Game Gmae All Triangle 1`] = `
 }
 
 .emotion-3 {
-  background: red;
+  background: #fff;
   border: 1px solid #999;
   float: left;
   font-size: 24px;

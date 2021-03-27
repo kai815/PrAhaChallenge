@@ -7,7 +7,7 @@ exports[`Storyshots Example/Board Display All O 1`] = `
 }
 
 .emotion-1 {
-  background: red;
+  background: #fff;
   border: 1px solid #999;
   float: left;
   font-size: 24px;
@@ -106,7 +106,7 @@ exports[`Storyshots Example/Board Display All Triangle 1`] = `
 }
 
 .emotion-1 {
-  background: red;
+  background: #fff;
   border: 1px solid #999;
   float: left;
   font-size: 24px;
@@ -205,7 +205,7 @@ exports[`Storyshots Example/Board Display All X 1`] = `
 }
 
 .emotion-1 {
-  background: red;
+  background: #fff;
   border: 1px solid #999;
   float: left;
   font-size: 24px;
