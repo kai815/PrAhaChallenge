@@ -25,6 +25,10 @@ const SquareStyle = css({
   }
 })
 
+const SquareText = css({
+  color:"red"
+})
+
 export interface SquarePropsInterface {
   value: string;
   onClick: () => void;
@@ -38,7 +42,7 @@ export const Square = (props:SquarePropsInterface) => {
         props.onClick();
       }}
     >
-      {props.value}
+      <span css={SquareText}>{props.value}</span>
     </button>
   );
 }
