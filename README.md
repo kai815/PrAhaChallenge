@@ -102,10 +102,13 @@ test/snapshot/answer.md
 
 実装系
 
-test/storybook/my-app以下
+test/storybook/my-app 以下
 
 プルリク
 https://github.com/kai815/PrAhaChallenge/pull/15
+
+任意課題のプルリク
+https://github.com/kai815/PrAhaChallenge/pull/16
 
 ### 13.の解答
 
@@ -115,7 +118,7 @@ test/visual-regression/answer.md
 
 実装系
 
-test/storybook/my-app以下
+test/storybook/my-app 以下
 
 プルリク
 https://github.com/kai815/PrAhaChallenge/pull/17
