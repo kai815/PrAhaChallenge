@@ -1,0 +1,121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Example/Sqaure Display O 1`] = `
+.emotion-0 {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
+}
+
+.emotion-0:focus {
+  outline: none;
+}
+
+.emotion-0:hover {
+  background: #ddd;
+}
+
+.emotion-1 {
+  color: red;
+}
+
+<button
+  className="emotion-0"
+  onClick={[Function]}
+>
+  <span
+    className="emotion-1"
+  >
+    O
+  </span>
+</button>
+`;
+
+exports[`Storyshots Example/Sqaure Display Triangle 1`] = `
+.emotion-0 {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
+}
+
+.emotion-0:focus {
+  outline: none;
+}
+
+.emotion-0:hover {
+  background: #ddd;
+}
+
+.emotion-1 {
+  color: red;
+}
+
+<button
+  className="emotion-0"
+  onClick={[Function]}
+>
+  <span
+    className="emotion-1"
+  >
+    △
+  </span>
+</button>
+`;
+
+exports[`Storyshots Example/Sqaure Display X 1`] = `
+.emotion-0 {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
+}
+
+.emotion-0:focus {
+  outline: none;
+}
+
+.emotion-0:hover {
+  background: #ddd;
+}
+
+.emotion-1 {
+  color: red;
+}
+
+<button
+  className="emotion-0"
+  onClick={[Function]}
+>
+  <span
+    className="emotion-1"
+  >
+    X
+  </span>
+</button>
+`;
