@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Example/Move Desc 4 1`] = `"Go to move #4"`;
+
+exports[`Storyshots Example/Move Desc Initial 1`] = `"Go to game start"`;
+
+exports[`Storyshots Example/Move Move History 3 1`] = `
+Array [
+  <li>
+    <button
+      onClick={[Function]}
+    >
+      Go to game start
+    </button>
+  </li>,
+  <li>
+    <button
+      onClick={[Function]}
+    >
+      Go to move #1
+    </button>
+  </li>,
+  <li>
+    <button
+      onClick={[Function]}
+    >
+      Go to move #2
+    </button>
+  </li>,
+]
+`;
+
+exports[`Storyshots Example/Move Move History Initial 1`] = `
+<li>
+  <button
+    onClick={[Function]}
+  >
+    Go to game start
+  </button>
+</li>
+`;

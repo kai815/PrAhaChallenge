@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Example/Status Winner Null Next X 1`] = `"次のプレイヤー X's turn"`;
+
+exports[`Storyshots Example/Status Winner X 1`] = `"Winner: X"`;
+
+exports[`Storyshots Example/Status Winner Y 1`] = `"Winner: Y"`;

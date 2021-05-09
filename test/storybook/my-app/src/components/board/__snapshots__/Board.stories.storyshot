@@ -1,0 +1,418 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Example/Board Display All O 1`] = `
+.emotion-0:after {
+  clear: both;
+  display: table;
+}
+
+.emotion-1 {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
+}
+
+.emotion-1:focus {
+  outline: none;
+}
+
+.emotion-1:hover {
+  background: #ddd;
+}
+
+.emotion-2 {
+  color: red;
+}
+
+<div>
+  <div
+    className="emotion-0"
+  >
+    <button
+      className="emotion-1"
+      onClick={[Function]}
+    >
+      <span
+        className="emotion-2"
+      >
+        O
+      </span>
+    </button>
+    <button
+      className="emotion-1"
+      onClick={[Function]}
+    >
+      <span
+        className="emotion-2"
+      >
+        O
+      </span>
+    </button>
+    <button
+      className="emotion-1"
+      onClick={[Function]}
+    >
+      <span
+        className="emotion-2"
+      >
+        O
+      </span>
+    </button>
+  </div>
+  <div
+    className="emotion-0"
+  >
+    <button
+      className="emotion-1"
+      onClick={[Function]}
+    >
+      <span
+        className="emotion-2"
+      >
+        O
+      </span>
+    </button>
+    <button
+      className="emotion-1"
+      onClick={[Function]}
+    >
+      <span
+        className="emotion-2"
+      >
+        O
+      </span>
+    </button>
+    <button
+      className="emotion-1"
+      onClick={[Function]}
+    >
+      <span
+        className="emotion-2"
+      >
+        O
+      </span>
+    </button>
+  </div>
+  <div
+    className="emotion-0"
+  >
+    <button
+      className="emotion-1"
+      onClick={[Function]}
+    >
+      <span
+        className="emotion-2"
+      >
+        O
+      </span>
+    </button>
+    <button
+      className="emotion-1"
+      onClick={[Function]}
+    >
+      <span
+        className="emotion-2"
+      >
+        O
+      </span>
+    </button>
+    <button
+      className="emotion-1"
+      onClick={[Function]}
+    >
+      <span
+        className="emotion-2"
+      >
+        O
+      </span>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Example/Board Display All Triangle 1`] = `
+.emotion-0:after {
+  clear: both;
+  display: table;
+}
+
+.emotion-1 {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
+}
+
+.emotion-1:focus {
+  outline: none;
+}
+
+.emotion-1:hover {
+  background: #ddd;
+}
+
+.emotion-2 {
+  color: red;
+}
+
+<div>
+  <div
+    className="emotion-0"
+  >
+    <button
+      className="emotion-1"
+      onClick={[Function]}
+    >
+      <span
+        className="emotion-2"
+      >
+        △
+      </span>
+    </button>
+    <button
+      className="emotion-1"
+      onClick={[Function]}
+    >
+      <span
+        className="emotion-2"
+      >
+        △
+      </span>
+    </button>
+    <button
+      className="emotion-1"
+      onClick={[Function]}
+    >
+      <span
+        className="emotion-2"
+      >
+        △
+      </span>
+    </button>
+  </div>
+  <div
+    className="emotion-0"
+  >
+    <button
+      className="emotion-1"
+      onClick={[Function]}
+    >
+      <span
+        className="emotion-2"
+      >
+        △
+      </span>
+    </button>
+    <button
+      className="emotion-1"
+      onClick={[Function]}
+    >
+      <span
+        className="emotion-2"
+      >
+        △
+      </span>
+    </button>
+    <button
+      className="emotion-1"
+      onClick={[Function]}
+    >
+      <span
+        className="emotion-2"
+      >
+        △
+      </span>
+    </button>
+  </div>
+  <div
+    className="emotion-0"
+  >
+    <button
+      className="emotion-1"
+      onClick={[Function]}
+    >
+      <span
+        className="emotion-2"
+      >
+        △
+      </span>
+    </button>
+    <button
+      className="emotion-1"
+      onClick={[Function]}
+    >
+      <span
+        className="emotion-2"
+      >
+        △
+      </span>
+    </button>
+    <button
+      className="emotion-1"
+      onClick={[Function]}
+    >
+      <span
+        className="emotion-2"
+      >
+        △
+      </span>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Example/Board Display All X 1`] = `
+.emotion-0:after {
+  clear: both;
+  display: table;
+}
+
+.emotion-1 {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
+}
+
+.emotion-1:focus {
+  outline: none;
+}
+
+.emotion-1:hover {
+  background: #ddd;
+}
+
+.emotion-2 {
+  color: red;
+}
+
+<div>
+  <div
+    className="emotion-0"
+  >
+    <button
+      className="emotion-1"
+      onClick={[Function]}
+    >
+      <span
+        className="emotion-2"
+      >
+        X
+      </span>
+    </button>
+    <button
+      className="emotion-1"
+      onClick={[Function]}
+    >
+      <span
+        className="emotion-2"
+      >
+        X
+      </span>
+    </button>
+    <button
+      className="emotion-1"
+      onClick={[Function]}
+    >
+      <span
+        className="emotion-2"
+      >
+        X
+      </span>
+    </button>
+  </div>
+  <div
+    className="emotion-0"
+  >
+    <button
+      className="emotion-1"
+      onClick={[Function]}
+    >
+      <span
+        className="emotion-2"
+      >
+        X
+      </span>
+    </button>
+    <button
+      className="emotion-1"
+      onClick={[Function]}
+    >
+      <span
+        className="emotion-2"
+      >
+        X
+      </span>
+    </button>
+    <button
+      className="emotion-1"
+      onClick={[Function]}
+    >
+      <span
+        className="emotion-2"
+      >
+        X
+      </span>
+    </button>
+  </div>
+  <div
+    className="emotion-0"
+  >
+    <button
+      className="emotion-1"
+      onClick={[Function]}
+    >
+      <span
+        className="emotion-2"
+      >
+        X
+      </span>
+    </button>
+    <button
+      className="emotion-1"
+      onClick={[Function]}
+    >
+      <span
+        className="emotion-2"
+      >
+        X
+      </span>
+    </button>
+    <button
+      className="emotion-1"
+      onClick={[Function]}
+    >
+      <span
+        className="emotion-2"
+      >
+        X
+      </span>
+    </button>
+  </div>
+</div>
+`;
