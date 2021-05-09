@@ -29,6 +29,10 @@ exports[`Storyshots Example/Board Display All O 1`] = `
   background: #ddd;
 }
 
+.emotion-2 {
+  color: red;
+}
+
 <div>
   <div
     className="emotion-0"
@@ -37,41 +41,31 @@ exports[`Storyshots Example/Board Display All O 1`] = `
       className="emotion-1"
       onClick={[Function]}
     >
-      O
+      <span
+        className="emotion-2"
+      >
+        O
+      </span>
     </button>
     <button
       className="emotion-1"
       onClick={[Function]}
     >
-      O
+      <span
+        className="emotion-2"
+      >
+        O
+      </span>
     </button>
     <button
       className="emotion-1"
       onClick={[Function]}
     >
-      O
-    </button>
-  </div>
-  <div
-    className="emotion-0"
-  >
-    <button
-      className="emotion-1"
-      onClick={[Function]}
-    >
-      O
-    </button>
-    <button
-      className="emotion-1"
-      onClick={[Function]}
-    >
-      O
-    </button>
-    <button
-      className="emotion-1"
-      onClick={[Function]}
-    >
-      O
+      <span
+        className="emotion-2"
+      >
+        O
+      </span>
     </button>
   </div>
   <div
@@ -81,19 +75,65 @@ exports[`Storyshots Example/Board Display All O 1`] = `
       className="emotion-1"
       onClick={[Function]}
     >
-      O
+      <span
+        className="emotion-2"
+      >
+        O
+      </span>
     </button>
     <button
       className="emotion-1"
       onClick={[Function]}
     >
-      O
+      <span
+        className="emotion-2"
+      >
+        O
+      </span>
     </button>
     <button
       className="emotion-1"
       onClick={[Function]}
     >
-      O
+      <span
+        className="emotion-2"
+      >
+        O
+      </span>
+    </button>
+  </div>
+  <div
+    className="emotion-0"
+  >
+    <button
+      className="emotion-1"
+      onClick={[Function]}
+    >
+      <span
+        className="emotion-2"
+      >
+        O
+      </span>
+    </button>
+    <button
+      className="emotion-1"
+      onClick={[Function]}
+    >
+      <span
+        className="emotion-2"
+      >
+        O
+      </span>
+    </button>
+    <button
+      className="emotion-1"
+      onClick={[Function]}
+    >
+      <span
+        className="emotion-2"
+      >
+        O
+      </span>
     </button>
   </div>
 </div>
@@ -128,6 +168,10 @@ exports[`Storyshots Example/Board Display All Triangle 1`] = `
   background: #ddd;
 }
 
+.emotion-2 {
+  color: red;
+}
+
 <div>
   <div
     className="emotion-0"
@@ -136,41 +180,31 @@ exports[`Storyshots Example/Board Display All Triangle 1`] = `
       className="emotion-1"
       onClick={[Function]}
     >
-      △
+      <span
+        className="emotion-2"
+      >
+        △
+      </span>
     </button>
     <button
       className="emotion-1"
       onClick={[Function]}
     >
-      △
+      <span
+        className="emotion-2"
+      >
+        △
+      </span>
     </button>
     <button
       className="emotion-1"
       onClick={[Function]}
     >
-      △
-    </button>
-  </div>
-  <div
-    className="emotion-0"
-  >
-    <button
-      className="emotion-1"
-      onClick={[Function]}
-    >
-      △
-    </button>
-    <button
-      className="emotion-1"
-      onClick={[Function]}
-    >
-      △
-    </button>
-    <button
-      className="emotion-1"
-      onClick={[Function]}
-    >
-      △
+      <span
+        className="emotion-2"
+      >
+        △
+      </span>
     </button>
   </div>
   <div
@@ -180,19 +214,65 @@ exports[`Storyshots Example/Board Display All Triangle 1`] = `
       className="emotion-1"
       onClick={[Function]}
     >
-      △
+      <span
+        className="emotion-2"
+      >
+        △
+      </span>
     </button>
     <button
       className="emotion-1"
       onClick={[Function]}
     >
-      △
+      <span
+        className="emotion-2"
+      >
+        △
+      </span>
     </button>
     <button
       className="emotion-1"
       onClick={[Function]}
     >
-      △
+      <span
+        className="emotion-2"
+      >
+        △
+      </span>
+    </button>
+  </div>
+  <div
+    className="emotion-0"
+  >
+    <button
+      className="emotion-1"
+      onClick={[Function]}
+    >
+      <span
+        className="emotion-2"
+      >
+        △
+      </span>
+    </button>
+    <button
+      className="emotion-1"
+      onClick={[Function]}
+    >
+      <span
+        className="emotion-2"
+      >
+        △
+      </span>
+    </button>
+    <button
+      className="emotion-1"
+      onClick={[Function]}
+    >
+      <span
+        className="emotion-2"
+      >
+        △
+      </span>
     </button>
   </div>
 </div>
@@ -227,6 +307,10 @@ exports[`Storyshots Example/Board Display All X 1`] = `
   background: #ddd;
 }
 
+.emotion-2 {
+  color: red;
+}
+
 <div>
   <div
     className="emotion-0"
@@ -235,41 +319,31 @@ exports[`Storyshots Example/Board Display All X 1`] = `
       className="emotion-1"
       onClick={[Function]}
     >
-      X
+      <span
+        className="emotion-2"
+      >
+        X
+      </span>
     </button>
     <button
       className="emotion-1"
       onClick={[Function]}
     >
-      X
+      <span
+        className="emotion-2"
+      >
+        X
+      </span>
     </button>
     <button
       className="emotion-1"
       onClick={[Function]}
     >
-      X
-    </button>
-  </div>
-  <div
-    className="emotion-0"
-  >
-    <button
-      className="emotion-1"
-      onClick={[Function]}
-    >
-      X
-    </button>
-    <button
-      className="emotion-1"
-      onClick={[Function]}
-    >
-      X
-    </button>
-    <button
-      className="emotion-1"
-      onClick={[Function]}
-    >
-      X
+      <span
+        className="emotion-2"
+      >
+        X
+      </span>
     </button>
   </div>
   <div
@@ -279,19 +353,65 @@ exports[`Storyshots Example/Board Display All X 1`] = `
       className="emotion-1"
       onClick={[Function]}
     >
-      X
+      <span
+        className="emotion-2"
+      >
+        X
+      </span>
     </button>
     <button
       className="emotion-1"
       onClick={[Function]}
     >
-      X
+      <span
+        className="emotion-2"
+      >
+        X
+      </span>
     </button>
     <button
       className="emotion-1"
       onClick={[Function]}
     >
-      X
+      <span
+        className="emotion-2"
+      >
+        X
+      </span>
+    </button>
+  </div>
+  <div
+    className="emotion-0"
+  >
+    <button
+      className="emotion-1"
+      onClick={[Function]}
+    >
+      <span
+        className="emotion-2"
+      >
+        X
+      </span>
+    </button>
+    <button
+      className="emotion-1"
+      onClick={[Function]}
+    >
+      <span
+        className="emotion-2"
+      >
+        X
+      </span>
+    </button>
+    <button
+      className="emotion-1"
+      onClick={[Function]}
+    >
+      <span
+        className="emotion-2"
+      >
+        X
+      </span>
     </button>
   </div>
 </div>

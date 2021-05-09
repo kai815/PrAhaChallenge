@@ -43,6 +43,10 @@ exports[`Storyshots Example/Game Game Initial 1`] = `
   background: #ddd;
 }
 
+.emotion-4 {
+  color: red;
+}
+
 <div
   className="emotion-0"
 >
@@ -57,41 +61,31 @@ exports[`Storyshots Example/Game Game Initial 1`] = `
           className="emotion-3"
           onClick={[Function]}
         >
-          
+          <span
+            className="emotion-4"
+          >
+            
+          </span>
         </button>
         <button
           className="emotion-3"
           onClick={[Function]}
         >
-          
+          <span
+            className="emotion-4"
+          >
+            
+          </span>
         </button>
         <button
           className="emotion-3"
           onClick={[Function]}
         >
-          
-        </button>
-      </div>
-      <div
-        className="emotion-2"
-      >
-        <button
-          className="emotion-3"
-          onClick={[Function]}
-        >
-          
-        </button>
-        <button
-          className="emotion-3"
-          onClick={[Function]}
-        >
-          
-        </button>
-        <button
-          className="emotion-3"
-          onClick={[Function]}
-        >
-          
+          <span
+            className="emotion-4"
+          >
+            
+          </span>
         </button>
       </div>
       <div
@@ -101,19 +95,65 @@ exports[`Storyshots Example/Game Game Initial 1`] = `
           className="emotion-3"
           onClick={[Function]}
         >
-          
+          <span
+            className="emotion-4"
+          >
+            
+          </span>
         </button>
         <button
           className="emotion-3"
           onClick={[Function]}
         >
-          
+          <span
+            className="emotion-4"
+          >
+            
+          </span>
         </button>
         <button
           className="emotion-3"
           onClick={[Function]}
         >
-          
+          <span
+            className="emotion-4"
+          >
+            
+          </span>
+        </button>
+      </div>
+      <div
+        className="emotion-2"
+      >
+        <button
+          className="emotion-3"
+          onClick={[Function]}
+        >
+          <span
+            className="emotion-4"
+          >
+            
+          </span>
+        </button>
+        <button
+          className="emotion-3"
+          onClick={[Function]}
+        >
+          <span
+            className="emotion-4"
+          >
+            
+          </span>
+        </button>
+        <button
+          className="emotion-3"
+          onClick={[Function]}
+        >
+          <span
+            className="emotion-4"
+          >
+            
+          </span>
         </button>
       </div>
     </div>
@@ -180,6 +220,10 @@ exports[`Storyshots Example/Game Gmae All Triangle 1`] = `
   background: #ddd;
 }
 
+.emotion-4 {
+  color: red;
+}
+
 <div
   className="emotion-0"
 >
@@ -194,41 +238,31 @@ exports[`Storyshots Example/Game Gmae All Triangle 1`] = `
           className="emotion-3"
           onClick={[Function]}
         >
-          △
+          <span
+            className="emotion-4"
+          >
+            △
+          </span>
         </button>
         <button
           className="emotion-3"
           onClick={[Function]}
         >
-          △
+          <span
+            className="emotion-4"
+          >
+            △
+          </span>
         </button>
         <button
           className="emotion-3"
           onClick={[Function]}
         >
-          △
-        </button>
-      </div>
-      <div
-        className="emotion-2"
-      >
-        <button
-          className="emotion-3"
-          onClick={[Function]}
-        >
-          △
-        </button>
-        <button
-          className="emotion-3"
-          onClick={[Function]}
-        >
-          △
-        </button>
-        <button
-          className="emotion-3"
-          onClick={[Function]}
-        >
-          △
+          <span
+            className="emotion-4"
+          >
+            △
+          </span>
         </button>
       </div>
       <div
@@ -238,19 +272,65 @@ exports[`Storyshots Example/Game Gmae All Triangle 1`] = `
           className="emotion-3"
           onClick={[Function]}
         >
-          △
+          <span
+            className="emotion-4"
+          >
+            △
+          </span>
         </button>
         <button
           className="emotion-3"
           onClick={[Function]}
         >
-          △
+          <span
+            className="emotion-4"
+          >
+            △
+          </span>
         </button>
         <button
           className="emotion-3"
           onClick={[Function]}
         >
-          △
+          <span
+            className="emotion-4"
+          >
+            △
+          </span>
+        </button>
+      </div>
+      <div
+        className="emotion-2"
+      >
+        <button
+          className="emotion-3"
+          onClick={[Function]}
+        >
+          <span
+            className="emotion-4"
+          >
+            △
+          </span>
+        </button>
+        <button
+          className="emotion-3"
+          onClick={[Function]}
+        >
+          <span
+            className="emotion-4"
+          >
+            △
+          </span>
+        </button>
+        <button
+          className="emotion-3"
+          onClick={[Function]}
+        >
+          <span
+            className="emotion-4"
+          >
+            △
+          </span>
         </button>
       </div>
     </div>
