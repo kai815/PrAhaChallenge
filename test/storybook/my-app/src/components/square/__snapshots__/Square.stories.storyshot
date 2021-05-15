@@ -30,6 +30,7 @@ exports[`Storyshots Example/Sqaure Display O 1`] = `
 
 <button
   className="emotion-0"
+  data-e2e="button-0"
   onClick={[Function]}
 >
   <span
@@ -70,6 +71,7 @@ exports[`Storyshots Example/Sqaure Display Triangle 1`] = `
 
 <button
   className="emotion-0"
+  data-e2e="button-0"
   onClick={[Function]}
 >
   <span
@@ -110,6 +112,7 @@ exports[`Storyshots Example/Sqaure Display X 1`] = `
 
 <button
   className="emotion-0"
+  data-e2e="button-0"
   onClick={[Function]}
 >
   <span

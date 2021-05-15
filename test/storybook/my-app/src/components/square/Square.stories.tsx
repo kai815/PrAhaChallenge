@@ -15,14 +15,17 @@ const Template: Story<SquarePropsInterface> = (args) => <Square {...args} />;
 export const DisplayO = Template.bind({});
 DisplayO.args = {
   value: "O",
+  indexNumber:0
 };
 
 export const DisplayX = Template.bind({});
 DisplayX.args = {
   value: "X",
+  indexNumber:0
 };
 
 export const DisplayTriangle = Template.bind({});
 DisplayTriangle.args = {
   value: "△",
+  indexNumber:0
 };

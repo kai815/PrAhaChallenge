@@ -59,6 +59,7 @@ exports[`Storyshots Example/Game Game Initial 1`] = `
       >
         <button
           className="emotion-3"
+          data-e2e="button-0"
           onClick={[Function]}
         >
           <span
@@ -69,6 +70,7 @@ exports[`Storyshots Example/Game Game Initial 1`] = `
         </button>
         <button
           className="emotion-3"
+          data-e2e="button-1"
           onClick={[Function]}
         >
           <span
@@ -79,40 +81,7 @@ exports[`Storyshots Example/Game Game Initial 1`] = `
         </button>
         <button
           className="emotion-3"
-          onClick={[Function]}
-        >
-          <span
-            className="emotion-4"
-          >
-            
-          </span>
-        </button>
-      </div>
-      <div
-        className="emotion-2"
-      >
-        <button
-          className="emotion-3"
-          onClick={[Function]}
-        >
-          <span
-            className="emotion-4"
-          >
-            
-          </span>
-        </button>
-        <button
-          className="emotion-3"
-          onClick={[Function]}
-        >
-          <span
-            className="emotion-4"
-          >
-            
-          </span>
-        </button>
-        <button
-          className="emotion-3"
+          data-e2e="button-2"
           onClick={[Function]}
         >
           <span
@@ -127,6 +96,7 @@ exports[`Storyshots Example/Game Game Initial 1`] = `
       >
         <button
           className="emotion-3"
+          data-e2e="button-3"
           onClick={[Function]}
         >
           <span
@@ -137,6 +107,7 @@ exports[`Storyshots Example/Game Game Initial 1`] = `
         </button>
         <button
           className="emotion-3"
+          data-e2e="button-4"
           onClick={[Function]}
         >
           <span
@@ -147,6 +118,44 @@ exports[`Storyshots Example/Game Game Initial 1`] = `
         </button>
         <button
           className="emotion-3"
+          data-e2e="button-5"
+          onClick={[Function]}
+        >
+          <span
+            className="emotion-4"
+          >
+            
+          </span>
+        </button>
+      </div>
+      <div
+        className="emotion-2"
+      >
+        <button
+          className="emotion-3"
+          data-e2e="button-6"
+          onClick={[Function]}
+        >
+          <span
+            className="emotion-4"
+          >
+            
+          </span>
+        </button>
+        <button
+          className="emotion-3"
+          data-e2e="button-7"
+          onClick={[Function]}
+        >
+          <span
+            className="emotion-4"
+          >
+            
+          </span>
+        </button>
+        <button
+          className="emotion-3"
+          data-e2e="button-8"
           onClick={[Function]}
         >
           <span
@@ -162,7 +171,11 @@ exports[`Storyshots Example/Game Game Initial 1`] = `
     className="emotion-1"
   >
     <div>
-      次のプレイヤー X's turn
+      <span
+        data-e2e="status"
+      >
+        次のプレイヤー X's turn
+      </span>
     </div>
     <ol>
       <li>
@@ -236,6 +249,7 @@ exports[`Storyshots Example/Game Gmae All Triangle 1`] = `
       >
         <button
           className="emotion-3"
+          data-e2e="button-0"
           onClick={[Function]}
         >
           <span
@@ -246,6 +260,7 @@ exports[`Storyshots Example/Game Gmae All Triangle 1`] = `
         </button>
         <button
           className="emotion-3"
+          data-e2e="button-1"
           onClick={[Function]}
         >
           <span
@@ -256,40 +271,7 @@ exports[`Storyshots Example/Game Gmae All Triangle 1`] = `
         </button>
         <button
           className="emotion-3"
-          onClick={[Function]}
-        >
-          <span
-            className="emotion-4"
-          >
-            △
-          </span>
-        </button>
-      </div>
-      <div
-        className="emotion-2"
-      >
-        <button
-          className="emotion-3"
-          onClick={[Function]}
-        >
-          <span
-            className="emotion-4"
-          >
-            △
-          </span>
-        </button>
-        <button
-          className="emotion-3"
-          onClick={[Function]}
-        >
-          <span
-            className="emotion-4"
-          >
-            △
-          </span>
-        </button>
-        <button
-          className="emotion-3"
+          data-e2e="button-2"
           onClick={[Function]}
         >
           <span
@@ -304,6 +286,7 @@ exports[`Storyshots Example/Game Gmae All Triangle 1`] = `
       >
         <button
           className="emotion-3"
+          data-e2e="button-3"
           onClick={[Function]}
         >
           <span
@@ -314,6 +297,7 @@ exports[`Storyshots Example/Game Gmae All Triangle 1`] = `
         </button>
         <button
           className="emotion-3"
+          data-e2e="button-4"
           onClick={[Function]}
         >
           <span
@@ -324,6 +308,44 @@ exports[`Storyshots Example/Game Gmae All Triangle 1`] = `
         </button>
         <button
           className="emotion-3"
+          data-e2e="button-5"
+          onClick={[Function]}
+        >
+          <span
+            className="emotion-4"
+          >
+            △
+          </span>
+        </button>
+      </div>
+      <div
+        className="emotion-2"
+      >
+        <button
+          className="emotion-3"
+          data-e2e="button-6"
+          onClick={[Function]}
+        >
+          <span
+            className="emotion-4"
+          >
+            △
+          </span>
+        </button>
+        <button
+          className="emotion-3"
+          data-e2e="button-7"
+          onClick={[Function]}
+        >
+          <span
+            className="emotion-4"
+          >
+            △
+          </span>
+        </button>
+        <button
+          className="emotion-3"
+          data-e2e="button-8"
           onClick={[Function]}
         >
           <span
@@ -339,7 +361,11 @@ exports[`Storyshots Example/Game Gmae All Triangle 1`] = `
     className="emotion-1"
   >
     <div>
-      Winner: △
+      <span
+        data-e2e="status"
+      >
+        Winner: △
+      </span>
     </div>
     <ol>
       <li>
@@ -347,6 +373,259 @@ exports[`Storyshots Example/Game Gmae All Triangle 1`] = `
           onClick={[Function]}
         >
           Go to game start
+        </button>
+      </li>
+    </ol>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Example/Game Gmae Draw Result 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.emotion-1 {
+  margin-left: 20px;
+}
+
+.emotion-2:after {
+  clear: both;
+  display: table;
+}
+
+.emotion-3 {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
+}
+
+.emotion-3:focus {
+  outline: none;
+}
+
+.emotion-3:hover {
+  background: #ddd;
+}
+
+.emotion-4 {
+  color: red;
+}
+
+<div
+  className="emotion-0"
+>
+  <div
+    className="emotion-1"
+  >
+    <div>
+      <div
+        className="emotion-2"
+      >
+        <button
+          className="emotion-3"
+          data-e2e="button-0"
+          onClick={[Function]}
+        >
+          <span
+            className="emotion-4"
+          >
+            X
+          </span>
+        </button>
+        <button
+          className="emotion-3"
+          data-e2e="button-1"
+          onClick={[Function]}
+        >
+          <span
+            className="emotion-4"
+          >
+            O
+          </span>
+        </button>
+        <button
+          className="emotion-3"
+          data-e2e="button-2"
+          onClick={[Function]}
+        >
+          <span
+            className="emotion-4"
+          >
+            X
+          </span>
+        </button>
+      </div>
+      <div
+        className="emotion-2"
+      >
+        <button
+          className="emotion-3"
+          data-e2e="button-3"
+          onClick={[Function]}
+        >
+          <span
+            className="emotion-4"
+          >
+            X
+          </span>
+        </button>
+        <button
+          className="emotion-3"
+          data-e2e="button-4"
+          onClick={[Function]}
+        >
+          <span
+            className="emotion-4"
+          >
+            O
+          </span>
+        </button>
+        <button
+          className="emotion-3"
+          data-e2e="button-5"
+          onClick={[Function]}
+        >
+          <span
+            className="emotion-4"
+          >
+            X
+          </span>
+        </button>
+      </div>
+      <div
+        className="emotion-2"
+      >
+        <button
+          className="emotion-3"
+          data-e2e="button-6"
+          onClick={[Function]}
+        >
+          <span
+            className="emotion-4"
+          >
+            O
+          </span>
+        </button>
+        <button
+          className="emotion-3"
+          data-e2e="button-7"
+          onClick={[Function]}
+        >
+          <span
+            className="emotion-4"
+          >
+            X
+          </span>
+        </button>
+        <button
+          className="emotion-3"
+          data-e2e="button-8"
+          onClick={[Function]}
+        >
+          <span
+            className="emotion-4"
+          >
+            O
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    className="emotion-1"
+  >
+    <div>
+      <span
+        data-e2e="status"
+      >
+        Draw!
+      </span>
+    </div>
+    <ol>
+      <li>
+        <button
+          onClick={[Function]}
+        >
+          Go to game start
+        </button>
+      </li>
+      <li>
+        <button
+          onClick={[Function]}
+        >
+          Go to move #1
+        </button>
+      </li>
+      <li>
+        <button
+          onClick={[Function]}
+        >
+          Go to move #2
+        </button>
+      </li>
+      <li>
+        <button
+          onClick={[Function]}
+        >
+          Go to move #3
+        </button>
+      </li>
+      <li>
+        <button
+          onClick={[Function]}
+        >
+          Go to move #4
+        </button>
+      </li>
+      <li>
+        <button
+          onClick={[Function]}
+        >
+          Go to move #5
+        </button>
+      </li>
+      <li>
+        <button
+          onClick={[Function]}
+        >
+          Go to move #6
+        </button>
+      </li>
+      <li>
+        <button
+          onClick={[Function]}
+        >
+          Go to move #7
+        </button>
+      </li>
+      <li>
+        <button
+          onClick={[Function]}
+        >
+          Go to move #8
+        </button>
+      </li>
+      <li>
+        <button
+          onClick={[Function]}
+        >
+          Go to move #9
         </button>
       </li>
     </ol>
