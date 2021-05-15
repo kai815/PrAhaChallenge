@@ -36,13 +36,13 @@ export const Game = (props:GamePropsInterFace) => {
   } = props;
   const [ xIsNext, setXIsNext ] = useState(true);
   const current = history[stepNumber];
-  const winner = calculateWinner(current.squares);
+  const winner = calculateWinner(current.squares,stepNumber);
 
   const handleClick = (i: number) => {
     const slicedHistory = history.slice(0, stepNumber + 1);
     const current = slicedHistory[slicedHistory.length - 1];
     const squares = current.squares.slice();
-    if (calculateWinner(squares) || squares[i]) {
+    if (calculateWinner(squares,stepNumber) || squares[i]) {
       return;
     }
     squares[i] = xIsNext ? "X" : "O";
@@ -82,7 +82,7 @@ export const Game = (props:GamePropsInterFace) => {
   );
 }
 
-const calculateWinner = (squares: string[]) => {
+const calculateWinner = (squares: string[], stepNumber:number) => {
   const lines = [
     [0, 1, 2],
     [3, 4, 5],
@@ -98,6 +98,10 @@ const calculateWinner = (squares: string[]) => {
     if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
       return squares[a];
     }
+  }
+  //勝者がいなくて全てのステップが終わったら引き分け
+  if(stepNumber >= 9){
+    return "draw";
   }
   return null;
 }
