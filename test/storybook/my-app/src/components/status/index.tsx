@@ -14,6 +14,10 @@ export const Status = (props:StatusPropsInterFace) => {
     status = `次のプレイヤー ${xIsNext ? "X" : "O"}'s turn`;
   }
   return (
-    <>{status}</>
+    <>
+      <span data-e2e="status">
+        {status}
+      </span>
+    </>
   )
 }
