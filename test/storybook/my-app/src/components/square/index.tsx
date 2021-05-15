@@ -32,6 +32,7 @@ const SquareText = css({
 export interface SquarePropsInterface {
   value: string;
   onClick: () => void;
+  indexNumber: number;
 }
 
 export const Square = (props:SquarePropsInterface) => {
@@ -41,6 +42,7 @@ export const Square = (props:SquarePropsInterface) => {
       onClick={() => {
         props.onClick();
       }}
+      data-e2e={`button-${props.indexNumber}`}
     >
       <span css={SquareText}>{props.value}</span>
     </button>
