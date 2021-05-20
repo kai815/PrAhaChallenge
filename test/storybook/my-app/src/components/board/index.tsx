@@ -27,6 +27,7 @@ export const Board = (props:BoardPropsInterface) => {
     return (
       <Square
         value={props.squares[i]}
+        indexNumber={i}
         onClick={() => props.onClick(i)}
       />
     );

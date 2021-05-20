@@ -39,6 +39,7 @@ exports[`Storyshots Example/Board Display All O 1`] = `
   >
     <button
       className="emotion-1"
+      data-e2e="button-0"
       onClick={[Function]}
     >
       <span
@@ -49,6 +50,7 @@ exports[`Storyshots Example/Board Display All O 1`] = `
     </button>
     <button
       className="emotion-1"
+      data-e2e="button-1"
       onClick={[Function]}
     >
       <span
@@ -59,40 +61,7 @@ exports[`Storyshots Example/Board Display All O 1`] = `
     </button>
     <button
       className="emotion-1"
-      onClick={[Function]}
-    >
-      <span
-        className="emotion-2"
-      >
-        O
-      </span>
-    </button>
-  </div>
-  <div
-    className="emotion-0"
-  >
-    <button
-      className="emotion-1"
-      onClick={[Function]}
-    >
-      <span
-        className="emotion-2"
-      >
-        O
-      </span>
-    </button>
-    <button
-      className="emotion-1"
-      onClick={[Function]}
-    >
-      <span
-        className="emotion-2"
-      >
-        O
-      </span>
-    </button>
-    <button
-      className="emotion-1"
+      data-e2e="button-2"
       onClick={[Function]}
     >
       <span
@@ -107,6 +76,7 @@ exports[`Storyshots Example/Board Display All O 1`] = `
   >
     <button
       className="emotion-1"
+      data-e2e="button-3"
       onClick={[Function]}
     >
       <span
@@ -117,6 +87,7 @@ exports[`Storyshots Example/Board Display All O 1`] = `
     </button>
     <button
       className="emotion-1"
+      data-e2e="button-4"
       onClick={[Function]}
     >
       <span
@@ -127,6 +98,44 @@ exports[`Storyshots Example/Board Display All O 1`] = `
     </button>
     <button
       className="emotion-1"
+      data-e2e="button-5"
+      onClick={[Function]}
+    >
+      <span
+        className="emotion-2"
+      >
+        O
+      </span>
+    </button>
+  </div>
+  <div
+    className="emotion-0"
+  >
+    <button
+      className="emotion-1"
+      data-e2e="button-6"
+      onClick={[Function]}
+    >
+      <span
+        className="emotion-2"
+      >
+        O
+      </span>
+    </button>
+    <button
+      className="emotion-1"
+      data-e2e="button-7"
+      onClick={[Function]}
+    >
+      <span
+        className="emotion-2"
+      >
+        O
+      </span>
+    </button>
+    <button
+      className="emotion-1"
+      data-e2e="button-8"
       onClick={[Function]}
     >
       <span
@@ -178,6 +187,7 @@ exports[`Storyshots Example/Board Display All Triangle 1`] = `
   >
     <button
       className="emotion-1"
+      data-e2e="button-0"
       onClick={[Function]}
     >
       <span
@@ -188,6 +198,7 @@ exports[`Storyshots Example/Board Display All Triangle 1`] = `
     </button>
     <button
       className="emotion-1"
+      data-e2e="button-1"
       onClick={[Function]}
     >
       <span
@@ -198,40 +209,7 @@ exports[`Storyshots Example/Board Display All Triangle 1`] = `
     </button>
     <button
       className="emotion-1"
-      onClick={[Function]}
-    >
-      <span
-        className="emotion-2"
-      >
-        △
-      </span>
-    </button>
-  </div>
-  <div
-    className="emotion-0"
-  >
-    <button
-      className="emotion-1"
-      onClick={[Function]}
-    >
-      <span
-        className="emotion-2"
-      >
-        △
-      </span>
-    </button>
-    <button
-      className="emotion-1"
-      onClick={[Function]}
-    >
-      <span
-        className="emotion-2"
-      >
-        △
-      </span>
-    </button>
-    <button
-      className="emotion-1"
+      data-e2e="button-2"
       onClick={[Function]}
     >
       <span
@@ -246,6 +224,7 @@ exports[`Storyshots Example/Board Display All Triangle 1`] = `
   >
     <button
       className="emotion-1"
+      data-e2e="button-3"
       onClick={[Function]}
     >
       <span
@@ -256,6 +235,7 @@ exports[`Storyshots Example/Board Display All Triangle 1`] = `
     </button>
     <button
       className="emotion-1"
+      data-e2e="button-4"
       onClick={[Function]}
     >
       <span
@@ -266,6 +246,44 @@ exports[`Storyshots Example/Board Display All Triangle 1`] = `
     </button>
     <button
       className="emotion-1"
+      data-e2e="button-5"
+      onClick={[Function]}
+    >
+      <span
+        className="emotion-2"
+      >
+        △
+      </span>
+    </button>
+  </div>
+  <div
+    className="emotion-0"
+  >
+    <button
+      className="emotion-1"
+      data-e2e="button-6"
+      onClick={[Function]}
+    >
+      <span
+        className="emotion-2"
+      >
+        △
+      </span>
+    </button>
+    <button
+      className="emotion-1"
+      data-e2e="button-7"
+      onClick={[Function]}
+    >
+      <span
+        className="emotion-2"
+      >
+        △
+      </span>
+    </button>
+    <button
+      className="emotion-1"
+      data-e2e="button-8"
       onClick={[Function]}
     >
       <span
@@ -317,6 +335,7 @@ exports[`Storyshots Example/Board Display All X 1`] = `
   >
     <button
       className="emotion-1"
+      data-e2e="button-0"
       onClick={[Function]}
     >
       <span
@@ -327,6 +346,7 @@ exports[`Storyshots Example/Board Display All X 1`] = `
     </button>
     <button
       className="emotion-1"
+      data-e2e="button-1"
       onClick={[Function]}
     >
       <span
@@ -337,40 +357,7 @@ exports[`Storyshots Example/Board Display All X 1`] = `
     </button>
     <button
       className="emotion-1"
-      onClick={[Function]}
-    >
-      <span
-        className="emotion-2"
-      >
-        X
-      </span>
-    </button>
-  </div>
-  <div
-    className="emotion-0"
-  >
-    <button
-      className="emotion-1"
-      onClick={[Function]}
-    >
-      <span
-        className="emotion-2"
-      >
-        X
-      </span>
-    </button>
-    <button
-      className="emotion-1"
-      onClick={[Function]}
-    >
-      <span
-        className="emotion-2"
-      >
-        X
-      </span>
-    </button>
-    <button
-      className="emotion-1"
+      data-e2e="button-2"
       onClick={[Function]}
     >
       <span
@@ -385,6 +372,7 @@ exports[`Storyshots Example/Board Display All X 1`] = `
   >
     <button
       className="emotion-1"
+      data-e2e="button-3"
       onClick={[Function]}
     >
       <span
@@ -395,6 +383,7 @@ exports[`Storyshots Example/Board Display All X 1`] = `
     </button>
     <button
       className="emotion-1"
+      data-e2e="button-4"
       onClick={[Function]}
     >
       <span
@@ -405,6 +394,44 @@ exports[`Storyshots Example/Board Display All X 1`] = `
     </button>
     <button
       className="emotion-1"
+      data-e2e="button-5"
+      onClick={[Function]}
+    >
+      <span
+        className="emotion-2"
+      >
+        X
+      </span>
+    </button>
+  </div>
+  <div
+    className="emotion-0"
+  >
+    <button
+      className="emotion-1"
+      data-e2e="button-6"
+      onClick={[Function]}
+    >
+      <span
+        className="emotion-2"
+      >
+        X
+      </span>
+    </button>
+    <button
+      className="emotion-1"
+      data-e2e="button-7"
+      onClick={[Function]}
+    >
+      <span
+        className="emotion-2"
+      >
+        X
+      </span>
+    </button>
+    <button
+      className="emotion-1"
+      data-e2e="button-8"
       onClick={[Function]}
     >
       <span
