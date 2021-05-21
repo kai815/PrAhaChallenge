@@ -122,3 +122,16 @@ test/storybook/my-app 以下
 
 プルリク
 https://github.com/kai815/PrAhaChallenge/pull/17
+
+### 14.の解答
+
+質問系
+
+test/e2e/answer.md
+
+実装系
+
+test/storybook/my-app 以下
+
+プルリク
+https://github.com/kai815/PrAhaChallenge/pull/18
