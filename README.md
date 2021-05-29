@@ -135,3 +135,16 @@ test/storybook/my-app 以下
 
 プルリク
 https://github.com/kai815/PrAhaChallenge/pull/18
+
+### 15.の解答
+
+実装系
+
+tests/tdd 以下
+
+質問の回答
+
+tdd/answer.md
+
+プルリク
+https://github.com/kai815/praha-challenge-templates/pull/5
