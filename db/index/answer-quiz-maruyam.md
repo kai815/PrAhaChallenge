@@ -92,5 +92,13 @@ salary にインデックスあり
 
 4.20 s
 
+to_date にもインデックス
+
+```sql
+| SELECT AVG(salaries.salary) FROM salaries JOIN employees ON employees.emp_no = salaries.emp_no WHERE to_date > CURRENT_DATE()     | 16.86 s |
+```
+
+16.86 s と遅くなった
+
 速くなってないなぁ
 他に貼るべきなのか

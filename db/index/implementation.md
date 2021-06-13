@@ -118,14 +118,13 @@ mysql> SELECT sql_text, sys.format_time(timer_wait) AS time FROM performance_sch
 +-----------------------------------------------------------------------------------------------------------------------------------+-----------+
 | sql_text                                                                                                                          | time      |
 +-----------------------------------------------------------------------------------------------------------------------------------+-----------+
-| SELECT sql_text, sys.format_time(timer_wait) AS time FROM performance_schema.events_statements_history WHERE sql_text IS NOT NULL | 1.81 ms   |
-| ALTER TABLE employees
-ADD INDEX gender_index(gender)                                                                              | 861.95 ms |
+| SELECT sql_text, sys.format_time(timer_wait) AS time FROM performance_schema.events_statements_history WHERE sql_text IS NOT NULL | 1.17 ms   |
+| SELECT emp_no, first_name, gender FROM employees WHERE gender = 'M'                                                               | 203.73 ms |
 +-----------------------------------------------------------------------------------------------------------------------------------+-----------+
 2 rows in set (0.00 sec)
 ```
 
-1.81 ms と速くなった
+203.73 ms と遅くなった？
 
 2.の測定 s
 
