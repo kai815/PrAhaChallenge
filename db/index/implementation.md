@@ -125,7 +125,7 @@ ADD INDEX gender_index(gender)                                                  
 2 rows in set (0.00 sec)
 ```
 
-1.81 ms と早くなった
+1.81 ms と速くなった
 
 2.の測定 s
 
@@ -143,7 +143,7 @@ WHERE gender = 'M'                                                              
 
 ```
 
-1.88 ms と早くなった
+1.88 ms と速くなった
 
 #### first_name にインデックス
 
@@ -230,3 +230,118 @@ LIKE 句の中間一致と後方一致だと使えないよう
 
 参考
 https://qiita.com/NagaokaKenichi/items/44cabcafa3d02d9cd896
+
+## 課題３（実装）
+
+### insert してみる
+
+インデックスありで insert
+
+```sql
+INSERT INTO employees VALUES (300030,'2021-06-12','Hideo','Kaizuka','M','2021-06-12');
+Query OK, 1 row affected (0.03 sec)
+```
+
+```sql
+mysql> SELECT sql_text, sys.format_time(timer_wait) AS time FROM performance_schema.events_statements_history WHERE sql_text IS NOT NULL;
++---------------------------------------------------------------------------------------+-----------+
+| sql_text                                                                              | time      |
++---------------------------------------------------------------------------------------+-----------+
+| EXPLAIN SELECT emp_no, first_name, gender
+FROM employees
+WHERE gender = 'M'           | 529.20 us |
+| INSERT INTO employees VALUES (300030,'2021-06-12','Hideo','Kaizuka','M','2021-06-12') | 29.48 ms  |
++---------------------------------------------------------------------------------------+-----------+
+```
+
+29.48 ms
+
+インデックスを削除
+
+```sql
+ALTER TABLE employees DROP INDEX gender_index;
+```
+
+```sql
+ALTER TABLE employees DROP INDEX first_name;
+```
+
+インデックスの削除の確認
+
+```sql
+mysql> show index from employees;
++-----------+------------+----------+--------------+-------------+-----------+-------------+----------+--------+------+------------+---------+---------------+
+| Table     | Non_unique | Key_name | Seq_in_index | Column_name | Collation | Cardinality | Sub_part | Packed | Null | Index_type | Comment | Index_comment |
++-----------+------------+----------+--------------+-------------+-----------+-------------+----------+--------+------+------------+---------+---------------+
+| employees |          0 | PRIMARY  |            1 | emp_no      | A         |      299246 |     NULL | NULL   |      | BTREE      |         |               |
++-----------+------------+----------+--------------+-------------+-----------+-------------+----------+--------+------+------------+---------+---------------+
+1 row in set (0.00 sec)
+```
+
+index を削除した後に insert
+
+```sql
+INSERT INTO employees VALUES (300032,'2021-06-12','Taro','Test','M','2021-06-12');
+Query OK, 1 row affected (0.00 sec)
+```
+
+```sql
+mysql> SELECT sql_text, sys.format_time(timer_wait) AS time FROM performance_schema.events_statements_history WHERE sql_text IS NOT NULL;
++-----------------------------------------------------------------------------------------------------------------------------------+-----------+
+| sql_text                                                                                                                          | time      |
++-----------------------------------------------------------------------------------------------------------------------------------+-----------+
+| SELECT sql_text, sys.format_time(timer_wait) AS time FROM performance_schema.events_statements_history WHERE sql_text IS NOT NULL | 2.58 ms   |
+| INSERT INTO employees VALUES (300031,'2021-06-12','Taro','Test','M','2021-06-12')                                                 | 822.20 us |
++-----------------------------------------------------------------------------------------------------------------------------------+-----------+
+2 rows in set (0.01 sec)
+```
+
+822.20 us
+
+すごく速くなっている
+
+### index の有無での insert の速度
+
+速くなった。
+index があると insert が遅くなる原因としては、通常のテーブルに行を挿入するだけでなく、インデックスも挿入する必要があるので、インデックスがある分だけ、遅くなる。
+
+### index の有無での delete の速度
+
+insert と同じ理由で遅くなる。
+
+実際に実行する。
+index なし
+
+```sql
+DELETE FROM employees
+WHERE emp_no = 300032;
+```
+
+```sql
+mysql> SELECT sql_text, sys.format_time(timer_wait) AS time FROM performance_schema.events_statements_history WHERE sql_text IS NOT NULL;
++-----------------------------------------------------------------------------------------------------------------------------------+-----------+
+| sql_text                                                                                                                          | time      |
++-----------------------------------------------------------------------------------------------------------------------------------+-----------+
+| SELECT sql_text, sys.format_time(timer_wait) AS time FROM performance_schema.events_statements_history WHERE sql_text IS NOT NULL | 3.03 ms   |
+| DELETE employees WHERE emp_no = 300032                                                                                            | 206.90 us |
++-----------------------------------------------------------------------------------------------------------------------------------+-----------+
+2 rows in set (0.00 sec)
+```
+
+206.90 us
+
+インデックス貼ったあと
+
+```sql
+mysql> SELECT sql_text, sys.format_time(timer_wait) AS time FROM performance_schema.events_statements_history WHERE sql_text IS NOT NULL;
++-----------------------------------------------------------------------------------------------------------------------------------+---------+
+| sql_text                                                                                                                          | time    |
++-----------------------------------------------------------------------------------------------------------------------------------+---------+
+| SELECT sql_text, sys.format_time(timer_wait) AS time FROM performance_schema.events_statements_history WHERE sql_text IS NOT NULL | 2.30 ms |
+| DELETE FROM employees
+WHERE emp_no = 300030                                                                                       | 2.67 ms |
++-----------------------------------------------------------------------------------------------------------------------------------+---------+
+2 rows in set (0.00 sec)
+```
+
+2.67 ms と遅くなった。
