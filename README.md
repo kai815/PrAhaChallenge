@@ -148,3 +148,39 @@ tdd/answer.md
 
 プルリク
 https://github.com/kai815/praha-challenge-templates/pull/5
+
+## データベース
+
+### 16.の解答
+
+SQL ノック
+
+db/sql/nock.md
+
+質問の回答
+
+db/sql/answer.md
+
+クイズ
+
+db/sql/quiz.md
+
+プルリク
+https://github.com/kai815/PrAhaChallenge/pull/19
+
+### 17.の回答
+
+課題１
+
+index/answer.md
+
+実装系
+
+index/implementation.md
+
+クイズ
+
+index/quiz.md
+
+プルリク
+https://github.com/kai815/PrAhaChallenge/pull/20
