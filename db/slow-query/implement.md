@@ -166,3 +166,27 @@ SELECT COUNT(*) FROM salaries WHERE salary < 1000;
 0.1 秒より長いのしかない。
 
 ### 課題２（実装）
+
+#### 最も頻度高くスロークエリに現れるクエリ
+
+```
+mysqldumpslow -s c -t 1 /tmp/mysql-slow.log > /tmp/analitics-slowquery.log
+```
+
+count でソートして取得できる
+
+#### 実行時間が最も長いクエリ
+
+```
+mysqldumpslow -s at -t 1 /tmp/mysql-slow.log > /tmp/analitics-slowquery.log
+```
+
+クエリー時間でソートして取得できる
+
+#### ロック時間が最も長いクエリ
+
+```
+mysqldumpslow -s al -t 1 /tmp/mysql-slow.log > /tmp/analitics-slowquery.log
+```
+
+ロック時間でソートして取得できる
