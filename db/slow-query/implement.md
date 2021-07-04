@@ -210,6 +210,9 @@ Count: 2  Time=0.47s (0s)  Lock=0.00s (0s)  Rows=1.0 (2), root[root]@localhost
 色々なクエリをランダムにやった後に実行時間が最も長いスロークエリを出す
 
 ```
+root@a733384885c0:/# mysqldumpslow -s t -t 1 /tmp/mysql-slow.log > /tmp/analitics-slowquery.log
+
+Reading mysql slow query log from /tmp/mysql-slow.log
 root@a733384885c0:/# cat /tmp/analitics-slowquery.log Count: 1  Time=1.15s (1s)  Lock=0.00s (0s)  Rows=1.0 (1), root[root]@localhost
   SELECT COUNT(*) FROM salaries WHERE salary > N
 ```
