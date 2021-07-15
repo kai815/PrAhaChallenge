@@ -170,6 +170,8 @@ https://github.com/kai815/PrAhaChallenge/pull/19
 
 ### 17.の回答
 
+インデックス
+
 課題１
 
 index/answer.md
@@ -184,3 +186,66 @@ index/quiz.md
 
 プルリク
 https://github.com/kai815/PrAhaChallenge/pull/20
+
+### 18.の回答
+
+複合インデックス
+
+質問回答系
+
+db/multi-index/answer.md
+
+実装系
+
+db/multi-index/implemantation.md
+
+クイズ
+
+db/multi-index/quiz.md
+
+https://github.com/kai815/PrAhaChallenge/pull/21
+
+### 19.の回答
+
+スロークエリ
+
+実装系
+
+db/slow-query/implement.md
+
+質問回答系
+
+db/slow-query/answer.md
+
+クイズ
+
+db/slow-query/quiz.md
+
+https://github.com/kai815/PrAhaChallenge/pull/22
+
+### 20.の回答
+
+NULL
+
+実装系
+
+db/null/answer.md
+
+回答
+
+db/null/quiz.md
+
+https://github.com/kai815/PrAhaChallenge/pull/23
+
+### 21.の回答
+
+ビュー
+
+質問回答系
+
+db/view/answer.md
+
+実装系
+
+db/view/implement.md
+https://github.com/kai815/PrAhaChallenge/pull/24
