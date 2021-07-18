@@ -25,3 +25,5 @@ tags: varchar -- ("tagA,tagB,tagC"といった値が入る)
 5.tag の一覧を表示する時に、全部の Post から tags を取得、被っている tags を削除という処理になるので手間になる
 
 ## 課題２
+
+db/anti-pattern/one/answer.png
