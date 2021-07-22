@@ -1,0 +1,37 @@
+@startuml
+
+
+' avoid problems with angled crows feet
+skinparam linetype ortho
+
+entity "NovelComment" as nc {
+  id : varchar
+  --
+  text: varchar
+  novel_id:varchar<<FK>>
+}
+
+entity "MangaComment" as mc {
+  id : varchar
+  --
+  text: varchar
+  manga_id:varchar<<FK>>
+}
+
+
+entity "Novel" as n {
+  id : varchar
+  --
+  name: varchar
+}
+
+entity "Manga" as m {
+  id : varchar
+  --
+  name: varchar
+}
+
+n ||..o{ nc
+m ||..o{ mc
+
+@enduml
