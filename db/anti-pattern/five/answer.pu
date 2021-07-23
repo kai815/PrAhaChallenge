@@ -1,0 +1,44 @@
+@startuml
+
+
+' avoid problems with angled crows feet
+skinparam linetype ortho
+
+entity "NewCustomer" as nc {
+  id : varchar
+  --
+  status_id : varchar<<FK>>
+  closedAt: date -- 成約した日付が入る
+}
+
+entity "ActivityHistory" as ah {
+  id : varchar
+  --
+  activity_id : varchar<<FK>>
+  actedAt: date 行動した日付
+}
+
+entity "ActivityMaster" as am {
+  id : varchar
+  --
+  name : varchar
+}
+
+entity "StatusMaster" as sm {
+  id : varchar
+  --
+  name : varchar
+}
+
+entity "NewCustomerActiveityHistory" as ncah {
+  id: varchar
+  --
+  new_customer_id : varchar
+  activity_history_id
+}
+
+nc ||..o{ ncah
+ah ||..o{ ncah
+am ||..o{ ah
+sm ||..o{ nc
+@enduml
