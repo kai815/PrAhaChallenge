@@ -7,14 +7,14 @@ skinparam linetype ortho
 entity "NewCustomer" as nc {
   id : varchar
   --
-  status_id : varchar<<FK>>
+  status_id : varchar
   closedAt: date -- 成約した日付が入る
 }
 
-entity "ActivityHistory" as ah {
+entity "NewCustomerActiveityHistory" as ncah {
   id : varchar
   --
-  activity_id : varchar<<FK>>
+  activity_id : varchar
   actedAt: date 行動した日付
 }
 
@@ -30,15 +30,8 @@ entity "StatusMaster" as sm {
   name : varchar
 }
 
-entity "NewCustomerActiveityHistory" as ncah {
-  id: varchar
-  --
-  new_customer_id : varchar
-  activity_history_id
-}
 
 nc ||..o{ ncah
-ah ||..o{ ncah
-am ||..o{ ah
+am ||..o{ ncah
 sm ||..o{ nc
 @enduml
