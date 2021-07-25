@@ -1,0 +1,23 @@
+@startuml
+
+
+' avoid problems with angled crows feet
+skinparam linetype ortho
+
+entity "Message" as m {
+  id : varchar
+  --
+  text: varchar
+}
+
+entity "ChildrenMessage" as ch {
+  id : varchar
+  --
+  text: varchar
+  parent_message_id: varchar
+}
+
+
+m ||..o{ ch
+
+@enduml

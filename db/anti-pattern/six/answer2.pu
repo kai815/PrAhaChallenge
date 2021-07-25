@@ -1,0 +1,14 @@
+@startuml
+
+
+' avoid problems with angled crows feet
+skinparam linetype ortho
+
+entity "Student" as s {
+  id: varchar
+  --
+  name: varchar
+  status: int -- どんな数字に何のステータスが対応するかはアプリケーションのenum的なので管理する
+}
+
+@enduml

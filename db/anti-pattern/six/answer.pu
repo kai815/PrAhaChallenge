@@ -1,0 +1,23 @@
+@startuml
+
+
+' avoid problems with angled crows feet
+skinparam linetype ortho
+
+entity "Student" as s {
+  id: varchar
+  --
+  name: varchar
+  status_id: varchar<<FK>>
+}
+
+entity "StudentStatusMaster" as ssm {
+  id : varchar
+  --
+  text: varchar
+}
+
+
+ssm ||..o{ s
+
+@enduml

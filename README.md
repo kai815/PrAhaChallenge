@@ -249,3 +249,21 @@ db/view/answer.md
 
 db/view/implement.md
 https://github.com/kai815/PrAhaChallenge/pull/24
+
+### 22 の回答
+
+トランザクション
+
+回答系
+
+db/transaction/answer.md
+
+実装系
+
+db/transaction/implement.md
+
+クイズ
+
+db/transaction/quiz.md
+
+https://github.com/kai815/PrAhaChallenge/pull/25
