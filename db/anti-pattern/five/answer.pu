@@ -15,6 +15,7 @@ entity "NewCustomerActiveityHistory" as ncah {
   id : varchar
   --
   activity_id : varchar
+  new_customer_id : varchar
   actedAt: date 行動した日付
 }
 
