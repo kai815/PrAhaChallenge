@@ -26,4 +26,8 @@ https://github.com/praha-inc/praha-challenge-templates/blob/master/db/design/sus
 
 注文内容を変更する
 
-寿司やセットメニューの価格を変更する
+寿司やセットメニューの価格を変更する(名前とかも変更するかもだけど、そこも履歴テーブル作るか悩む)
+
+### 回答
+
+db/modeling/one/answer.png
