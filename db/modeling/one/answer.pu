@@ -20,6 +20,7 @@ entity "SingleMenuOrder" {
   single_menu_id:varchar
   quantity:int
   is_sabinuki:boolean
+  shari_size_id:varchar
 }
 
 entity "SetMenuOrder" {
@@ -29,6 +30,7 @@ entity "SetMenuOrder" {
   set_menu_id:varchar
   quantity:int
   is_sabinuki:boolean
+  shari_size_id:varchar
 }
 
 entity "SingleMenu" {
@@ -82,6 +84,11 @@ entity "SetMenuPriceHistory" {
   end_date:date
 }
 
+entity "shariSize" {
+  id : varchar
+  --
+  name:varchar
+}
 
 
 Order ||..o{ SingleMenuOrder
@@ -94,4 +101,6 @@ SingleMenu ||..o{ SetSingleRelation
 SetMenu ||..o{ SetSingleRelation
 SingleMenu ||..o{ SingleMenuPriceHistory
 SetMenu ||..o{ SetMenuPriceHistory
+shariSize ||..o{ SingleMenuOrder
+shariSize ||..o{ SetMenuOrder
 @enduml

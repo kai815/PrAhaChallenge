@@ -36,11 +36,18 @@ db/modeling/one/answer.png
 
 ### シャリの大小
 
-SingleMenuOrder テーブルと SetMenuOrder テーブルにシャリの大小カラムを追加する
-）
+SingleMenuOrder テーブルと SetMenuOrder テーブルにシャリの大小カラムを追加する。大小以外に今後増えることも考えられるので、マスターを用意してそこから参照できるように。
 
 ### 月毎の寿司ネタが何個か
 
 これは今の設計でもいける
 月ごとの Order から SingleMenuOrder に紐づく SingleMenu の数を集計するのと、
 SetMenuOrder から SetMenu に SetSingleRelation から SingleMenu を取れる。（JOIN 多いかも？）
+
+### 回答
+
+db/modeling/one/answer2.png
+
+## 課題 3
+
+価格の変更で注文数が上がったか下がったか確認できるようにしたい
