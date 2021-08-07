@@ -31,3 +31,16 @@ https://github.com/praha-inc/praha-challenge-templates/blob/master/db/design/sus
 ### 回答
 
 db/modeling/one/answer.png
+
+## 課題 2 仕様変更
+
+### シャリの大小
+
+SingleMenuOrder テーブルと SetMenuOrder テーブルにシャリの大小カラムを追加する
+）
+
+### 月毎の寿司ネタが何個か
+
+これは今の設計でもいける
+月ごとの Order から SingleMenuOrder に紐づく SingleMenu の数を集計するのと、
+SetMenuOrder から SetMenu に SetSingleRelation から SingleMenu を取れる。（JOIN 多いかも？）
