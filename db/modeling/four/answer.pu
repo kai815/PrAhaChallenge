@@ -1,0 +1,45 @@
+@startuml
+
+
+' avoid problems with angled crows feet
+skinparam linetype ortho
+
+entity "User" {
+  id : varchar
+  --
+  name: varchar
+}
+
+entity "Task" {
+  id : varchar
+  --
+  message: varchar
+  frequency: varchar
+  (アプリ側で文字のパターンを増やすことで頻度の増加に柔軟に対応する)
+  create_user_id:varchar
+  is_all_user_done:boolean
+  created_at:date
+}
+
+entity "TaskUser" {
+  id : varchar
+  --
+  is_done:boolean
+  user_id:varchar
+  task_id:varchar
+}
+
+entity "RemindHistory" {
+  id : varchar
+  --
+  task_id:varchar
+  user_id:varchar
+  created_at:date
+}
+
+User ||..o{ Task
+Task ||..o{ TaskUser
+User ||..o{ TaskUser
+Task ||..o{ RemindHistory
+User ||..o{ RemindHistory
+@enduml
