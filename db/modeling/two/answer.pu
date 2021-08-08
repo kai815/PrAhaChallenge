@@ -1,0 +1,63 @@
+@startuml
+
+
+' avoid problems with angled crows feet
+skinparam linetype ortho
+
+entity "WorkSpace"{
+  id : varchar
+  --
+  name : varchar
+}
+
+entity "User"{
+  id : varchar
+  --
+  name : name
+}
+
+entity "WorkSpaceMember"{
+  id : varchar
+  --
+  work_space_id:varchar
+  user_id:varchar
+}
+
+entity "Message" {
+  id : varchar
+  --
+  text: varchar
+  channel_id: varchar
+  user_id:varchar
+}
+
+entity "MessageSread" {
+  id : varchar
+  --
+  parent_id: varchar
+  child_id: varchar
+}
+
+entity "Channel" {
+  id : varchar
+  --
+  name: varchar
+  work_space_id:varchar
+}
+
+entity "ChannelMember" {
+  id : varchar
+  --
+  channel_id:varchar
+  user_id:varchar
+}
+
+WorkSpace ||..o{ WorkSpaceMember
+User ||..o{ WorkSpaceMember
+User ||..o{ ChannelMember
+WorkSpace ||..o{ Channel
+Channel ||..o{ ChannelMember
+User ||..o{ Message
+Channel ||..o{ Message
+Message ||..o{ MessageSread
+@enduml
