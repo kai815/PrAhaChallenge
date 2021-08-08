@@ -29,6 +29,7 @@ entity "Message" {
   text: varchar
   channel_id: varchar
   user_id:varchar
+  created_at: date
 }
 
 entity "MessageSread" {
