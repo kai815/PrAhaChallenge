@@ -38,6 +38,7 @@ entity "SingleMenu" {
   --
   name: varchar
   genre_id:varchar
+  is_eatin_only:boolean
 }
 
 entity "SingleMenuGenre" {
@@ -51,6 +52,7 @@ entity "SetMenu" {
   --
   name : varchar
   genre_id:varchar
+  is_eatin_only:boolean
 }
 
 entity "SetMenuGenre" {
