@@ -1,0 +1,108 @@
+@startuml
+
+
+' avoid problems with angled crows feet
+skinparam linetype ortho
+
+entity "Order" {
+  id : varchar
+  --
+  customer_name: varchar
+  tel:varchar
+  is_payed:boolean
+  order_date: date
+}
+
+entity "SingleMenuOrder" {
+  id : varchar
+  --
+  order_id: varchar
+  single_menu_id:varchar
+  quantity:int
+  is_sabinuki:boolean
+  shari_size_id:varchar
+}
+
+entity "SetMenuOrder" {
+  id : varchar
+  --
+  order_id: varchar
+  set_menu_id:varchar
+  quantity:int
+  is_sabinuki:boolean
+  shari_size_id:varchar
+}
+
+entity "SingleMenu" {
+  id : varchar
+  --
+  name: varchar
+  genre_id:varchar
+  is_eatin_only:boolean
+}
+
+entity "SingleMenuGenre" {
+  id : varchar
+  --
+  name: varchar
+}
+
+entity "SetMenu" {
+  id : varchar
+  --
+  name : varchar
+  genre_id:varchar
+  is_eatin_only:boolean
+}
+
+entity "SetMenuGenre" {
+  id : varchar
+  --
+  name: varchar
+}
+
+entity "SetSingleRelation" {
+  id : varchar
+  --
+  set_menu_id:varchar
+  single_menu_id:varchar
+}
+
+entity "SingleMenuPriceHistory" {
+  id : varchar
+  --
+  single_menu_id:varchar
+  price:int
+  start_date:date
+  end_date:date
+}
+
+entity "SetMenuPriceHistory" {
+  id : varchar
+  --
+  set_menu_id:varchar
+  price:int
+  start_date:date
+  end_date:date
+}
+
+entity "shariSize" {
+  id : varchar
+  --
+  name:varchar
+}
+
+
+Order ||..o{ SingleMenuOrder
+Order ||..o{ SetMenuOrder
+SingleMenuGenre ||..o{ SingleMenu
+SetMenuGenre ||..o{ SetMenu
+SingleMenu ||..o{ SingleMenuOrder
+SetMenu ||..o{ SetMenuOrder
+SingleMenu ||..o{ SetSingleRelation
+SetMenu ||..o{ SetSingleRelation
+SingleMenu ||..o{ SingleMenuPriceHistory
+SetMenu ||..o{ SetMenuPriceHistory
+shariSize ||..o{ SingleMenuOrder
+shariSize ||..o{ SetMenuOrder
+@enduml

@@ -1,0 +1,56 @@
+@startuml
+
+
+' avoid problems with angled crows feet
+skinparam linetype ortho
+
+
+entity "User" {
+  id : varchar
+  --
+  name:varchar
+}
+
+entity "Directory" {
+  id : varchar
+  --
+  name:varchar
+  create_user_id:varchar
+  deleated_at:date 
+  (この日付から何日か経ったらTreeも含めて物理削除するかな)
+  deleate_user:date
+}
+
+entity "DirectoryTree" {
+  id : varchar
+  --
+  parent_id:varchar
+  child_id:varchar
+  depth:int
+}
+
+entity "Document" {
+  id : varchar
+  --
+  directory_id:varchar
+  create_user_id:varchar
+  created_at:date
+}
+
+entity "DocumentHistory" {
+  id : varchar
+  --
+  contents:varchar
+  document_id:varchar
+  deleat_flg:boolean
+  (これtrueのレコードのupdated_atから何日か経ったらDocumentも含めて物理削除する)
+  update_user_id:varchar
+  updated_at:date
+}
+
+User ||..o{ Directory
+User ||..o{ Document
+Directory ||..o{ DirectoryTree
+Directory ||..o{ Document
+Document ||..o{ DocumentHistory
+@enduml
