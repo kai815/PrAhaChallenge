@@ -270,12 +270,12 @@ https://github.com/kai815/PrAhaChallenge/pull/25
 
 ### 23 の回答
 
-アンチパターン1
+アンチパターン 1
 質問系
 
 db/anti-pattern/one/answer.md
 
-UML図
+UML 図
 https://github.com/kai815/PrAhaChallenge/blob/68590966d1ced8a1bfe7425d10a4b80629927a33/db/anti-pattern/one/answer.png
 
 2
@@ -283,7 +283,7 @@ https://github.com/kai815/PrAhaChallenge/blob/68590966d1ced8a1bfe7425d10a4b80629
 
 db/anti-pattern/two/answer.md
 
-UML図
+UML 図
 https://github.com/kai815/PrAhaChallenge/blob/660cb753003126b46301d44c1ccb139b7c360dc1/db/anti-pattern/two/answer.png
 
 3
@@ -291,7 +291,7 @@ https://github.com/kai815/PrAhaChallenge/blob/660cb753003126b46301d44c1ccb139b7c
 
 db/anti-pattern/three/answer.md
 
-UML図
+UML 図
 https://github.com/kai815/PrAhaChallenge/blob/660cb753003126b46301d44c1ccb139b7c360dc1/db/anti-pattern/three/answer.png
 
 4
@@ -299,7 +299,7 @@ https://github.com/kai815/PrAhaChallenge/blob/660cb753003126b46301d44c1ccb139b7c
 
 db/anti-pattern/four/answer.md
 
-UML図
+UML 図
 https://github.com/kai815/PrAhaChallenge/blob/660cb753003126b46301d44c1ccb139b7c360dc1/db/anti-pattern/four/answer.png
 
 5
@@ -307,7 +307,7 @@ https://github.com/kai815/PrAhaChallenge/blob/660cb753003126b46301d44c1ccb139b7c
 
 db/anti-pattern/five/answer.md
 
-UML図
+UML 図
 https://github.com/kai815/PrAhaChallenge/blob/660cb753003126b46301d44c1ccb139b7c360dc1/db/anti-pattern/five/answer.png
 
 6
@@ -315,21 +315,24 @@ https://github.com/kai815/PrAhaChallenge/blob/660cb753003126b46301d44c1ccb139b7c
 
 db/anti-pattern/six/answer.md
 
-UML図
+UML 図
 
 5
 質問系
 
 db/anti-pattern/five/answer.md
 
-UML図
+UML 図
 
-1案
+1 案
 https://github.com/kai815/PrAhaChallenge/blob/660cb753003126b46301d44c1ccb139b7c360dc1/db/anti-pattern/five/answer.png
 
-2案
+2 案
 https://github.com/kai815/PrAhaChallenge/blob/660cb753003126b46301d44c1ccb139b7c360dc1/db/anti-pattern/six/answer2.png
 
-
-
 https://github.com/kai815/PrAhaChallenge/pull/26
+
+## 設計
+
+SOLID の回答
+https://github.com/kai815/PrAhaChallenge/pull/28
