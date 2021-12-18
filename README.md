@@ -1,6 +1,6 @@
 # PrAhaChallenge
 
-PrAhaChallenge の課題を行うためのレポジトリ
+[PrAhaChallenge](https://praha-challenge.com/) の課題を行うためのレポジトリ
 
 ## Web の基礎
 
