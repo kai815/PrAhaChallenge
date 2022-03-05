@@ -1,11 +1,11 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import Text from '../components/Text';
+import Text from '.';
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: 'Example/Text',
+  title: 'Example/Atoms/Text',
   component: Text,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
