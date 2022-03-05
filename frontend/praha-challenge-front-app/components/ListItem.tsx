@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 
 import { User } from '../interfaces'
+import { red } from './ListItem.css'
 
 type Props = {
   data: User
@@ -9,7 +10,7 @@ type Props = {
 
 const ListItem = ({ data }: Props) => (
   <Link href="/users/[id]" as={`/users/${data.id}`}>
-    <a>
+    <a className={red}>
       {data.id}: {data.name}
     </a>
   </Link>
