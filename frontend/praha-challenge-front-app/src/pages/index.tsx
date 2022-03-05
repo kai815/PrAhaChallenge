@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import Text from '../components/atoms/Text/index'
+import Text from '@/components/atoms/Text'
 
 const IndexPage = () => (
   <>
