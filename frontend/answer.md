@@ -12,7 +12,7 @@ Template にコンテンツを流し込んだもの。
 
 ### Template
 
-Organism や Molecul、Atom を使ってページのレイアウトを提供します。
+Organism や Molecule、Atom を使ってページのレイアウトを提供します。
 具体的なコンテンツは含まず、あくまでレイアウトに責任を持ちます。
 
 ### Organism
