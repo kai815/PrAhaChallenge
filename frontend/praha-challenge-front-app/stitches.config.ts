@@ -14,7 +14,7 @@ export const { styled, getCssText } = createStitches({
       xs:'0.75rem', /* 12px */
       sm:"0.875rem", /* 14px */
       base:"1rem", /* 16px */
-      lg:"1.125rem", /* 18px */
+      lg:"1.25rem", /* 18px */
     },
     lineHeight:{
       xs:'1rem', /* 16px */

@@ -5,14 +5,21 @@ const Text = styled('p', {
   color: '$hiContrast',
   variants: {
     size: {
-      1: {
-        fontSize: '$1',
+      xs: {
+        fontSize: '$xs',
+        lineHeight:'$xs'
       },
-      2: {
-        fontSize: '$2',
+      sm: {
+        fontSize: '$sm',
+        lineHeight: '$sm',
       },
-      3: {
-        fontSize: '$3',
+      base: {
+        fontSize: '$base',
+        lineHeight: '$base',
+      },
+      lg: {
+        fontSize: '$lg',
+        lineHeight: '$lg',
       },
     },
   },

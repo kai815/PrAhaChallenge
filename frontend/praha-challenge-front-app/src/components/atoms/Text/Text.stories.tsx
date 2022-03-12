@@ -17,5 +17,5 @@ export default {
 const Template: ComponentStory<typeof Text> = ((args) => {return (<Text size={args.size}>テスト</Text>)});
 export const Default = Template.bind({});
 Default.args = {
-  size:"2"
+  size:"base"
 }
