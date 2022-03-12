@@ -9,7 +9,7 @@ const IndexPage = () => (
         <a>About</a>
       </Link>
     </p>
-    <Text as="h1" size="3">
+    <Text as="h1" size="xl2">
       Hello, from Stitches.
     </Text>
   </>

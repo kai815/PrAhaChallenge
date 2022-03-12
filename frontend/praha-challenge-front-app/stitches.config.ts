@@ -9,7 +9,7 @@ export const { styled, getCssText } = createStitches({
       hiContrast: 'hsl(206,10%,5%)',
       loContrast: 'white',
     },
-    fontSize: {
+    fontSizes: {
       // https://tailwindcss.com/docs/font-sizeに倣う
       xs:'0.75rem', /* 12px */
       sm:"0.875rem", /* 14px */
@@ -18,7 +18,7 @@ export const { styled, getCssText } = createStitches({
       xl: "1.25rem", /* 20px */
       xl2: "1.5rem", /* 24px */
     },
-    lineHeight:{
+    lineHeights:{
       xs:'1rem', /* 16px */
       sm:"1.25rem", /* 20px */
       base:"1.5rem", /* 24px */
