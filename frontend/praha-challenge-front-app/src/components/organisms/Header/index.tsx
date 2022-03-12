@@ -1,4 +1,5 @@
 import { styled } from '../../../../stitches.config';
+import { css } from '@stitches/core';
 import Link from "next/link";
 import Text from '@/components/atoms/Text'
 
@@ -31,6 +32,14 @@ const Right = styled('div',{
   flexDirection: "row",
 });
 
+const LinkText = css({
+  color: '$grey800',
+  arginLeft: "1rem",
+  marginRight: "1rem",
+  marginTop: "0px",
+  marginBottom: "0px",
+})
+
 const Header = ()=>{
   return(
     <Wrapper>
@@ -44,7 +53,29 @@ const Header = ()=>{
             </a>
           </Link>
         </Left>
-        <Right><Text size="xl2">テスト</Text></Right>
+        <Right>
+          <Link href="#" prefetch={false}>
+            <a>
+            <Text className={LinkText()} size="base">
+              Home
+            </Text>
+            </a>
+          </Link>
+          <Link href="#" prefetch={false}>
+            <a>
+            <Text className={LinkText()} size="base">
+              Blog
+            </Text>
+            </a>
+          </Link>
+          <Link href="#" prefetch={false}>
+            <a>
+            <Text className={LinkText()} size="base">
+              About us
+            </Text>
+            </a>
+          </Link>
+        </Right>
       </Container>
     </Wrapper>
   )

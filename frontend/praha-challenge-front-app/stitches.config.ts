@@ -8,6 +8,7 @@ export const { styled, getCssText } = createStitches({
     colors: {
       hiContrast: 'hsl(206,10%,5%)',
       loContrast: 'white',
+      grey800:"rgba(31, 41, 55,1)"
     },
     fontSizes: {
       // https://tailwindcss.com/docs/font-sizeに倣う

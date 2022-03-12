@@ -9,6 +9,7 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
+    "@stitches/core": "^1.2.7",
     "@stitches/react": "^1.2.7",
     "next": "latest",
     "react": "^17.0.2",
