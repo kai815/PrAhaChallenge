@@ -21,6 +21,14 @@ const Text = styled('p', {
         fontSize: '$lg',
         lineHeight: '$lg',
       },
+      xl: {
+        fontSize: '$xl',
+        lineHeight: '$xl',
+      },
+      xl2: {
+        fontSize: '$xl2',
+        lineHeight: '$xl2',
+      },
     },
   },
 });

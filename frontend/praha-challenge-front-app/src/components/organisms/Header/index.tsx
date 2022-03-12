@@ -38,13 +38,13 @@ const Header = ()=>{
         <Left>
           <Link href="#" prefetch={false}>
             <a>
-              <Text size="lg" as="h1">
+              <Text size="xl2" as="h1">
                 Brand
               </Text>
             </a>
           </Link>
         </Left>
-        <Right>テスト</Right>
+        <Right><Text size="xl2">テスト</Text></Right>
       </Container>
     </Wrapper>
   )
