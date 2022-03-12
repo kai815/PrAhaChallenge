@@ -26,6 +26,17 @@ export const { styled, getCssText } = createStitches({
       lg:"1.75rem", /* 28px */
       xl:"1.75rem", /* 28px */
       xl2: "2rem", /* 32px */
+    },
+    fontWeights:{
+      //https://tailwindcss.com/docs/font-weight
+      thin:100,
+      extralight: 200,
+      light:300,
+      normal:400,
+      medium: 500,
+      semibold: 600,
+      bold: 700,
+      extrabold: 800,
     } 
   },
 });

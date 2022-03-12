@@ -30,6 +30,32 @@ const Text = styled('p', {
         lineHeight: '$xl2',
       },
     },
+    weight: {
+      thin:{
+        fontWeight: '$thin'
+      },
+      extralight:{
+        fontWeight: '$extralight'
+      },
+      light:{
+        fontWeight: '$light'
+      },
+      normal:{
+        fontWeight: '$normal'
+      },
+      medium:{
+        fontWeight: '$medium'
+      },
+      semibold:{
+        fontWeight: '$semibold'
+      },
+      bold:{
+        fontWeight: '$bold'
+      },
+      extrabold:{
+        fontWeight: '$extrabold'
+      },
+    }
   },
 });
 
