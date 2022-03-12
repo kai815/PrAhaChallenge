@@ -11,5 +11,5 @@ export default {
 } as ComponentMeta<typeof Header>;
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template: ComponentStory<typeof Header> = (() => {return (<Header >テスト</Header>)});
+const Template: ComponentStory<typeof Header> = (() => {return (<Header />)});
 export const Default = Template.bind({});

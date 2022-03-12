@@ -1,10 +1,12 @@
 import { styled } from '../../../../stitches.config';
+import Link from "next/link";
+import Text from '@/components/atoms/Text'
 
 const Wrapper = styled('nav', {
   boxShadow: '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)',
   paddingLeft: '1.5rem',
   paddingRight: '1.5rem',
-  addingTop: '1rem',
+  paddingTop: '1rem',
   paddingBottom: '1rem'
 });
 
@@ -33,7 +35,15 @@ const Header = ()=>{
   return(
     <Wrapper>
       <Container>
-        <Left>テスト</Left>
+        <Left>
+          <Link href="#" prefetch={false}>
+            <a>
+              <Text size="lg" as="h1">
+                Brand
+              </Text>
+            </a>
+          </Link>
+        </Left>
         <Right>テスト</Right>
       </Container>
     </Wrapper>
