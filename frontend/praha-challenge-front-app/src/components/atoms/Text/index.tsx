@@ -7,6 +7,9 @@ const Text = styled('p', {
       grey100: {
         color:'$grey100'
       },
+      grey300: {
+        color:'$grey300'
+      },
       grey500: {
         color:'$grey500'
       },
