@@ -36,9 +36,15 @@ const LayoutDateTag = styled('div',{
 
 const ContentLayout = styled('div',{
   marginTop:"0.5rem"
-}
-)
+})
 
+const ReadMoreLink = styled('a',{
+  color:"rgba(59, 130, 246, 1)",
+  textDecoration: "inherit",
+  "&:hover":{
+    textDecoration: "underline",
+  }
+})
 
 const PostCard = ({
   date,
@@ -63,6 +69,7 @@ const PostCard = ({
           {description}
         </Text>
       </ContentLayout>
+      <ReadMoreLink href="#">ReadMore</ReadMoreLink>
     </CardOutLine>
   )
 }
