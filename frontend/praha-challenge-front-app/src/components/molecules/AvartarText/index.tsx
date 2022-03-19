@@ -1,7 +1,7 @@
 import { styled } from '../../../../stitches.config'
 import { css } from '@stitches/core';
 import Text from '@/components/atoms/Text'
-import Avatar,{ PropsType as AvatarType } from '@/components/atoms/Avator'
+import Avatar,{ PropsType as AvatarType } from '@/components/atoms/Avatar'
 
 type PropsType={
   avatar:AvatarType,
