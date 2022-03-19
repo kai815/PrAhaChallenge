@@ -10,6 +10,8 @@ export default {
   argTypes: {
     date: {String},
     tag:{Object},
+    description:{String},
+    user: {Object}
   },
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
 } as ComponentMeta<typeof PostCard>;
@@ -24,5 +26,12 @@ Default.args = {
     href:"#"
   },
   title:"Build Your New Idea with Laravel Freamwork.",
-  description:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora expedita dicta totam aspernatur doloremque. Excepturi iste iusto eos enim reprehenderit nisi, accusamus delectus nihil quis facere in modi ratione libero!"
+  description:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora expedita dicta totam aspernatur doloremque. Excepturi iste iusto eos enim reprehenderit nisi, accusamus delectus nihil quis facere in modi ratione libero!",
+  user:{
+    avatar:{
+      src:"https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=731&q=80",
+      alt: "avatar"
+    },
+    name:"Alex John"
+  }
 }
