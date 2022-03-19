@@ -19,13 +19,30 @@ const PageNationItem = styled('a',{
   marginRight: '0.25rem',
   fontWeight: '$medium',
   color:'$grey700',
-  borderRadius: '0.375rem'
+  borderRadius: '0.375rem',
+  '&:hover':{ 
+    //https://tailwindcss.jp/docs/background-colorのblue500
+    backgroundColor: '#4299e1',
+    color: '$white',
+    cursor:'pointer'
+  },
+  variants:{
+    disabled:{
+      disabled:{
+        '&:hover':{
+          cursor: 'not-allowed',
+          backgroundColor:'$white',
+          color:'$grey700',
+        }
+      }
+    }
+  }
 })
 
 const PageNation = ({pageCount}:PropsType)=>{
   return(
     <PageNationLayout>
-      <PageNationItem>
+      <PageNationItem disabled="disabled">
         previous
       </PageNationItem>
         {

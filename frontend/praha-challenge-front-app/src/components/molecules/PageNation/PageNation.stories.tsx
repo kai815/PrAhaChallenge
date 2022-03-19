@@ -16,7 +16,7 @@ export default {
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
 const Template: ComponentStory<typeof PageNation> = ((args) => {
   return (
-    <div style={{background:"#6b7280",padding:'20px'}}>
+    <div style={{background:"#9ca3af",padding:'20px'}}>
       <PageNation {...args} />
     </div>
   )
