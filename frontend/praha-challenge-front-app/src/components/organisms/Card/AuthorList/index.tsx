@@ -36,6 +36,10 @@ const ListItem = styled('li',{
   alignItems: "center",
 })
 
+const TextMargin = styled('div',{
+  marginLeft: "0.25rem",
+})
+
 const AuthorListCard = ({authors}:PropsType)=>{
   console.log("authors",authors)
   return(
@@ -45,13 +49,15 @@ const AuthorListCard = ({authors}:PropsType)=>{
           authors?.map((author)=>(
             <ListItem key={author.key}>
               <AvatarText avatar={author.avatar} text={author.name}/>
-              <Text
-                as="span"
-                size="sm"
-                weight="light"
-                color="grey700">
-                  Created {author.createdPostCount} Posts
-              </Text>
+              <TextMargin>
+                <Text
+                  as="span"
+                  size="sm"
+                  weight="light"
+                  color="grey700">
+                    Created {author.createdPostCount} Posts
+                </Text>
+              </TextMargin>
             </ListItem>)
           )
         }
