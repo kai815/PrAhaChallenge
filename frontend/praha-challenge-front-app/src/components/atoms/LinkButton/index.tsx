@@ -6,17 +6,24 @@ type PropsType={
 }
 
 const BaseLinkButton = styled('a', {
-  backgroundColor:"$grey100",
+  backgroundColor:"$grey600",
   padding:"0.25rem 0.5rem",
   borderRadius:"0.25rem",
   color: 'inherit',
-    textDecoration:'none'
+  textDecoration:'none'
 });
+
+const LinkButtonText = styled('span',{
+  fontWeight: '$bold',
+  color: '$grey100'
+})
 
 const LinkButton =({text,href}:PropsType)=>{
   return(
     <BaseLinkButton href={href}>
-      {text}
+      <LinkButtonText>
+        {text}
+      </LinkButtonText>
     </BaseLinkButton>
   )
 }

@@ -40,6 +40,6 @@ export const { styled, getCssText, globalCss } = createStitches({
       semibold: 600,
       bold: 700,
       extrabold: 800,
-    } 
+    }
   },
 });
