@@ -9,6 +9,8 @@ const BaseLinkButton = styled('a', {
   backgroundColor:"$grey100",
   padding:"0.25rem 0.5rem",
   borderRadius:"0.25rem",
+  color: 'inherit',
+    textDecoration:'none'
 });
 
 const LinkButton =({text,href}:PropsType)=>{

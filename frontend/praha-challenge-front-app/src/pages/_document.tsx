@@ -4,10 +4,6 @@ import { getCssText,globalCss } from '../../stitches.config';
 
 const globalStyles = globalCss({
   '*': { margin: 0, padding: 0 },
-  a:{
-    color: 'inherit',
-    textDecoration:'none'
-  }
 });
 
 

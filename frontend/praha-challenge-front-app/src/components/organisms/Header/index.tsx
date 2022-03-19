@@ -40,13 +40,18 @@ const LinkText = css({
   marginBottom: "0px",
 })
 
+const AtagReset = css({
+  color: 'inherit',
+  textDecoration:'none'
+})
+
 const Header = ()=>{
   return(
     <Wrapper>
       <Container>
         <Left>
           <Link href="#" prefetch={false}>
-            <a>
+            <a className={AtagReset()}>
               <Text size="xl2" as="h1">
                 Brand
               </Text>
@@ -55,21 +60,21 @@ const Header = ()=>{
         </Left>
         <Right>
           <Link href="#" prefetch={false}>
-            <a>
+            <a className={AtagReset()}>
             <Text className={LinkText()} size="base">
               Home
             </Text>
             </a>
           </Link>
           <Link href="#" prefetch={false}>
-            <a>
+            <a className={AtagReset()}>
             <Text className={LinkText()} size="base">
               Blog
             </Text>
             </a>
           </Link>
           <Link href="#" prefetch={false}>
-            <a>
+            <a className={AtagReset()}>
             <Text className={LinkText()} size="base">
               About us
             </Text>
