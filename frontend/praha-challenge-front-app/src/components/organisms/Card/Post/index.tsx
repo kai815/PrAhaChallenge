@@ -2,7 +2,7 @@ import { styled } from '../../../../../stitches.config'
 import LinkButton from '@/components/atoms/LinkButton'
 import Text from '@/components/atoms/Text'
 import AvatarText from '@/components/molecules/AvatarText'
-import {PropsType as AvartarType} from '@/components/atoms/Avatar'
+import {AvatarType} from '@/components/atoms/Avatar'
 
 type PropsType = {
   date: string,
@@ -14,7 +14,7 @@ type PropsType = {
   },
   user:{
     name:string,
-    avatar:AvartarType
+    avatar:AvatarType
   }
 }
 
@@ -24,7 +24,7 @@ const CardOutLine = styled('div',{
   paddingRight: "2.5rem",
   paddingTop: "1.5rem",
   paddingBottom: "1.5rem",
-  boxShadow: "0 0 #0000, 0 0 #0000, 0 0 #0000, 0 0 #0000, 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+  boxShadow: "$md",
   maxWidth: "56rem",
 })
 const LayoutTop = styled('div',{
