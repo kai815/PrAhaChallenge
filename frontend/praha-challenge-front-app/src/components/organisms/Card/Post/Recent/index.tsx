@@ -18,13 +18,29 @@ type PropsType = {
 const RecentPostCardOutLine = styled('div',{
   display: "flex",
   flexDirection: "column",
-  paddingLeft: '1.5rem',
-  paddingRight: '1.5rem',
-  paddingTop: '1rem',
-  paddingBottom: '1rem',
+  paddingLeft: '2rem',
+  paddingRight: '2rem',
+  paddingTop: '1.5rem',
+  paddingBottom: '1.5rem',
   maxWidth: '24rem',
   borderRadius: '0.5rem',
   boxShadow: "$md",
+})
+const TopLayout = styled('div',{
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+})
+
+const TitleLayout = styled('div',{
+  marginTop:'1rem'
+})
+
+const BottomLayout = styled('div',{
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "space-between",
+  marginTop:'1rem'
 })
 
 const RecentPostCard = ({
@@ -35,14 +51,20 @@ const RecentPostCard = ({
 }: PropsType)=>{
   return (
     <RecentPostCardOutLine>
-      <LinkButton text={category} href={`#${category}`}/>
-      <Text size="lg" weight="medium" color="grey700">
-        {title}
-      </Text>
-      <AvatarText avatar={author.avatar} text={author.name} />
-      <Text as="span" size="sm" weight="light" color="grey600">
-        {date}
-      </Text>
+      <TopLayout>
+        <LinkButton text={category} href={`#${category}`}/>
+      </TopLayout>
+      <TitleLayout>
+        <Text as="span" size="lg" weight="medium" color="grey700">
+          {title}
+        </Text>
+      </TitleLayout>
+      <BottomLayout>
+        <AvatarText avatar={author.avatar} text={author.name} />
+        <Text as="span" size="sm" weight="light" color="grey600">
+          {date}
+        </Text>
+      </BottomLayout>
     </RecentPostCardOutLine>
   )
 }
