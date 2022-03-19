@@ -2,8 +2,21 @@ import { styled } from '../../../../stitches.config';
 
 const Text = styled('p', {
   fontFamily: '$system',
-  color: '$hiContrast',
   variants: {
+    color:{
+      grey100: {
+        color:'$grey100'
+      },
+      grey500: {
+        color:'$grey500'
+      },
+      grey600: {
+        color:'$grey600'
+      },
+      grey800: {
+        color:'$grey800'
+      },
+    },
     size: {
       xs: {
         fontSize: '$xs',

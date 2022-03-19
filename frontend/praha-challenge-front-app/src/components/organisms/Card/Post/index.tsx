@@ -1,5 +1,6 @@
-import { styled } from '../../../../../stitches.config';
+import { styled } from '../../../../../stitches.config'
 import LinkButton from '@/components/atoms/LinkButton'
+import Text from '@/components/atoms/Text'
 
 type PropsType = {
   date: string,
@@ -28,10 +29,6 @@ const CardOutLine = styled('div',{
   maxWidth: "56rem",
 })
 
-const DateText = styled('span',{
-  fontWeight:"$light",
-  color:"$grey600"
-})
 
 const PostCard = ({
   date,
@@ -42,7 +39,7 @@ const PostCard = ({
 }:PropsType)=>{
   return (
     <CardOutLine>
-      <DateText>{date}</DateText>
+      <Text as="span" color="grey600" size="base" weight="light">{date}</Text>
       <LinkButton text={tag.text} href={tag.href}/>
     </CardOutLine>
   )
