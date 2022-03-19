@@ -59,6 +59,9 @@ const PostCard = ({
         <Text as="h2" color="grey700" size="xl2" weight="bold">
           {title}
         </Text>
+        <Text as="p" color="grey600" size="base" weight="normal">
+          {description}
+        </Text>
       </ContentLayout>
     </CardOutLine>
   )
