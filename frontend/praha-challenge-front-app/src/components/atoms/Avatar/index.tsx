@@ -1,10 +1,13 @@
 import { styled } from '../../../../stitches.config';
 
-export type PropsType={
+export type AvatarType = {
   src:string,
   alt:string,
-  className?:string
 }
+
+type PropsType = {
+  className?:string
+} & AvatarType
 
 const BaseImage = styled('img',{
   width: "2.5rem",
