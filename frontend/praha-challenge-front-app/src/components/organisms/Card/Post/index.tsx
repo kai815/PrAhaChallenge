@@ -65,7 +65,7 @@ const PostCard = ({
         <Text as="span" color="grey600" size="base" weight="light">
           {date}
         </Text>
-        <LinkButton text={tag.text} href={tag.href}/>
+        <LinkButton text={tag.text} href={tag.href} fontWeight="bold" />
       </LayoutTop>
       <ContentLayout>
         <Text as="h2" color="grey700" size="xl2" weight="bold">

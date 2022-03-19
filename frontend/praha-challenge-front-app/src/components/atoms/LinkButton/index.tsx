@@ -3,6 +3,8 @@ import { styled } from '../../../../stitches.config';
 type PropsType={
   text:string,
   href:string,
+  textColor? : 'grey' | 'green',
+  fontWeight? : 'normal' | 'bold'
 }
 
 const BaseLinkButton = styled('a', {
@@ -14,14 +16,36 @@ const BaseLinkButton = styled('a', {
 });
 
 const LinkButtonText = styled('span',{
-  fontWeight: '$bold',
-  color: '$grey100'
+  variants: {
+    color:{
+      green: {
+        color:'$green100'
+      },
+      grey:{
+        color:'$grey100'
+      }
+    },
+    fontWeight: {
+      bold:{
+        fontWeight:'$bold'
+      },
+      normal:{
+        fontWeight: '$normal'
+      }
+
+    },
+  }
 })
 
-const LinkButton =({text,href}:PropsType)=>{
+const LinkButton =({
+  text,
+  href,
+  textColor = "grey",
+  fontWeight = "normal"
+}:PropsType)=>{
   return(
     <BaseLinkButton href={href}>
-      <LinkButtonText>
+      <LinkButtonText color={textColor} fontWeight={fontWeight}>
         {text}
       </LinkButtonText>
     </BaseLinkButton>

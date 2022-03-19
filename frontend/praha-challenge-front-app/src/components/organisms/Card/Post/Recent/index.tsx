@@ -52,7 +52,7 @@ const RecentPostCard = ({
   return (
     <RecentPostCardOutLine>
       <TopLayout>
-        <LinkButton text={category} href={`#${category}`}/>
+        <LinkButton text={category} href={`#${category}`} textColor="green"/>
       </TopLayout>
       <TitleLayout>
         <Text as="span" size="lg" weight="medium" color="grey700">

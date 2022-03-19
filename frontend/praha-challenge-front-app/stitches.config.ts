@@ -13,7 +13,8 @@ export const { styled, getCssText, globalCss } = createStitches({
       grey500:"rgba(107, 114, 128, 1)",
       grey600:"rgba(75, 85, 99, 1)",
       grey700:"rgba(55, 65, 81, 1)",
-      grey800:"rgba(31, 41, 55, 1)"
+      grey800:"rgba(31, 41, 55, 1)",
+      green100:"rgba(209, 250, 229, 1)"
     },
     fontSizes: {
       // https://tailwindcss.com/docs/font-sizeに倣う
