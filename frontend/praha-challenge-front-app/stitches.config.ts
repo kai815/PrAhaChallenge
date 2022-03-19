@@ -6,8 +6,7 @@ export const { styled, getCssText, globalCss } = createStitches({
       system: 'system-ui',
     },
     colors: {
-      hiContrast: 'hsl(206,10%,5%)',
-      loContrast: 'white',
+      white:'rgba(255, 255, 255, 1)',
       grey100:"rgba(243, 244, 246, 1)",
       grey300:"rgba(209, 213, 219, 1)",
       grey500:"rgba(107, 114, 128, 1)",
