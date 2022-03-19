@@ -1,7 +1,7 @@
 import { styled } from '../../../../../stitches.config'
 import LinkButton from '@/components/atoms/LinkButton'
 import Text from '@/components/atoms/Text'
-import AvatarText from '@/components/molecules/AvartarText'
+import AvatarText from '@/components/molecules/AvatarText'
 import {PropsType as AvartarType} from '@/components/atoms/Avatar'
 
 type PropsType = {
