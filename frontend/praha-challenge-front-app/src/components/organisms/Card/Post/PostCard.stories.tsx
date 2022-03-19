@@ -22,5 +22,6 @@ Default.args = {
   tag:{
     text:"Laravel",
     href:"#"
-  }
+  },
+  title:"Build Your New Idea with Laravel Freamwork."
 }

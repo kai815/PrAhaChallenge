@@ -4,7 +4,7 @@ import Text from '@/components/atoms/Text'
 
 type PropsType = {
   date: string,
-  title?: string,
+  title: string,
   description?: string,
   tag:{
     text:string,
@@ -34,6 +34,11 @@ const LayoutDateTag = styled('div',{
   alignItems: "center",
 })
 
+const ContentLayout = styled('div',{
+  marginTop:"0.5rem"
+}
+)
+
 
 const PostCard = ({
   date,
@@ -45,9 +50,16 @@ const PostCard = ({
   return (
     <CardOutLine>
       <LayoutDateTag>
-        <Text as="span" color="grey600" size="base" weight="light">{date}</Text>
+        <Text as="span" color="grey600" size="base" weight="light">
+          {date}
+        </Text>
         <LinkButton text={tag.text} href={tag.href}/>
       </LayoutDateTag>
+      <ContentLayout>
+        <Text as="h2" color="grey700" size="xl2" weight="bold">
+          {title}
+        </Text>
+      </ContentLayout>
     </CardOutLine>
   )
 }
