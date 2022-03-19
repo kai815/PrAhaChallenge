@@ -1,8 +1,9 @@
 import { styled } from '../../../../stitches.config';
 
-type PropsType={
+export type PropsType={
   src:string,
-  alt:string
+  alt:string,
+  className?:string
 }
 
 const BaseImage = styled('img',{
@@ -13,9 +14,9 @@ const BaseImage = styled('img',{
 })
 
 
-const Avatar =({src,alt}:PropsType)=>{
+const Avatar =({src,alt , className = ''}:PropsType)=>{
   return(
-    <BaseImage src={src} alt={alt}/>
+    <BaseImage src={src} alt={alt} className={className}/>
   )
 }
 export default Avatar;
