@@ -7,7 +7,6 @@ import Avatar from '.';
 export default {
   title: 'Atoms/Avatar',
   component: Avatar,
-  
   argTypes: {
     src: {String},
     alt: {String}
