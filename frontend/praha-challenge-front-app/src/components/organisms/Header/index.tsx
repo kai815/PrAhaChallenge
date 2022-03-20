@@ -4,6 +4,7 @@ import Link from "next/link";
 import Text from '@/components/atoms/Text'
 
 const Wrapper = styled('nav', {
+  backgroundColor: '$white',
   boxShadow: '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)',
   paddingLeft: '1.5rem',
   paddingRight: '1.5rem',
