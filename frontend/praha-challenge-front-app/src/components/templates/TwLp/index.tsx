@@ -26,7 +26,7 @@ const LayoutInner = styled('div',{
 
 const Container = styled('div',{
   display:'flex',
-  justifyContent: 'spage-between',
+  justifyContent: 'space-between',
   paddingRight:'auto',
   paddingLeft:'auto',
   maxWidth: '1536px'
