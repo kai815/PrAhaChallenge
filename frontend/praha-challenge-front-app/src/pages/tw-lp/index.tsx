@@ -1,5 +1,5 @@
 import TwLpTemplate from "@/components/templates/TwLp"
-import {TwLpData} from "@/data/TwLpData"
+import {TwLpData} from "@/sampleData/TwLpData"
 
 const TwLpPage = () => (
   <TwLpTemplate {...TwLpData}/>
