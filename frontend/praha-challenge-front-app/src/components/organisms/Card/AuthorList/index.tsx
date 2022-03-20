@@ -29,12 +29,13 @@ const AuthorListCardOutLine = styled('div',{
 
 const List = styled('ul',{
   marginLeft: "-1rem",
-  marginRight: "-1rem"
+  marginRight: "-1rem",
 })
 
 const ListItem = styled('li',{
   display: "flex",
   alignItems: "center",
+  marginTop:'1.5rem'
 })
 
 const TextMargin = styled('div',{
