@@ -1,7 +1,6 @@
 import { styled } from '../../../../stitches.config'
 import Header from '@/components/organisms/Header'
-import PostCard from '@/components/organisms/Card/Post'
-import PostCardStories from '@/components/organisms/Card/Post/PostCard.stories'
+import PostCard,{PropsType as PostCardPropsType} from '@/components/organisms/Card/Post'
 import AuthorListCard from '@/components/organisms/Card/AuthorList'
 import CategoryListCard from '@/components/organisms/Card/CategoryList'
 import PageNation from '@/components/molecules/PageNation'
@@ -10,6 +9,7 @@ import Text from '@/components/atoms/Text'
 import Select,{PropsType as SelectPropsType} from '@/components/atoms/Select'
 
 type TwLpTemplateType = {
+  posts:PostCardPropsType[]
 } & SelectPropsType
 
 const Layout = styled('div',{
@@ -44,7 +44,16 @@ const MainContentTitle = styled('div',{
 const SelectWidth = styled('div',{
 })
 
-const TwLpTemplate = ({options}:TwLpTemplateType)=>{
+const PostLayout = styled('div',{
+  marginTop:'1.5rem',
+  marginLeft: 'auto',
+  marginRight: 'auto',
+})
+
+const TwLpTemplate = ({
+  options,
+  posts
+}:TwLpTemplateType)=>{
   return (
     <Layout>
       <Header/>
@@ -59,6 +68,13 @@ const TwLpTemplate = ({options}:TwLpTemplateType)=>{
               <Select options={options}/>
             </SelectWidth>
           </MainContentTitle>
+          {
+            posts.map((post)=>(
+              <PostLayout key={post.key}>
+                <PostCard {...post}/>
+              </PostLayout>
+            ))
+          }
         </MainContent>
         </Container>
       </LayoutInner>

@@ -8,7 +8,8 @@ export default {
   title: 'templates/TwLpTemplate',
   component: TwLpTemplate,
   argTypes: {
-    options: {Array}
+    options: {Array},
+    posts:{Array}
   },
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
 } as ComponentMeta<typeof TwLpTemplate>;
@@ -28,5 +29,92 @@ Default.args = {
       value: "Lastweek",
       key:'2'
     },
+  ],
+  posts:[
+    {
+      date:'Jun 1, 2020',
+      tag:{
+        text:"Laravel",
+        href:"#"
+      },
+      title:"Build Your New Idea with Laravel Freamwork.",
+      description:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora expedita dicta totam aspernatur doloremque. Excepturi iste iusto eos enim reprehenderit nisi, accusamus delectus nihil quis facere in modi ratione libero!",
+      user:{
+        avatar:{
+          src:"https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=731&q=80",
+          alt: "avatar"
+        },
+        name:"Alex John"
+      },
+      key:1
+    },
+    {
+      date:'Jun 2, 2020',
+      tag:{
+        text:"Larave2",
+        href:"#"
+      },
+      title:"Build Your New Idea with Laravel Freamwork.2",
+      description:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora expedita dicta totam aspernatur doloremque. Excepturi iste iusto eos enim reprehenderit nisi, accusamus delectus nihil quis facere in modi ratione libero!",
+      user:{
+        avatar:{
+          src:"https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=731&q=80",
+          alt: "avatar2"
+        },
+        name:"Alex John2"
+      },
+      key:2
+    },
+    {
+      date:'Jun 3, 2020',
+      tag:{
+        text:"Larave3",
+        href:"#"
+      },
+      title:"Build Your New Idea with Laravel Freamwork.3",
+      description:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora expedita dicta totam aspernatur doloremque. Excepturi iste iusto eos enim reprehenderit nisi, accusamus delectus nihil quis facere in modi ratione libero!",
+      user:{
+        avatar:{
+          src:"https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=731&q=80",
+          alt: "avatar3"
+        },
+        name:"Alex John3"
+      },
+      key:3
+    },
+    {
+      date:'Jun 4, 2020',
+      tag:{
+        text:"Larave4",
+        href:"#"
+      },
+      title:"Build Your New Idea with Laravel Freamwork.4",
+      description:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora expedita dicta totam aspernatur doloremque. Excepturi iste iusto eos enim reprehenderit nisi, accusamus delectus nihil quis facere in modi ratione libero!",
+      user:{
+        avatar:{
+          src:"https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=731&q=80",
+          alt: "avatar4"
+        },
+        name:"Alex John4"
+      },
+      key:4
+    },
+    {
+      date:'Jun 5, 2020',
+      tag:{
+        text:"Larave5",
+        href:"#"
+      },
+      title:"Build Your New Idea with Laravel Freamwork.5",
+      description:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora expedita dicta totam aspernatur doloremque. Excepturi iste iusto eos enim reprehenderit nisi, accusamus delectus nihil quis facere in modi ratione libero!",
+      user:{
+        avatar:{
+          src:"https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=731&q=80",
+          alt: "avatar5"
+        },
+        name:"Alex John5"
+      },
+      key:5
+    }
   ]
 }

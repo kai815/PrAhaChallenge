@@ -4,7 +4,7 @@ import Text from '@/components/atoms/Text'
 import AvatarText from '@/components/molecules/AvatarText'
 import {AvatarType} from '@/components/atoms/Avatar'
 
-type PropsType = {
+export type PropsType = {
   date: string,
   title: string,
   description?: string,
@@ -15,10 +15,12 @@ type PropsType = {
   user:{
     name:string,
     avatar:AvatarType
-  }
+  },
+  key:number
 }
 
 const CardOutLine = styled('div',{
+  backgroundColor:"$white",
   borderRadius: "0.5rem",
   paddingLeft: "2.5rem",
   paddingRight: "2.5rem",
