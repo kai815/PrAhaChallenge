@@ -30,8 +30,8 @@ const LayoutInner = styled('div',{
 const Container = styled('div',{
   display:'flex',
   justifyContent: 'space-between',
-  paddingRight:'auto',
-  paddingLeft:'auto',
+  marginRight:'auto',
+  marginLeft:'auto',
   maxWidth: '1536px'
 })
 const MainContent = styled('div',{
