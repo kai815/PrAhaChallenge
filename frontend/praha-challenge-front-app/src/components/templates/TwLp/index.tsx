@@ -1,15 +1,16 @@
 import { styled } from '../../../../stitches.config'
 import Header from '@/components/organisms/Header'
 import PostCard,{PropsType as PostCardPropsType} from '@/components/organisms/Card/Post'
+import RecentPostCard,{PropsType as RecentPostCardPropsType} from '@/components/organisms/Card/Post/Recent'
 import AuthorListCard,{PropsType as AuthorListCardPropsType} from '@/components/organisms/Card/AuthorList'
 import CategoryListCard,{PropsType as CategoryListCardPropsType} from '@/components/organisms/Card/CategoryList'
 import PageNation from '@/components/molecules/PageNation'
-import AvatarText from '@/components/molecules/AvatarText'
 import Text from '@/components/atoms/Text'
 import Select,{PropsType as SelectPropsType} from '@/components/atoms/Select'
 
 type TwLpTemplateType = {
   posts:PostCardPropsType[]
+  recentPost:RecentPostCardPropsType
 } & SelectPropsType
   & AuthorListCardPropsType
   & CategoryListCardPropsType
@@ -77,12 +78,18 @@ const CategoryContentLayout = styled('div',{
   marginTop: '2.5rem',
 })
 
+const RecentPostLayout = styled('div',{
+  paddingLeft:'2rem',
+  paddingRight: '2rem',
+  marginTop: '2.5rem',
+})
 
 const TwLpTemplate = ({
   options,
   posts,
   authors,
-  categories
+  categories,
+  recentPost
 }:TwLpTemplateType)=>{
   return (
     <Layout>
@@ -122,6 +129,12 @@ const TwLpTemplate = ({
             </Text>
             <CategoryListCard categories={categories}/>
           </CategoryContentLayout>
+          <RecentPostLayout>
+            <Text as="h1" size="xl" weight="bold" color="grey700">
+              Recent Post
+            </Text>
+            <RecentPostCard {...recentPost} />
+          </RecentPostLayout>
         </SubConentLayout>
         </Container>
       </LayoutInner>

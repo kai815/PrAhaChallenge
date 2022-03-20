@@ -5,7 +5,7 @@ import AvatarText from '@/components/molecules/AvatarText'
 import {AvatarType} from '@/components/atoms/Avatar'
 
 
-type PropsType = {
+export type PropsType = {
   title:string
   date:string
   category:string
@@ -16,6 +16,7 @@ type PropsType = {
 }
 
 const RecentPostCardOutLine = styled('div',{
+  backgroundColor:'$white',
   display: "flex",
   flexDirection: "column",
   paddingLeft: '2rem',

@@ -9,7 +9,10 @@ export default {
   component: TwLpTemplate,
   argTypes: {
     options: {Array},
-    posts:{Array}
+    posts:{Array},
+    authors:{Array},
+    categories:{Array},
+    recentPost:{Object}
   },
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
 } as ComponentMeta<typeof TwLpTemplate>;
@@ -189,5 +192,17 @@ Default.args = {
       name:'Laravel',
       key:6
     },
-  ]
+  ],
+  recentPost:{
+    date:'Jun 1, 2020',
+    category:"Laravel",
+    title:"Build Your New Idea with Laravel Freamwork.",
+    author:{
+      avatar:{
+        src:"https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=731&q=80",
+        alt: "avatar"
+      },
+      name:"Alex John"
+    }
+  }
 }
