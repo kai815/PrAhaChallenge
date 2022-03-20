@@ -7,6 +7,7 @@ type PropsType = {
   paddingXSize:'s'|'m'|'l'
   paddingYSize:'s'|'m',
   maxWidth:'s'|'m',
+  flexDirection?:'column'
 }
 
 const OutLine = styled('div',{
@@ -45,6 +46,12 @@ const OutLine = styled('div',{
       m:{
         maxWidth: "56rem",
       }
+    },
+    flexDirection:{
+      column:{
+        display: "flex",
+        flexDirection: "column",
+      }
     }
   }
 })
@@ -53,11 +60,12 @@ const CardOutLine = ({
   paddingXSize,
   paddingYSize,
   maxWidth,
+  flexDirection = undefined,
   className = '',
   children,
 }:PropsType)=>{
   return (
-    <OutLine className={className} paddingXSize={paddingXSize} paddingYSize={paddingYSize} maxWidth={maxWidth}>
+    <OutLine className={className} paddingXSize={paddingXSize} paddingYSize={paddingYSize} maxWidth={maxWidth} flexDirection={flexDirection}>
       {children}
     </OutLine>
   )

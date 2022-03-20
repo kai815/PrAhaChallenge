@@ -19,6 +19,10 @@ export default {
     maxWidth:{
       control: { type: 'select' },
       options:['s','m']
+    },
+    flexDirection:{
+      control: { type: 'select' },
+      options:['column']
     }
   }
 } as ComponentMeta<typeof CardOutLine>;
