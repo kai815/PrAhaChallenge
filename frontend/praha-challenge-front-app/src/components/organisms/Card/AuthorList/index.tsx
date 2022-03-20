@@ -10,11 +10,12 @@ type Author = {
   avatar:AvatarType
 } 
 
-type PropsType = {
+export type PropsType = {
   authors:Author[]
 }
 
 const AuthorListCardOutLine = styled('div',{
+  backgroundColor:'$white',
   display: "flex",
   flexDirection: "column",
   paddingLeft: '1.5rem',

@@ -1,7 +1,7 @@
 import { styled } from '../../../../stitches.config'
 import Header from '@/components/organisms/Header'
 import PostCard,{PropsType as PostCardPropsType} from '@/components/organisms/Card/Post'
-import AuthorListCard from '@/components/organisms/Card/AuthorList'
+import AuthorListCard,{PropsType as AuthorListCardPropsType} from '@/components/organisms/Card/AuthorList'
 import CategoryListCard from '@/components/organisms/Card/CategoryList'
 import PageNation from '@/components/molecules/PageNation'
 import AvatarText from '@/components/molecules/AvatarText'
@@ -10,7 +10,7 @@ import Select,{PropsType as SelectPropsType} from '@/components/atoms/Select'
 
 type TwLpTemplateType = {
   posts:PostCardPropsType[]
-} & SelectPropsType
+} & SelectPropsType & AuthorListCardPropsType
 
 const Layout = styled('div',{
   overflowX: 'hidden',
@@ -46,6 +46,7 @@ const SelectWidth = styled('div',{
 
 const PostLayout = styled('div',{
   marginTop:'1.5rem',
+  //cardに直接つけるかも
   marginLeft: 'auto',
   marginRight: 'auto',
 })
@@ -54,9 +55,25 @@ const PageNationLayout = styled('div',{
   marginTop:'2rem',
 })
 
+const SubConentLayout = styled('div',{
+  width: '33.333333%',
+  marginLeft: '-2rem',
+  marginRight: '-2rem',
+})
+
+const AuthorContentLayout = styled('div',{
+  paddingLeft:'2rem',
+  paddingRight: '2rem',
+  //cardに直接つけるかも
+  marginLeft: 'auto',
+  marginRight: 'auto'
+})
+
+
 const TwLpTemplate = ({
   options,
-  posts
+  posts,
+  authors
 }:TwLpTemplateType)=>{
   return (
     <Layout>
@@ -83,6 +100,14 @@ const TwLpTemplate = ({
             <PageNation pageCount={3}/>
           </PageNationLayout>
         </MainContent>
+        <SubConentLayout>
+          <AuthorContentLayout>
+            <Text as="h1" size="xl" weight="bold" color="grey700">
+              Authors
+            </Text>
+            <AuthorListCard authors={authors}/>
+          </AuthorContentLayout>
+        </SubConentLayout>
         </Container>
       </LayoutInner>
     </Layout>

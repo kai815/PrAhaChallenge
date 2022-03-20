@@ -116,5 +116,52 @@ Default.args = {
       },
       key:5
     }
+  ],
+  authors:[
+    {
+      avatar:{
+        src:"https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=731&q=80",
+        alt: "avatar"
+      },
+      name:"Alex John",
+      createdPostCount:10,
+      key:1
+    },
+    {
+      avatar:{
+        src:"https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=731&q=80",
+        alt: "avatar"
+      },
+      name:"Alex John2",
+      createdPostCount:20,
+      key:2
+    },
+    {
+      avatar:{
+        src:"https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=731&q=80",
+        alt: "avatar"
+      },
+      name:"Alex John3",
+      createdPostCount:30,
+      key:3
+    },
+    {
+      avatar:{
+        src:"https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=731&q=80",
+        alt: "avatar"
+      },
+      name:"Alex John4",
+      createdPostCount:40,
+      key:4
+    },
+    {
+      avatar:{
+        src:"https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=731&q=80",
+        alt: "avatar"
+      },
+      name:"Alex John5",
+      createdPostCount:50,
+      key:5
+    },
   ]
 }
