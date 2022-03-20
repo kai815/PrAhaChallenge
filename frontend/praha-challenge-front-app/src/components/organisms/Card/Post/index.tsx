@@ -16,7 +16,8 @@ export type PropsType = {
     name:string,
     avatar:AvatarType
   },
-  key:number
+  key:number,
+  className?:string
 }
 
 const CardOutLine = styled('div',{
@@ -59,10 +60,11 @@ const PostCard = ({
   title,
   description,
   tag,
-  user
+  user,
+  className = ''
 }:PropsType)=>{
   return (
-    <CardOutLine>
+    <CardOutLine className={className}>
       <LayoutTop>
         <Text as="span" color="grey600" size="base" weight="light">
           {date}

@@ -12,7 +12,8 @@ export type PropsType = {
   author:{
     name:string
     avatar:AvatarType
-  }
+  },
+  className?:string
 }
 
 const RecentPostCardOutLine = styled('div',{
@@ -49,9 +50,10 @@ const RecentPostCard = ({
   date,
   category,
   author,
+  className=''
 }: PropsType)=>{
   return (
-    <RecentPostCardOutLine>
+    <RecentPostCardOutLine className={className}>
       <TopLayout>
         <LinkButton text={category} href={`#${category}`} textColor="green"/>
       </TopLayout>

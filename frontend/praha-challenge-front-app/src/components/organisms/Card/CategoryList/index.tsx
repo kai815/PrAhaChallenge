@@ -8,6 +8,7 @@ type Category = {
 
 export type PropsType = {
   categories:Category[]
+  className?:string
 }
 
 const CategoryListCardOutLine = styled('div',{
@@ -28,9 +29,12 @@ const ListItem = styled('li',{
   alignItems: "center",
 })
 
-const CategoryListCard = ({categories}:PropsType)=>{
+const CategoryListCard = ({
+  categories,
+  className = ''
+}:PropsType)=>{
   return (
-    <CategoryListCardOutLine>
+    <CategoryListCardOutLine className={className}>
       <ul>
         {
           categories.map((category)=>(

@@ -112,7 +112,7 @@ const TwLpTemplate = ({
           {
             posts.map((post)=>(
               <PostLayout key={post.key}>
-                <PostCard {...post}/>
+                <PostCard className={MarginXAuto()} {...post}/>
               </PostLayout>
             ))
           }
@@ -135,7 +135,7 @@ const TwLpTemplate = ({
                 Categories
               </Text>
             </SubConentTitleLayout>
-            <CategoryListCard categories={categories}/>
+            <CategoryListCard categories={categories} className={MarginXAuto()}/>
           </CategoryContentLayout>
           <RecentPostLayout>
             <SubConentTitleLayout>
@@ -143,7 +143,7 @@ const TwLpTemplate = ({
                 Recent Post
               </Text>
             </SubConentTitleLayout>
-            <RecentPostCard {...recentPost} />
+            <RecentPostCard {...recentPost} className={MarginXAuto()}/>
           </RecentPostLayout>
         </SubConentLayout>
         </Container>
