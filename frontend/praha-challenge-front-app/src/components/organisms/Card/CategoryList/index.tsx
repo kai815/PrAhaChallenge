@@ -6,11 +6,12 @@ type Category = {
   key:number,
 }
 
-type PropsType = {
+export type PropsType = {
   categories:Category[]
 }
 
 const CategoryListCardOutLine = styled('div',{
+  backgroundColor:'$white',
   display: "flex",
   flexDirection: "column",
   paddingLeft: '1.5rem',

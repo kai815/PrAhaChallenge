@@ -2,7 +2,7 @@ import { styled } from '../../../../stitches.config'
 import Header from '@/components/organisms/Header'
 import PostCard,{PropsType as PostCardPropsType} from '@/components/organisms/Card/Post'
 import AuthorListCard,{PropsType as AuthorListCardPropsType} from '@/components/organisms/Card/AuthorList'
-import CategoryListCard from '@/components/organisms/Card/CategoryList'
+import CategoryListCard,{PropsType as CategoryListCardPropsType} from '@/components/organisms/Card/CategoryList'
 import PageNation from '@/components/molecules/PageNation'
 import AvatarText from '@/components/molecules/AvatarText'
 import Text from '@/components/atoms/Text'
@@ -10,7 +10,9 @@ import Select,{PropsType as SelectPropsType} from '@/components/atoms/Select'
 
 type TwLpTemplateType = {
   posts:PostCardPropsType[]
-} & SelectPropsType & AuthorListCardPropsType
+} & SelectPropsType
+  & AuthorListCardPropsType
+  & CategoryListCardPropsType
 
 const Layout = styled('div',{
   overflowX: 'hidden',
@@ -69,11 +71,18 @@ const AuthorContentLayout = styled('div',{
   marginRight: 'auto'
 })
 
+const CategoryContentLayout = styled('div',{
+  paddingLeft:'2rem',
+  paddingRight: '2rem',
+  marginTop: '2.5rem',
+})
+
 
 const TwLpTemplate = ({
   options,
   posts,
-  authors
+  authors,
+  categories
 }:TwLpTemplateType)=>{
   return (
     <Layout>
@@ -107,6 +116,12 @@ const TwLpTemplate = ({
             </Text>
             <AuthorListCard authors={authors}/>
           </AuthorContentLayout>
+          <CategoryContentLayout>
+            <Text as="h1" size="xl" weight="bold" color="grey700">
+              Categories
+            </Text>
+            <CategoryListCard categories={categories}/>
+          </CategoryContentLayout>
         </SubConentLayout>
         </Container>
       </LayoutInner>

@@ -163,5 +163,31 @@ Default.args = {
       createdPostCount:50,
       key:5
     },
+  ],
+  categories:[
+    {
+      name:'Vue',
+      key:1
+    },
+    {
+      name:'Design',
+      key:2
+    },
+    {
+      name:'AWS',
+      key:3
+    },
+    {
+      name:'Django',
+      key:4
+    },
+    {
+      name:'PHP',
+      key:5
+    },
+    {
+      name:'Laravel',
+      key:6
+    },
   ]
 }
