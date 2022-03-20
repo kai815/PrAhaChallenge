@@ -3,18 +3,18 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import AvatarText from '.';
 
-// More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
+
 export default {
   title: 'Molecules/AvatarText',
   component: AvatarText,
-  // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
+  
   argTypes: {
     avatar: {Object},
     text: {String}
   },
 } as ComponentMeta<typeof AvatarText>;
 
-// More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
+
 const Template: ComponentStory<typeof AvatarText> = ((args) => {return (<AvatarText {...args} />)});
 export const Default = Template.bind({});
 Default.args = {
