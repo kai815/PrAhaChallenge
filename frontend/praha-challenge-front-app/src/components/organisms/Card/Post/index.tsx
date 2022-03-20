@@ -3,6 +3,7 @@ import LinkButton from '@/components/atoms/LinkButton'
 import Text from '@/components/atoms/Text'
 import AvatarText from '@/components/molecules/AvatarText'
 import {AvatarType} from '@/components/atoms/Avatar'
+import CardOutLine from '@/components/atoms/CardOutLine'
 
 export type PropsType = {
   date: string,
@@ -20,16 +21,6 @@ export type PropsType = {
   className?:string
 }
 
-const CardOutLine = styled('div',{
-  backgroundColor:"$white",
-  borderRadius: "0.5rem",
-  paddingLeft: "2.5rem",
-  paddingRight: "2.5rem",
-  paddingTop: "1.5rem",
-  paddingBottom: "1.5rem",
-  boxShadow: "$md",
-  maxWidth: "56rem",
-})
 const LayoutTop = styled('div',{
   display: "flex",
   justifyContent: "space-between",
@@ -64,7 +55,12 @@ const PostCard = ({
   className = ''
 }:PropsType)=>{
   return (
-    <CardOutLine className={className}>
+    <CardOutLine
+      paddingXSize="l"
+      paddingYSize="m"
+      maxWidth="m"
+      className={className}
+    >
       <LayoutTop>
         <Text as="span" color="grey600" size="base" weight="light">
           {date}

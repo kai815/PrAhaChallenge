@@ -2,6 +2,7 @@ import { styled } from '../../../../../stitches.config'
 import Text from '@/components/atoms/Text'
 import AvatarText from '@/components/molecules/AvatarText'
 import {AvatarType} from '@/components/atoms/Avatar'
+import CardOutLine from '@/components/atoms/CardOutLine'
 
 type Author = {
   name: string,
@@ -14,19 +15,6 @@ export type PropsType = {
   authors:Author[],
   className?:string
 }
-
-const AuthorListCardOutLine = styled('div',{
-  backgroundColor:'$white',
-  display: "flex",
-  flexDirection: "column",
-  paddingLeft: '1.5rem',
-  paddingRight: '1.5rem',
-  paddingTop: '1rem',
-  paddingBottom: '1rem',
-  maxWidth: '24rem',
-  borderRadius: '0.5rem',
-  boxShadow: "$md",
-})
 
 const List = styled('ul',{
   marginLeft: "-1rem",
@@ -48,7 +36,13 @@ const AuthorListCard = ({
   className = ''
 }:PropsType)=>{
   return(
-    <AuthorListCardOutLine className={className}>
+    <CardOutLine
+      paddingXSize="s"
+      paddingYSize="s"
+      maxWidth="s"
+      flexDirection="column"
+      className={className}
+    >
       <List>
         {
           authors?.map((author)=>(
@@ -67,7 +61,7 @@ const AuthorListCard = ({
           )
         }
       </List>
-    </AuthorListCardOutLine>
+    </CardOutLine>
   )
 }
 export default AuthorListCard;

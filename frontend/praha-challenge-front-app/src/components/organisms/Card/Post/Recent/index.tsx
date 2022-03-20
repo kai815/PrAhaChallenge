@@ -3,6 +3,7 @@ import LinkButton from '@/components/atoms/LinkButton'
 import Text from '@/components/atoms/Text'
 import AvatarText from '@/components/molecules/AvatarText'
 import {AvatarType} from '@/components/atoms/Avatar'
+import CardOutLine from '@/components/atoms/CardOutLine'
 
 
 export type PropsType = {
@@ -16,18 +17,7 @@ export type PropsType = {
   className?:string
 }
 
-const RecentPostCardOutLine = styled('div',{
-  backgroundColor:'$white',
-  display: "flex",
-  flexDirection: "column",
-  paddingLeft: '2rem',
-  paddingRight: '2rem',
-  paddingTop: '1.5rem',
-  paddingBottom: '1.5rem',
-  maxWidth: '24rem',
-  borderRadius: '0.5rem',
-  boxShadow: "$md",
-})
+
 const TopLayout = styled('div',{
   display: "flex",
   justifyContent: "center",
@@ -53,7 +43,13 @@ const RecentPostCard = ({
   className=''
 }: PropsType)=>{
   return (
-    <RecentPostCardOutLine className={className}>
+    <CardOutLine
+      paddingXSize="m"
+      paddingYSize="m"
+      maxWidth="s"
+      flexDirection="column"
+      className={className}
+    >
       <TopLayout>
         <LinkButton text={category} href={`#${category}`} textColor="green"/>
       </TopLayout>
@@ -68,7 +64,7 @@ const RecentPostCard = ({
           {date}
         </Text>
       </BottomLayout>
-    </RecentPostCardOutLine>
+    </CardOutLine>
   )
 }
 

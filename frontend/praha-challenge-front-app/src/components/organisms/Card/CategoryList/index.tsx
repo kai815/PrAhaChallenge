@@ -1,5 +1,6 @@
 import { styled } from '../../../../../stitches.config'
 import Text from '@/components/atoms/Text' 
+import CardOutLine from '@/components/atoms/CardOutLine'
 
 type Category = {
   name: string,
@@ -11,18 +12,6 @@ export type PropsType = {
   className?:string
 }
 
-const CategoryListCardOutLine = styled('div',{
-  backgroundColor:'$white',
-  display: "flex",
-  flexDirection: "column",
-  paddingLeft: '1.5rem',
-  paddingRight: '1.5rem',
-  paddingTop: '1rem',
-  paddingBottom: '1rem',
-  maxWidth: '24rem',
-  borderRadius: '0.5rem',
-  boxShadow: "$md",
-})
 
 const ListItem = styled('li',{
   display: "flex",
@@ -34,7 +23,13 @@ const CategoryListCard = ({
   className = ''
 }:PropsType)=>{
   return (
-    <CategoryListCardOutLine className={className}>
+    <CardOutLine
+      paddingXSize="s"
+      paddingYSize="s"
+      maxWidth="s"
+      flexDirection="column"
+      className={className}
+    >
       <ul>
         {
           categories.map((category)=>(
@@ -46,7 +41,7 @@ const CategoryListCard = ({
           ))
         }
       </ul>
-    </CategoryListCardOutLine>
+    </CardOutLine>
   )
 }
 
