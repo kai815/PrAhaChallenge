@@ -50,6 +50,10 @@ const PostLayout = styled('div',{
   marginRight: 'auto',
 })
 
+const PageNationLayout = styled('div',{
+  marginTop:'2rem',
+})
+
 const TwLpTemplate = ({
   options,
   posts
@@ -75,6 +79,9 @@ const TwLpTemplate = ({
               </PostLayout>
             ))
           }
+          <PageNationLayout>
+            <PageNation pageCount={3}/>
+          </PageNationLayout>
         </MainContent>
         </Container>
       </LayoutInner>
