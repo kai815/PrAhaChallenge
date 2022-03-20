@@ -11,7 +11,8 @@ type Author = {
 } 
 
 export type PropsType = {
-  authors:Author[]
+  authors:Author[],
+  className?:string
 }
 
 const AuthorListCardOutLine = styled('div',{
@@ -42,10 +43,12 @@ const TextMargin = styled('div',{
   marginLeft: "0.25rem",
 })
 
-const AuthorListCard = ({authors}:PropsType)=>{
-  console.log("authors",authors)
+const AuthorListCard = ({
+  authors,
+  className = ''
+}:PropsType)=>{
   return(
-    <AuthorListCardOutLine>
+    <AuthorListCardOutLine className={className}>
       <List>
         {
           authors?.map((author)=>(

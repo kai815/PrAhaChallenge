@@ -1,4 +1,5 @@
 import { styled } from '../../../../stitches.config'
+import { css } from '@stitches/core';
 import Header from '@/components/organisms/Header'
 import PostCard,{PropsType as PostCardPropsType} from '@/components/organisms/Card/Post'
 import RecentPostCard,{PropsType as RecentPostCardPropsType} from '@/components/organisms/Card/Post/Recent'
@@ -14,6 +15,11 @@ type TwLpTemplateType = {
 } & SelectPropsType
   & AuthorListCardPropsType
   & CategoryListCardPropsType
+
+const MarginXAuto = css({
+  marginLeft: 'auto',
+  marginRight: 'auto',
+})
 
 const Layout = styled('div',{
   overflowX: 'hidden',
@@ -49,9 +55,6 @@ const SelectWidth = styled('div',{
 
 const PostLayout = styled('div',{
   marginTop:'1.5rem',
-  //cardに直接つけるかも
-  marginLeft: 'auto',
-  marginRight: 'auto',
 })
 
 const PageNationLayout = styled('div',{
@@ -64,12 +67,13 @@ const SubConentLayout = styled('div',{
   marginRight: '-2rem',
 })
 
+const SubConentTitleLayout = styled('div',{
+  marginBottom: '1rem',
+})
+
 const AuthorContentLayout = styled('div',{
   paddingLeft:'2rem',
   paddingRight: '2rem',
-  //cardに直接つけるかも
-  marginLeft: 'auto',
-  marginRight: 'auto'
 })
 
 const CategoryContentLayout = styled('div',{
@@ -118,21 +122,27 @@ const TwLpTemplate = ({
         </MainContent>
         <SubConentLayout>
           <AuthorContentLayout>
-            <Text as="h1" size="xl" weight="bold" color="grey700">
-              Authors
-            </Text>
-            <AuthorListCard authors={authors}/>
+            <SubConentTitleLayout>
+              <Text as="h1" size="xl" weight="bold" color="grey700">
+                Authors
+              </Text>
+            </SubConentTitleLayout>
+            <AuthorListCard authors={authors} className={MarginXAuto()}/>
           </AuthorContentLayout>
           <CategoryContentLayout>
-            <Text as="h1" size="xl" weight="bold" color="grey700">
-              Categories
-            </Text>
+            <SubConentTitleLayout>
+              <Text as="h1" size="xl" weight="bold" color="grey700">
+                Categories
+              </Text>
+            </SubConentTitleLayout>
             <CategoryListCard categories={categories}/>
           </CategoryContentLayout>
           <RecentPostLayout>
-            <Text as="h1" size="xl" weight="bold" color="grey700">
-              Recent Post
-            </Text>
+            <SubConentTitleLayout>
+              <Text as="h1" size="xl" weight="bold" color="grey700">
+                Recent Post
+              </Text>
+            </SubConentTitleLayout>
             <RecentPostCard {...recentPost} />
           </RecentPostLayout>
         </SubConentLayout>
