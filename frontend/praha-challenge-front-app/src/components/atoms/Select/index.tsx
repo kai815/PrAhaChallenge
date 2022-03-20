@@ -31,7 +31,7 @@ const BaseSelect = styled('select',{
 })
 
 
-const Avatar =({options}:PropsType)=>{
+const Select =({options}:PropsType)=>{
   return(
     <BaseSelect >
     {
@@ -44,4 +44,4 @@ const Avatar =({options}:PropsType)=>{
     </BaseSelect>
   )
 }
-export default Avatar;
+export default Select;
