@@ -53,6 +53,10 @@ const OutLine = styled('div',{
         flexDirection: "column",
       }
     }
+  },
+  media: {
+    //sp版
+    sm:'(max-width: 640px)',
   }
 })
 
