@@ -38,11 +38,16 @@ const Container = styled('div',{
   justifyContent: 'space-between',
   marginRight:'auto',
   marginLeft:'auto',
-  maxWidth: '1536px'
+  maxWidth: '1536px',
+  '@sm':{
+    direction:'column',
+  }
 })
 const MainContent = styled('div',{
   width: "66.666667%",
-  //width: '100%',
+  '@sm':{
+    width: '100%',
+  }
 })
 
 const MainContentTitle = styled('div',{
@@ -65,6 +70,9 @@ const SubConentLayout = styled('div',{
   width: '33.333333%',
   marginLeft: '-2rem',
   marginRight: '-2rem',
+  '@sm':{
+    display:'none',
+  }
 })
 
 const SubConentTitleLayout = styled('div',{
