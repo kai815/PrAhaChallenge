@@ -47,7 +47,7 @@ const PageNation = ({pageCount}:PropsType)=>{
       </PageNationItem>
         {
           [...Array(pageCount)].map((_, pageIndex)=>(
-            <PageNationItem>
+            <PageNationItem key={pageIndex}>
               {pageIndex + 1}
             </PageNationItem>
           ))
