@@ -3,30 +3,30 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import Select from '.';
 
-
 export default {
   title: 'Atoms/Select',
   component: Select,
-  
+
   argTypes: {
-    options: {Array}
+    options: { Array },
   },
 } as ComponentMeta<typeof Select>;
 
-
-const Template: ComponentStory<typeof Select> = ((args) => {return (<Select {...args} />)});
+const Template: ComponentStory<typeof Select> = (args) => {
+  return <Select {...args} />;
+};
 export const Default = Template.bind({});
 Default.args = {
-  options:[
+  options: [
     {
-      text:"Latest",
-      value: "Latest",
-      key:'1'
+      text: 'Latest',
+      value: 'Latest',
+      key: '1',
     },
     {
-      text:"Lastweek",
-      value: "Lastweek",
-      key:'2'
+      text: 'Lastweek',
+      value: 'Lastweek',
+      key: '2',
     },
-  ]
-}
+  ],
+};
