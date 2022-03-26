@@ -14,15 +14,20 @@ const Layout = styled('a', {
   color: 'inherit',
   textecoration: 'inherit',
 });
-const AvatarMargin = css({
+const AvatarLayout = styled('div', {
   marginLeft: '1rem',
   marginRight: '1rem',
+  '@sm': {
+    display: 'none',
+  },
 });
 
 const AvatarText = ({ avatar, text }: PropsType) => {
   return (
     <Layout>
-      <Avatar {...avatar} className={AvatarMargin()} />
+      <AvatarLayout>
+        <Avatar {...avatar} />
+      </AvatarLayout>
       <Text color='grey700' weight='bold' size='base'>
         {text}
       </Text>
