@@ -75,6 +75,7 @@ const SubConentLayout = styled('div', {
   width: '33.333333%',
   marginLeft: '-2rem',
   marginRight: '-2rem',
+  //本当はこれだけじゃなくて描画させないのが良さそう
   '@sm': {
     display: 'none',
   },

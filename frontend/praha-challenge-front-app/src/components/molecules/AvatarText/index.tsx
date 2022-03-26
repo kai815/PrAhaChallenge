@@ -17,6 +17,7 @@ const Layout = styled('a', {
 const AvatarLayout = styled('div', {
   marginLeft: '1rem',
   marginRight: '1rem',
+  //本当は画像を読み込まないとかまでした方が良さそう
   '@sm': {
     display: 'none',
   },
