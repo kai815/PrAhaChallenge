@@ -1,8 +1,6 @@
-import TwLpTemplate from "@/components/templates/TwLp"
-import {TwLpData} from "@/sampleData/TwLpData"
+import TwLpTemplate from '@/components/templates/TwLp';
+import { TwLpData } from '@/sampleData/TwLpData';
 
-const TwLpPage = () => (
-  <TwLpTemplate {...TwLpData}/>
-)
+const TwLpPage = () => <TwLpTemplate {...TwLpData} />;
 
-export default TwLpPage
+export default TwLpPage;

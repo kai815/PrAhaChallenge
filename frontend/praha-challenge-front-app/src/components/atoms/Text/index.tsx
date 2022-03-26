@@ -3,30 +3,30 @@ import { styled } from '../../../../stitches.config';
 const Text = styled('p', {
   fontFamily: '$system',
   variants: {
-    color:{
+    color: {
       grey100: {
-        color:'$grey100'
+        color: '$grey100',
       },
       grey300: {
-        color:'$grey300'
+        color: '$grey300',
       },
       grey500: {
-        color:'$grey500'
+        color: '$grey500',
       },
       grey600: {
-        color:'$grey600'
+        color: '$grey600',
       },
-      grey700:{
-        color:'$gery700'
+      grey700: {
+        color: '$gery700',
       },
       grey800: {
-        color:'$grey800'
+        color: '$grey800',
       },
     },
     size: {
       xs: {
         fontSize: '$xs',
-        lineHeight:'$xs'
+        lineHeight: '$xs',
       },
       sm: {
         fontSize: '$sm',
@@ -50,31 +50,31 @@ const Text = styled('p', {
       },
     },
     weight: {
-      thin:{
-        fontWeight: '$thin'
+      thin: {
+        fontWeight: '$thin',
       },
-      extralight:{
-        fontWeight: '$extralight'
+      extralight: {
+        fontWeight: '$extralight',
       },
-      light:{
-        fontWeight: '$light'
+      light: {
+        fontWeight: '$light',
       },
-      normal:{
-        fontWeight: '$normal'
+      normal: {
+        fontWeight: '$normal',
       },
-      medium:{
-        fontWeight: '$medium'
+      medium: {
+        fontWeight: '$medium',
       },
-      semibold:{
-        fontWeight: '$semibold'
+      semibold: {
+        fontWeight: '$semibold',
       },
-      bold:{
-        fontWeight: '$bold'
+      bold: {
+        fontWeight: '$bold',
       },
-      extrabold:{
-        fontWeight: '$extrabold'
+      extrabold: {
+        fontWeight: '$extrabold',
       },
-    }
+    },
   },
 });
 
