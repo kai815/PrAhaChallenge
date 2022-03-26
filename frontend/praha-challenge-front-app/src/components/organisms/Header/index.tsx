@@ -16,6 +16,7 @@ const ListIconCss = css({
   fill: 'currentColor',
 });
 
+//実務だとIconはもっと運用しやすい形にatomとかに切り出すけど、今回はしない
 const ListIcon = () => {
   return (
     <svg viewBox='0 0 24 24' className={ListIconCss()}>
