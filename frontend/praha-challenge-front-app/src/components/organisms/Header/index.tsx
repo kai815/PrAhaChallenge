@@ -3,7 +3,7 @@ import { css } from '@stitches/core';
 import Link from 'next/link';
 import Text from '@/components/atoms/Text';
 
-const ListIconStyle = styled('div', {
+const ListIconWrapper = styled('div', {
   color: '$grey600',
   display: 'none',
   '@sm': {
@@ -110,9 +110,9 @@ const Header = () => {
               </a>
             </Link>
           </RightListInner>
-          <ListIconStyle>
+          <ListIconWrapper>
             <ListIcon />
-          </ListIconStyle>
+          </ListIconWrapper>
         </Right>
       </Container>
     </Wrapper>
