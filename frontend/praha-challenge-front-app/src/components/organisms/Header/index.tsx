@@ -3,6 +3,28 @@ import { css } from '@stitches/core';
 import Link from 'next/link';
 import Text from '@/components/atoms/Text';
 
+const ListIconWrapper = styled('div', {
+  color: '$grey600',
+  display: 'none',
+  '@sm': {
+    display: 'block',
+  },
+});
+const ListIconCss = css({
+  width: '1.5rem',
+  height: '1.5rem',
+  fill: 'currentColor',
+});
+
+//実務だとIconはもっと運用しやすい形にatomとかに切り出すけど、今回はしない
+const ListIcon = () => {
+  return (
+    <svg viewBox='0 0 24 24' className={ListIconCss()}>
+      <path d='M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z'></path>
+    </svg>
+  );
+};
+
 const Wrapper = styled('nav', {
   backgroundColor: '$white',
   boxShadow: '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)',
@@ -28,9 +50,14 @@ const Left = styled('div', {
   alignItems: 'center',
 });
 
-const Right = styled('div', {
+const Right = styled('div', {});
+
+const RightListInner = styled('div', {
   display: 'flex',
   flexDirection: 'row',
+  '@sm': {
+    display: 'none',
+  },
 });
 
 const LinkText = css({
@@ -60,27 +87,32 @@ const Header = () => {
           </Link>
         </Left>
         <Right>
-          <Link href='#' prefetch={false}>
-            <a className={AtagReset()}>
-              <Text className={LinkText()} size='base'>
-                Home
-              </Text>
-            </a>
-          </Link>
-          <Link href='#' prefetch={false}>
-            <a className={AtagReset()}>
-              <Text className={LinkText()} size='base'>
-                Blog
-              </Text>
-            </a>
-          </Link>
-          <Link href='#' prefetch={false}>
-            <a className={AtagReset()}>
-              <Text className={LinkText()} size='base'>
-                About us
-              </Text>
-            </a>
-          </Link>
+          <RightListInner>
+            <Link href='#' prefetch={false}>
+              <a className={AtagReset()}>
+                <Text className={LinkText()} size='base'>
+                  Home
+                </Text>
+              </a>
+            </Link>
+            <Link href='#' prefetch={false}>
+              <a className={AtagReset()}>
+                <Text className={LinkText()} size='base'>
+                  Blog
+                </Text>
+              </a>
+            </Link>
+            <Link href='#' prefetch={false}>
+              <a className={AtagReset()}>
+                <Text className={LinkText()} size='base'>
+                  About us
+                </Text>
+              </a>
+            </Link>
+          </RightListInner>
+          <ListIconWrapper>
+            <ListIcon />
+          </ListIconWrapper>
         </Right>
       </Container>
     </Wrapper>

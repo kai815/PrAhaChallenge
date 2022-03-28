@@ -45,10 +45,15 @@ const Container = styled('div', {
   marginRight: 'auto',
   marginLeft: 'auto',
   maxWidth: '1536px',
+  '@sm': {
+    direction: 'column',
+  },
 });
 const MainContent = styled('div', {
   width: '66.666667%',
-  //width: '100%',
+  '@sm': {
+    width: '100%',
+  },
 });
 
 const MainContentTitle = styled('div', {
@@ -70,6 +75,10 @@ const SubConentLayout = styled('div', {
   width: '33.333333%',
   marginLeft: '-2rem',
   marginRight: '-2rem',
+  //本当はこれだけじゃなくて描画させないのが良さそう
+  '@sm': {
+    display: 'none',
+  },
 });
 
 const SubConentTitleLayout = styled('div', {
