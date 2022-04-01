@@ -50,6 +50,6 @@ export const { styled, getCssText, globalCss } = createStitches({
   },
   media: {
     //sp版
-    sm:'(max-width: 640px)',
-  }
+    sm: '(max-width: 640px)',
+  },
 });
