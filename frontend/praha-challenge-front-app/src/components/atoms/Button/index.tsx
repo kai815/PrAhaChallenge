@@ -12,6 +12,8 @@ type PropsType = {
 
 const BaseButton = styled('button', {
   color:'white',
+  borderRadius: '12px',
+  border: '0',
   variants: {
     color: {
       red: {
@@ -26,23 +28,20 @@ const BaseButton = styled('button', {
     },
     size: {
       small: {
-        width: '50px',
-        height: '30px',
+        padding: '3px 5px',
       },
       medium: {
-        width: '100px',
-        height: '60px',
+        padding: '6px 10px',
       },
       large: {
-        width: '150px',
-        height: '90px',
+        padding: '9px 15px',
       },
     },
   },
 });
 
 const Button = (props: PropsType) => {
-  const { size = 'medium', color = 'blue', children, disabled, onClick } = props;
+  const { size = 'medium', color = 'blue', children, disabled = false, onClick } = props;
   return (
     <BaseButton size={size} color={color} disabled={disabled} onClick={onClick}>
       {children}

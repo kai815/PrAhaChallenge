@@ -14,7 +14,8 @@ export default {
     size:{
       control:'select',
       options:['small','medium','large']
-    }
+    },
+    disabled:Boolean,
   }
 } as ComponentMeta<typeof Button>;
 
@@ -25,4 +26,5 @@ export const Default = Template.bind({});
 Default.args = {
   color: 'blue',
   size: 'medium',
+  disabled: false
 };
