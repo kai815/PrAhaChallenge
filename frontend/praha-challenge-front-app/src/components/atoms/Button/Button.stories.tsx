@@ -22,9 +22,13 @@ export default {
 const Template: ComponentStory<typeof Button> = (args) => {
   return <Button {...args} >テスト</Button>;
 };
+const alert = () => {
+  console.log("テスト")
+}
 export const Default = Template.bind({});
 Default.args = {
   color: 'blue',
   size: 'medium',
-  disabled: false
+  disabled: false,
+  onClick: alert
 };
