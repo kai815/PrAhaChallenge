@@ -44,7 +44,7 @@ const BaseButton = styled('button', {
     },
     disabled: {
       true: {
-        background: 'grey !important', //storyで切り替えてる時に色がグレーになったりならなかったりしたので追加importantつけた,
+        background: 'grey !important', //storyで切り替えてる時に色がグレーになったりならなかったりしたのでimportantつけた,
         opacity: '0.8',
         cursor: 'not-allowed;',
       },
