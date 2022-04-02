@@ -8,18 +8,17 @@ type PropsType = {
   children: ReactNode;
   disabled: boolean;
   onClick: React.MouseEventHandler<HTMLButtonElement>;
-} 
+};
 // & React.ComponentProps<'button'>
 // & Stitches.ComponentProps<React.ComponentProps<'button'>>
 // ここに書いてあることも試した
 //https://github.com/modulz/stitches/issues/669
 
-
 const BaseButton = styled('button', {
-  color:'white',
+  color: 'white',
   borderRadius: '12px',
   border: '0',
-  cursor:'pointer',
+  cursor: 'pointer',
   variants: {
     color: {
       red: {
@@ -43,24 +42,31 @@ const BaseButton = styled('button', {
         padding: '9px 15px',
       },
     },
-    disabled:{
-      true:{
-        background:'grey !important', //storyで切り替えてる時に色がグレーになったりならなかったりしたので追加importantつけた,
-        opacity:'0.8',
-        cursor:'not-allowed;'
-      }
-    }
+    disabled: {
+      true: {
+        background: 'grey !important', //storyで切り替えてる時に色がグレーになったりならなかったりしたので追加importantつけた,
+        opacity: '0.8',
+        cursor: 'not-allowed;',
+      },
+    },
   },
 });
 
 const Button = (props: PropsType) => {
-  const { size = 'medium', color = 'blue', children, disabled = false, onClick, ...restProps } = props;
+  const {
+    size = 'medium',
+    color = 'blue',
+    children,
+    disabled = false,
+    onClick,
+    ...restProps
+  } = props;
   const handleClick = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
-    if(disabled) {
-      return 
+    if (disabled) {
+      return;
     }
     return onClick(event);
-  }
+  };
   return (
     <BaseButton size={size} color={color} disabled={disabled} onClick={handleClick} {...restProps}>
       {children}
