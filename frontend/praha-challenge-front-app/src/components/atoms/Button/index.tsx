@@ -6,7 +6,7 @@ type PropsType = {
   color?: 'red' | 'blue' | 'green';
   size?: 'small' | 'medium' | 'large';
   children: ReactNode;
-  disabled: boolean;
+  disabled?: boolean;
   onClick: React.MouseEventHandler<HTMLButtonElement>;
 };
 // & React.ComponentProps<'button'>
