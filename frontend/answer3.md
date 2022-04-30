@@ -31,3 +31,11 @@ Container をビジネスロジックを持ち、Presentational に値を渡す�
 
 さらに、Presentational を Story に書き、見た目のテスト、
 Container のロジックテストと分けることができ、テストもしやすい。
+
+## useState のクイズ
+
+useState で宣言をするときに、以下のようにある外側の括弧はどういう意味でしょうか？
+
+```
+const [count, setCount] = useState(0);
+```
