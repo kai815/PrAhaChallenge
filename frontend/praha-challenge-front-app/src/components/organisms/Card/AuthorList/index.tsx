@@ -1,8 +1,6 @@
 import { styled } from '../../../../../stitches.config';
-import Text from '@/components/atoms/Text';
-import AvatarText from '@/components/molecules/AvatarText';
 import { AvatarType } from '@/components/atoms/Avatar';
-import CardOutLine from '@/components/atoms/CardOutLine';
+import AuthorListCardPresentor,{NoAuthorList} from './Presentor';
 
 type Author = {
   name: string;
@@ -16,43 +14,11 @@ export type PropsType = {
   className?: string;
 };
 
-const List = styled('ul', {
-  marginLeft: '-1rem',
-  marginRight: '-1rem',
-});
 
-const ListItem = styled('li', {
-  display: 'flex',
-  alignItems: 'center',
-  marginTop: '1.5rem',
-});
-
-const TextMargin = styled('div', {
-  marginLeft: '0.25rem',
-});
-
-const AuthorListCard = ({ authors, className = '' }: PropsType) => {
-  return (
-    <CardOutLine
-      paddingXSize='s'
-      paddingYSize='s'
-      maxWidth='s'
-      flexDirection='column'
-      className={className}
-    >
-      <List>
-        {authors?.map((author) => (
-          <ListItem key={author.key}>
-            <AvatarText avatar={author.avatar} text={author.name} />
-            <TextMargin>
-              <Text as='span' size='sm' weight='light' color='grey700'>
-                Created {author.createdPostCount} Posts
-              </Text>
-            </TextMargin>
-          </ListItem>
-        ))}
-      </List>
-    </CardOutLine>
-  );
+const AuthorListCardContainer = ({ authors, className = '' }: PropsType) => {
+  if (authors.length <= 0) {
+    return <NoAuthorList />;
+  }
+  return <AuthorListCardPresentor authors={authors} className={className} />;
 };
-export default AuthorListCard;
+export default AuthorListCardContainer;
