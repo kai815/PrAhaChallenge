@@ -24,3 +24,10 @@ codepen からダウンロードしてきました
 # 課題 3
 
 ## 「Container」と「Presentational」に分けるメリット
+
+Presentational を受け取った値を表示するのみの UI を担当するコンポーネント、
+Container をビジネスロジックを持ち、Presentational に値を渡すコンポーネント
+と分けることで、可読性・保守性が上がる。
+
+さらに、Presentational を Story に書き、見た目のテスト、
+Container のロジックテストと分けることができ、テストもしやすい。
