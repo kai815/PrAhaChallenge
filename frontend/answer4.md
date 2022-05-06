@@ -14,3 +14,11 @@
 ### 空の配列（[]）を指定した場合
 
 初回のレンダリング時にのみ第 1 引数の関数が実行される
+
+# 課題 2
+
+https://codesandbox.io/s/use-effect-demo-forked-uxkm9t?file=/src/some-component.js
+
+# 課題 3
+
+https://codesandbox.io/s/use-effect-demo-forked-uxkm9t?file=/src/fetch-component.js
