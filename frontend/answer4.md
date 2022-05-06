@@ -19,6 +19,12 @@
 
 https://codesandbox.io/s/use-effect-demo-forked-uxkm9t?file=/src/some-component.js
 
+codesandbox からダウンロードしてきたファイル
+frontend/use-effect/some-component.js
+
 # 課題 3
 
 https://codesandbox.io/s/use-effect-demo-forked-uxkm9t?file=/src/fetch-component.js
+
+codesandbox からダウンロードしてきたファイル
+frontend/use-effect/fetch-component.js
