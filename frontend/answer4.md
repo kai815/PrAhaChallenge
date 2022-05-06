@@ -22,9 +22,25 @@ https://codesandbox.io/s/use-effect-demo-forked-uxkm9t?file=/src/some-component.
 codesandbox からダウンロードしてきたファイル
 frontend/use-effect/some-component.js
 
+## 無限ループになってしまう理由
+
+```
+const [count, setCount] = useState(0);
+useEffect(() => {
+  setCount((prevState) => prevState + 1);
+}, [count]);
+```
+
+とすると、count が変更されるたびに、useEffect の第一引数の関数が実行されるが、
+useEffect 内で count を変更してるため、無限ループが発生する。
+
 # 課題 3
 
 https://codesandbox.io/s/use-effect-demo-forked-uxkm9t?file=/src/fetch-component.js
 
 codesandbox からダウンロードしてきたファイル
 frontend/use-effect/fetch-component.js
+
+# 課題 4
+
+useEffect と似た useLayoutEffect というのがありますが、この 2 つの違いを説明してください。
