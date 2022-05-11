@@ -25,6 +25,16 @@ frontend/use-effect/some-component.js
 ## 無限ループになってしまう理由
 
 ```
+useEffect(() => {
+  setCount((prevState) => prevState + 1);
+});
+```
+
+ステートの更新にはレンダリングが伴うからです。
+初回レンダリングされた後、useEffect でステートの更新がされ、ステートが更新されたので再レンダリング、 useEffect。。
+となります。
+
+```
 const [count, setCount] = useState(0);
 useEffect(() => {
   setCount((prevState) => prevState + 1);
