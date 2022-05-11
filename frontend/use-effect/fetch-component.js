@@ -8,7 +8,11 @@ export const FetchComponent = () => {
 
   // ここでuseEffectを使ってstar数を取得してみましょう!
   useEffect(() => {
-    fetch("https://api.github.com/repos/facebook/react")
+    // https://developer.mozilla.org/ja/docs/Web/API/AbortController
+    const controller = new AbortController();
+    fetch("https://api.github.com/repos/facebook/react", {
+      signal: controller.signal
+    })
       .then((response) => response.json())
       .then((responseData) => {
         const data = {
