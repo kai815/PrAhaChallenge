@@ -23,8 +23,13 @@
 ユーザーがアクセスする度にクライアントサイドでデータ取得とレンダリングを行うので、
 データは最新になる。
 
-データ取得と取得後の HTML 生成はクライアント側で JavaScript で行うため、検索エンジンがページを解釈するが難しく、
-SEO 的には不利と言われる。
+~~データ取得と取得後の HTML 生成はクライアント側で JavaScript で行うため、検索エンジンがページを解釈するのが難しく、
+SEO 的には不利と言われる。~~
+→ ここは誤りで読み取れる。
+
+https://developers.google.com/search/docs/advanced/javascript/javascript-seo-basics?hl=ja
+
+https://www.willgate.co.jp/promonista/evaluation-of-javascript/
 
 ### SSG
 
@@ -103,3 +108,7 @@ CSR。
 → データの反映が大事であるが、一般公開されていて SEO が大事というサービスではないので。
 
 下の 3 つ同じになったけど、何か考慮漏れないかな。。
+
+```
+
+```
