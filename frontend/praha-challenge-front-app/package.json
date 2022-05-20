@@ -4,6 +4,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
+    "export":"next build && next export",
     "type-check": "tsc",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
@@ -36,6 +37,6 @@
     "eslint-config-next": "^12.1.1",
     "eslint-config-prettier": "^8.5.0",
     "prettier": "^2.6.1",
-    "typescript": "4.0"
+    "typescript": "4.3.2"
   }
 }
