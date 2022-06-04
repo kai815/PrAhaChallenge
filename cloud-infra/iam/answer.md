@@ -39,9 +39,45 @@ AWS の設定は周りは画面を共有しながら確認する
 
 IAM に色々アクセスできる権限がない
 
+## EC2 から S3
+
+ロールなし
+
+```
+[ec2-user@ip-172-31-13-68 ~]$ aws s3 ls s3:praha-s3
+
+An error occurred (AccessDenied) when calling the ListObjectsV2 operation: Access Denied
+```
+
+ロールあり
+
+```
+[ec2-user@ip-172-31-13-68 ~]$ aws s3 ls s3://praha-s3
+2022-06-04 09:59:37     499204  googlegame.png
+```
+
+ロールあり（他のバケット無理）
+
+```
+[ec2-user@ip-172-31-13-68 ~]$ aws s3 ls s3://lamda-s3-kaizuka
+
+An error occurred (AccessDenied) when calling the ListObjectsV2 operation: Access Denied
+```
+
+ロールあり（削除できない）
+
+```
+[ec2-user@ip-172-31-13-68 ~]$ aws s3 rm s3://praha-s3/googlegame.png  --recursive
+[ec2-user@ip-172-31-13-68 ~]$ aws s3 ls s3://praha-s3
+2022-06-04 09:59:37     499204  googlegame.png
+```
+
+疑問エラーは出ない？
+
 ## EC2 インスタンスにロールを付与するべきか直接ポリシーを付与するべきか、どのような理由で、どちらの方が適切か？
 
-TODO
+そもそも画面から見てもロールを直接しかなさそう。
+役割から考えると、ポリシーは IAM ユーザーや後述の IAM ロールに割り当てることで、「誰が」その権限を持つのかといったことを決定するものなので、直接インスタンスに付与するのはおかしい？
 
 # 課題３
 
