@@ -15,3 +15,11 @@ az1
 az2
 
 ![az2](./screenshot/AZ2.png)
+
+## alb 入れた結果
+
+両方がいきてる場合
+![1and2](./screenshot/1and2.gif)
+
+1 を停止した場合
+![2only](./screenshot/2only.gif)
