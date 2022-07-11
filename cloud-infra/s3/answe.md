@@ -96,3 +96,17 @@
 
 復元完了
 ![hukkatu](./screenshot/hukkatu.png)
+
+## 参考
+
+ストレージクラス
+
+[https://dev.classmethod.jp/articles/should_i_choice_s3_storage_class/](https://dev.classmethod.jp/articles/should_i_choice_s3_storage_class/)
+
+レプリケーション
+
+[https://dev.classmethod.jp/articles/lim-s3-replication/](https://dev.classmethod.jp/articles/lim-s3-replication/)
+
+バージョニング
+
+[https://dev.classmethod.jp/articles/3minutes-s3-versioning-lifecycle/](https://dev.classmethod.jp/articles/3minutes-s3-versioning-lifecycle/)
