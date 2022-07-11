@@ -38,4 +38,19 @@
 
 ## ライフサイクル
 
-##
+### ライフサイクルとは？
+
+ある期間やルールを設定し、それを基に自動で、ストレージクラスを移動したり保存されているドキュメントなどを削除することができる機能。
+
+### 30 日経ったら安い storage に移行するライフサイクル
+
+以下のスクショ
+30 日経ったら `Standard-IA` に移行
+![30days-after](./screenshot/30days-after.png)
+
+アクセス頻度考えると `Glacier` がより安くていいかと思ったが、高くなる可能性もある？とのことで`Standard-IA`に。
+![glacierにしたら高い？](./screenshot/glacierにしたら高い？.png)
+
+### 90 日経ったら log ファイルを削除するライフサイクル
+
+![90days-after](./screenshot/90days-after.png)
