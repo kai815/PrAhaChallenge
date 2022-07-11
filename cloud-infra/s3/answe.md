@@ -54,3 +54,28 @@
 ### 90 日経ったら log ファイルを削除するライフサイクル
 
 ![90days-after](./screenshot/90days-after.png)
+
+# 課題２（バックアップ）
+
+## 「バージョニング」と「レプリケーション」の違い
+
+バージョニングは、単一のオブジェクトの複数のバージョンを保持できるようになる機能です。操作ミスによる削除に対しても、簡単に復旧できる手段を提供してくれます。
+
+レプリケーションは、Amazon S3 のバケット全体のオブジェクトを自動で非同期的にコピーする機能です。複数の対象バケットにも可能で、リージョンを跨いでも可能。
+
+## レプリケーション
+
+レプリケーション設定
+![replication](./screenshot/replication.png)
+
+レプリケーション先のバケット(まだレプリケーション画像ない)
+![no-replication](./screenshot/no-replication.png)
+
+レプリケーションもとのバケットに画像をアップ
+![replication-from](./screenshot/replication-from.png)
+
+レプリケーション先のバケット
+![replication-to](./screenshot/replication-to.png)
+赤枠が追加された画像
+
+## バージョニング
