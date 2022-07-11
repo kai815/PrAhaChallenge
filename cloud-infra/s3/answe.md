@@ -49,7 +49,7 @@
 ![30days-after](./screenshot/30days-after.png)
 
 アクセス頻度考えると `Glacier` がより安くていいかと思ったが、高くなる可能性もある？とのことで`Standard-IA`に。
-![glacierにしたら高い？](./screenshot/glacierにしたら高い？.png)
+![glacierにしたら高い？](./screenshot/glacier.png)
 
 ### 90 日経ったら log ファイルを削除するライフサイクル
 
