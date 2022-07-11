@@ -79,3 +79,20 @@
 赤枠が追加された画像
 
 ## バージョニング
+
+バージョニングの有効化
+![version-setting](./screenshot/version-setting.png)
+
+バージョニングしてるバケットに画像をアップ
+![ver-image-up](./screenshot/ver-image-up.png)
+
+バージョニングしてるバケットの画像を削除
+![ver-image-delete](./screenshot/ver-image-delete.png)
+`version.jpg`を削除
+
+復元するところ
+![recovery](./screenshot/recovery.png)
+※`version-settings.jpg`は復元の検証用にやったものなので、無視
+
+復元完了
+![hukkatu](./screenshot/hukkatu.png)
