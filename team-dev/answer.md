@@ -21,8 +21,21 @@ https://note.com/navitime_tech/n/nd61da833a838
 5. [no-debugger](https://eslint.org/docs/latest/rules/no-debugger)
    1. debuggerの使用を許可しない。console.logのやつも入れたかった
 
+### airbnbを試す
 
+### 対象
+frontend/praha-challenge-front-app
 
+installコマンド
+```
+npx install-peerdeps --dev eslint-config-airbnb
+```
+
+設定した後にlint:fixしたら、以下のようにエラーだらけになりました。
+
+![lint](lint.png)
+
+この課題は直すことはせずにlintの設定を戻しました。
 
 ### 参考
 https://eslint.org/docs/latest/rules/
