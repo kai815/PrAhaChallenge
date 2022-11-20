@@ -44,7 +44,7 @@
     "typescript": "4.3.2"
   },
   "lint-staged": {
-    "frontend/praha-challenge-front-app/*{js,ts,jsx,tsx}": [
+    "frontend/praha-challenge-front-app/src/*{js,ts,jsx,tsx}": [
       "yarn lint:fix",
       "yarn format"
     ]
