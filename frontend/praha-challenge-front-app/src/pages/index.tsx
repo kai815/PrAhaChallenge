@@ -10,7 +10,7 @@ const IndexPage = () => (
       </Link>
     </p>
     <Text as='h1' size='xl2'>
-      Hello, from Stitches.テストテストテスト
+      Hello, from Stitches.
     </Text>
   </>
 );
