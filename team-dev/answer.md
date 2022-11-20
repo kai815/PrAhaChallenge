@@ -52,6 +52,14 @@ yarn add -D husky lint-staged
 ```
 yarn husky install
 ```
+※frontend/praha-challenge-front-appのディレクトリでやりました
+
+実際にコミットした時
+![husky](husky.png)
+
+## ローカル環境でのpre-commit hookの問題点
+
+こっそり止めることができるので仕組みとしては弱い？
 
 ## 参考
 https://fwywd.com/tech/husky-setup
