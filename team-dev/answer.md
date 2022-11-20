@@ -41,3 +41,20 @@ npx install-peerdeps --dev eslint-config-airbnb
 https://eslint.org/docs/latest/rules/
 https://www.tam-tam.co.jp/tipsnote/javascript/post11934.html
 https://qiita.com/M-ISO/items/f9097a75b362206c2a99
+https://www.npmjs.com/package/eslint-config-airbnb
+
+# 課題2
+
+```
+yarn add -D husky lint-staged
+```
+
+```
+yarn husky install
+```
+
+## 参考
+https://fwywd.com/tech/husky-setup
+https://walking-succession-falls.com/%E6%B7%B1%E3%81%84%E3%83%87%E3%82%A3%E3%83%AC%E3%82%AF%E3%83%88%E3%83%AA%E9%9A%8E%E5%B1%A4%E3%81%ABhuskey%E3%82%92%E9%81%A9%E7%94%A8%E3%81%99%E3%82%8B%E5%A0%B4%E5%90%88%E3%81%AE%E6%89%8B%E9%A0%86
+https://zenn.dev/okkun/articles/f74cb21dcdefc1
+https://qiita.com/maejima_f/items/5eb8a4067e3aa6a3179d
