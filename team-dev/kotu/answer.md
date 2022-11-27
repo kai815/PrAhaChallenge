@@ -37,3 +37,9 @@ https://gist.github.com/stephenparish/9941e89d80e2bc58a153
 https://www.praha-inc.com/lab/posts/commit-message
 https://qiita.com/itosho/items/9565c6ad2ffc24c09364
 https://qiita.com/konatsu_p/items/dfe199ebe3a7d2010b3e
+
+## 課題2 
+PRのtemplate
+
+### 参考
+https://dev.classmethod.jp/articles/pull-request-template/
