@@ -43,3 +43,14 @@ PRのtemplate
 
 ### 参考
 https://dev.classmethod.jp/articles/pull-request-template/
+
+## 課題3
+その他チーム開発で工夫できること
+
+1. コードレビューのコメントの種類のラベルをつける(mustなのか、imoなのかなど)
+2. LintなどはCIでチェックさせて、コードレビューでしない
+3. レビューコメントの修正の際にはコミットのリンクを貼る
+
+### 参考
+https://qiita.com/iganin/items/aee297eade84849cc9cd
+https://zenn.dev/ckona/articles/my-codereview
