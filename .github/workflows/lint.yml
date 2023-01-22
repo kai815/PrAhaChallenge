@@ -1,0 +1,17 @@
+name : lint-test
+on:
+  pull_request:
+defaults:
+  run:
+    #frontend/praha-challenge-front-appで動かす
+    working-directory: frontend/praha-challenge-front-app
+jobs:
+  build:
+    name: Lint
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+      - run: yarn
+      - run: yarn lint
