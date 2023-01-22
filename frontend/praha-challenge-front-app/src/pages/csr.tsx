@@ -13,10 +13,10 @@ const CsrPage = () => {
         const data = responseData.stargazers_count;
         setStars(data);
       });
-      //cleanup
-      return ()=>{
-        controller.abort()
-      }
+    //cleanup
+    return () => {
+      controller.abort();
+    };
   }, []);
   return (
     <>
