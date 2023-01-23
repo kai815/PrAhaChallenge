@@ -11,6 +11,8 @@ https://github.com/kai815/PrAhaChallenge/actions/runs/3979166554/jobs/6821420883
 以下のPR
 https://github.com/kai815/praha-challenge-extra-large-task/pull/24
 
+テスト自体は落ちてますが、今回の目的としては、unit testとDBを使ったintegration testが行えていますので果たしてるかと思います。
+（テスト落ちてるところを直すまでやるのはやることがだいぶ増えそうなのもあり。）
 
 ## 参考
 https://docs.github.com/ja/actions/using-workflows/workflow-syntax-for-github-actions
