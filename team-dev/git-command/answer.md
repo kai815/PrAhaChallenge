@@ -65,6 +65,27 @@ https://www-creators.com/archives/1782
 
 ### 作業中、自分のローカル環境で細かく作業をコミットしていたため、複数に分かれたコミットを 1 つのコミットにまとめてからプッシュしたい（問題があったときにロールバックしやすいよう、意味のある単位でコミットをまとめる際に役立つ）
 
+```
+git rebase　-i HEAD~3
+```
+
+※3 はどのくらいのコミットを表示するか
+
+コミットを表示した上で、
+pick になっているのを squash する
+
+before
+
+![before](./rebase-befor.png)
+
+after
+![after](./rebase-after.png)
+
+#### 参考
+
+https://backlog.com/ja/git-tutorial/stepup/32/
+https://dev.classmethod.jp/articles/git-commit-matomeru/
+
 ### 特定のブランチを元に新たなブランチを作成したい
 
 ### リモートリポジトリをクローンする際に全てのコミット履歴が必要なく、最新コミットだけクローンしたい（clone にかかる時間を短縮するのに役立ちます）
