@@ -88,6 +88,39 @@ https://dev.classmethod.jp/articles/git-commit-matomeru/
 
 ### 特定のブランチを元に新たなブランチを作成したい
 
+```
+git checkout -b <新しいブランチ名> <元にするブランチ名>
+```
+
+#### 参考
+
+https://qiita.com/yukachin0414/items/ecc890e8b4ebee457238
+
 ### リモートリポジトリをクローンする際に全てのコミット履歴が必要なく、最新コミットだけクローンしたい（clone にかかる時間を短縮するのに役立ちます）
 
+```
+git clone -depth 1
+```
+
+#### 参考
+
+https://qiita.com/usamik26/items/7bfa61b31344206077fb
+https://senooken.jp/post/2022/08/11/6377/
+
 ### 他ブランチからのマージ中にコンフリクトが発生したため、ひとまずマージを中断したい
+
+編集する前
+
+```
+git merge --abort
+```
+
+編集したあと
+
+```
+git reset --hard HEAD
+```
+
+#### 参考
+
+https://qiita.com/chihiro/items/5dd671aa6f1c332986a7
