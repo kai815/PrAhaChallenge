@@ -56,7 +56,26 @@ https://www.nextdoorwith.info/wp/se/logging-design-policy-example/
 
 ## どのようなタイミングでログを出力すると良いか？（例えば「正常系の処理が終了したとき」「例外が生じたとき」など）ログレベルと併せて考える
 
+INFO リクエスト開始時 - 処理概要、実行クラス名、メソッド名、HTTP のリクエスト内容
+INFO 途中経過 - 実行条件、処理対象オブジェクトのキーとなる値等(customer_id, order_id 等)
+INFO 処理終了時 - 実行結果(OK/NG 等)、リダイレクト先、HTTP のレスポンス内容
+WARN イベント発生時 - 画面に表示したエラーメッセージ等
+ERROR 例外発生時 - 例外クラス、例外メッセージ
+INFO その他、必要に応じて
+
+### 参考
+
+https://qiita.com/nanasess/items/350e59b29cceb2f122b3
+
 ## ログを全て人力で検査するのは大変なので、スクリプトなどで集計しやすいように、パースしやすいメッセージを作ることも大切だと言われる。どのようなログメッセージならパースしやすいか？
+
+規則性があって、ある程度構造化されているもの。読みやすいログはトレースしやすいのもかもしれない。
+
+### 参考
+
+https://applis.io/posts/how-to-design-log-output
+https://docs.datadoghq.com/ja/logs/guide/log-parsing-best-practice/
+https://docs.datadoghq.com/ja/logs/log_configuration/parsing/?tab=%E3%83%9E%E3%83%83%E3%83%81%E3%83%A3%E3%83%BC
 
 ## 以下のログの種類の説明
 
