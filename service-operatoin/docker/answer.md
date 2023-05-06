@@ -95,3 +95,13 @@ https://stackoverflow.com/questions/33379393/docker-env-vs-run-export
 ## 課題2（実装）
 
 特大課題をdockerで起動できるようにする
+
+[こちらのPR](https://github.com/kai815/praha-challenge-extra-large-task/pull/26)
+
+### 参考
+https://qiita.com/yuuri23/items/6bfe9bb11727a80d12fd
+https://qiita.com/yucatio/items/f5d23043228cc35fc763
+https://zenn.dev/satton/articles/162735f93d5e6f
+https://zenn.dev/optimisuke/articles/17ee6aba316e47
+https://zenn.dev/mo_ri_regen/articles/how-to-dockerignore
+https://github.com/yasu-s/nestjs-docker-sample
