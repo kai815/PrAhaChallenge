@@ -1,4 +1,5 @@
 //課題の内容と異なるが、今のtwitterAPIはこれしか使えなさそうなので
+//こっちも結局使ってない
 import { ITwitterRepository, Result, MeResponse} from "./interfaces/twitter-intareface";
 import { Client } from "twitter-api-sdk";
 

@@ -1,3 +1,4 @@
+//こっちは結局使ってない 認証の関係
 import express, { Express, Request, Response } from 'express';
 import dotenv from 'dotenv';
 import { TwitterRepository }from "./repository/twitter"

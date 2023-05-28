@@ -1,3 +1,4 @@
+//こっちも結局使ってない
 export type Result = {
   success:boolean,
   message: string
