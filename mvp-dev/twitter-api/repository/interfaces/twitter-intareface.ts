@@ -10,7 +10,7 @@ export type MeResponse = {
 }
 
 export interface ITwitterRepository {
-  postTweet(body: string): Result;
-  deleteTweet(tweetId: string): Result;
-  getMe(): MeResponse;
+  postTweet(body: string): Promise<Result>;
+  deleteTweet(tweetId: string):Promise<Result>;
+  getMe(): Promise<MeResponse>;
 }

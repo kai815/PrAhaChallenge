@@ -16,17 +16,17 @@ app.get('/', (req: Request, res: Response) => {
   res.send('Express + TypeScript Server');
 });
 
-app.post('/tweet', (req: Request, res: Response) => {
+app.post('/tweet', async (req: Request, res: Response) => {
   const twitterRepo = new TwitterRepository()
-  const result = twitterRepo.postTweet(req.body)
+  const result = await twitterRepo.postTweet(req?.body?.content ?? '')
   if(result.success){
     return res.send("success")
   }
   return res.send("fail")
 })
-app.delete('/tweet/:id', (req: Request, res: Response) => {
+app.delete('/tweet/:id', async(req: Request, res: Response) => {
   const twitterRepo = new TwitterRepository()
-  const result = twitterRepo.deleteTweet(req.params.id)
+  const result = await twitterRepo.deleteTweet(req.params.id)
   if(result.success){
     return res.send("success")
   }
