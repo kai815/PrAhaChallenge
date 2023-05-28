@@ -85,14 +85,12 @@ server.on('request', async (req, res) => {
   try {
     // @ts-ignore
     const {code, state} = url.parse(req.url, true).query;
-    console.log({code})
 
     if (state !== STATE) {
       throw new Error("State isn't matching");
     }
 
     const result = await authClient.requestAccessToken(code as string);
-    console.log({result})
 
     res.writeHead(200, {"Content-Type": "text/plain"});
     res.end("OK");
