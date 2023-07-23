@@ -47,6 +47,10 @@ https://cloud.google.com/firestore/docs/best-practices?hl=ja
 
 https://ics.media/entry/4682/
 
+https://qiita.com/mogmet/items/921fe9ba62a4d2442e32
+
+https://firebase.google.com/docs/firestore/manage-data/add-data?hl=ja
+
 # 課題 2(質問)
 
 ## 正規化について
