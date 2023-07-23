@@ -43,6 +43,10 @@ https://cloud.google.com/firestore/docs/best-practices?hl=ja
 
 # 課題 2(実装)
 
+## 参考
+
+https://ics.media/entry/4682/
+
 # 課題 2(質問)
 
 ## 正規化について
