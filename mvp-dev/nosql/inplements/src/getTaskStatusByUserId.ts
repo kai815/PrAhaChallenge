@@ -1,5 +1,5 @@
 //ユーザの課題ステータスを一覧表示するスクリプト
-import { db, User, Task, TaskStatus } from "./db";
+import { db, Task, TaskStatus } from "./db";
 
 type TaskStatusMap = {
   [key: string]:string
