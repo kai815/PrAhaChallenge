@@ -1,0 +1,30 @@
+@startuml
+
+
+' avoid problems with angled crows feet
+skinparam linetype ortho
+
+entity "User" as u {
+  id : varchar
+  --
+  name varchar
+}
+
+entity "Task" as t {
+  id : varchar
+  --
+  name : varchar
+}
+
+entity "UserTaskStatus" as uts {
+  id : varchar
+  --
+  user_id:varchar
+  task_id:varchar
+  status:varchar
+}
+
+
+u ||..o{ uts
+t ||..o{ uts
+@enduml
