@@ -55,6 +55,7 @@ https://hachibeechan.hateblo.jp/entry/domain-driven-deskwork
 責務が広がりすぎる可能性があるのが1つ。
 また、`firebaseUserId`など認証に必要な情報が認証基盤(外部認証サービス)の変更によって変わった場合に、
 ドメインのビジネスロジックとは関係ないところで変更が生じる可能性があるのがもう1つの理由。
+また、セキュリティ事故防止のためにも分けたほうがいい。
 ### 参考
 
 https://github.com/little-hands/ddd-q-and-a/issues/173
